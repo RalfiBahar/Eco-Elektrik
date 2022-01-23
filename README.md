@@ -1,6 +1,6 @@
-# Hisar Okulları Shell Eco Marathon Elektrik Ekibi Github Sayfası
+# Eco Elektrik 🚗⚡
 
-Pisibi misibi...
+Hisar Okulları Shell Eco Marathon Elektrik Ekibi Github Sayfası...
 
 ## Task List
 - [ ] Tepe Lambası: Şematik-Footprint Eşleştirme
