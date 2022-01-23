@@ -1,0 +1,526 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>
+Integrated Library (Components) Report
+</title>
+</head>
+<body bgcolor="#FFFFFF">
+<font face="Arial" size="2">
+<h1>
+Integrated Library (Components) Report
+</h1>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library File Name
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+C:\Users\ralfi\Desktop\Eco Marathon\Tepe Lambasi\Tepe Lambasi Final\PartPrints\Kapasite\CL31A106KACLNNC.IntLib
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library File Date/Time
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Saturday, January 22, 2022 8:12:33 AM
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library File Size
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+20992
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Components
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+1
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Component List
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+CL31A106KACLNNC
+</font>
+</td>
+</tr>
+</table>
+<hr>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<img src="ProC20F.wmf" width="256" height="95">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Library Reference
+</b>
+</font>
+</td>
+<td valign="top">
+<h2>
+<font face="Arial" size="2">
+CL31A106KACLNNC
+</font>
+</h2>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Cap Ceramic 10uF 25V X5R 10% Pad SMD 1206 85C T/R
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Kind
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Standard
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Aliases
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Component has no aliases
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Designator
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+C?
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Parameters
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+7
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pins
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+2
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Models
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+1
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+<h5>
+Parameters
+</h5>
+<table border="1" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Name
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Value
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Type
+</b>
+</font>
+</td>
+<td align="center" valign="top">
+<font face="Arial" size="2">
+<b>
+Visible
+</b>
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+MF
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+&nbsp;
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Package
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+None
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Price
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+None
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Value
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+*
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+MP
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+CL31A106KACLNNC
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Availability
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Unavailable
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+False
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top">
+<font face="Arial" size="2">
+Comment
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+*
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+STRING
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+True
+</font>
+</td>
+</tr>
+</table>
+<h5>
+Models
+</h5>
+<table border="0" cellspacing="0" cellpadding="4" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<img src="ProC24E.wmf" width="256" height="145">
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+<table border="0" cellspacing="0" cellpadding="2" width="100%">
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Name
+</b>
+</font>
+</td>
+<td valign="top">
+<h3>
+<font face="Arial" size="2">
+CAPC3216X140N
+</font>
+</h3>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Model Type
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+Footprint
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Description
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+&nbsp;
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Height
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+0mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Dimension
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+181.89mil x 90.551mil
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Pads
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+2
+</font>
+</td>
+</tr>
+<tr>
+<td valign="top" width="30%">
+<font face="Arial" size="2">
+<b>
+Number of Primitives
+</b>
+</font>
+</td>
+<td valign="top">
+<font face="Arial" size="2">
+12
+</font>
+</td>
+</tr>
+</table>
+</font>
+</td>
+</tr>
+</table>
+&nbsp;
+<p>
+</font>
+</body>
+</html>
