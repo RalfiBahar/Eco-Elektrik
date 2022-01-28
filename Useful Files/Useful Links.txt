@@ -1,0 +1,7 @@
+ECO Elektronik Drive: https://drive.google.com/drive/u/1/folders/1MA2iAf50dafnCU7QQenJlasTOgjh-Xnq
+
+Altium PCB Rules: https://github.com/ayberkozgur/jlcpcb-design-rules-stackups/tree/master/design-rules
+
+Footprints: https://www.snapeda.com/home/
+
+Parts: https://www.digikey.com/
