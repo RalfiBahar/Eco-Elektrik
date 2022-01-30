@@ -4,22 +4,25 @@
 TinyGPSPlus gps;
 SoftwareSerial gpsSerial(3, 6);
 const int increaseButtonPIN = 2;
-int speedValue = 0;
-int actualSpeed = 0;
+const int decreaseButtonPIN = 4;
+
+volatile int speedValue = 0;
+volatile int actualSpeed = 0;
 
 void setup()
 {
-    pinMode(increaseButtonPIN, INPUT);
+    pinMode(increaseButtonPIN, INPUT);    
+    pinMode(decreaseButtonPIN, INPUT);
     Serial.begin(9600);
-    Serial2.begin(9600);
+    gpsSerial.begin(9600);
 }
 
 void loop()
 {
     getSpeed();
-    String msg = "Current speed of the car: " + (actualSpeed);
+    String msg = "Current speed of the car: " + String(actualSpeed);
     Serial.println(msg);
-    boolean increseButtonPressed = digitalRead(BUTTON);
+    boolean increseButtonPressed = digitalRead(increaseButtonPIN);
     if (increseButtonPressed == HIGH)
     {
         speedValue += 5;
@@ -27,10 +30,10 @@ void loop()
         getSpeed();
         String serialMessage2 = "The actual speed of the car is " + String(actualSpeed);
         Serial.println(serialMessage1);
-        Serial.println(serialMessage2);
+        MCU.println(serialMessage2);
     }
 
-    boolean decreaseButtonPressed = digitalRead(BUTTON);
+    boolean decreaseButtonPressed = digitalRead(decreaseButtonPIN);
     if (decreaseButtonPressed == HIGH)
     {
         if (speedValue >= 5)
