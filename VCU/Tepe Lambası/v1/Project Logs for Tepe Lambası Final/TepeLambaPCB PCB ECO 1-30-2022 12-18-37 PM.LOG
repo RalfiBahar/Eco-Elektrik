@@ -1,0 +1,174 @@
+Added Component: Designator=*(BUZZER)
+Added Component: Designator=555?(IC555)
+Added Component: Designator=C1(CAP)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CL31A106KACLNNC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=D1(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D2(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D3(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D4(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D5(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D6(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D7(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D8(LED)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Broadcom Limited"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "HSMF-C114"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "0606 Broadcom"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/HSMF-C114/Broadcom%20Limited/view-part/1939724/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J1(CONNECTOR)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "277-1667-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.ca/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1935161"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1935161/Phoenix%20Contact/view-part/423515/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(CONNECTOR)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "277-1667-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.ca/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1935161"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1935161/Phoenix%20Contact/view-part/423515/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1(RESISTOR)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERJ1TNF2002U"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESISTOR)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERJ1TNF2002U"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k"; VariantName = "[No Variations]"
+Added Component: Designator=TRN1(TRANSISTOR)
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=*-N
+Added Pin To Net: NetName=GND Pin=*-P
+Added Pin To Net: NetName=GND Pin=555?-1
+Added Pin To Net: NetName=Net555?_2 Pin=555?-2
+Added Pin To Net: NetName=GND Pin=555?-3
+Added Pin To Net: NetName=GND Pin=555?-4
+Added Pin To Net: NetName=Net555?_2 Pin=555?-6
+Added Pin To Net: NetName=GND Pin=555?-8
+Added Pin To Net: NetName=Net555?_2 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=D1-1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-3
+Added Pin To Net: NetName=NetD1_2 Pin=D1-4
+Added Pin To Net: NetName=NetD1_2 Pin=D2-1
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=D2-3
+Added Pin To Net: NetName=NetD2_2 Pin=D2-4
+Added Pin To Net: NetName=NetD2_2 Pin=D3-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=D3-3
+Added Pin To Net: NetName=NetD3_2 Pin=D3-4
+Added Pin To Net: NetName=NetD3_2 Pin=D4-1
+Added Pin To Net: NetName=GND Pin=D4-2
+Added Pin To Net: NetName=GND Pin=D4-3
+Added Pin To Net: NetName=GND Pin=D4-4
+Added Pin To Net: NetName=GND Pin=D5-1
+Added Pin To Net: NetName=NetD5_2 Pin=D5-2
+Added Pin To Net: NetName=NetD5_2 Pin=D5-3
+Added Pin To Net: NetName=NetD5_2 Pin=D5-4
+Added Pin To Net: NetName=NetD5_2 Pin=D6-1
+Added Pin To Net: NetName=NetD6_2 Pin=D6-2
+Added Pin To Net: NetName=NetD6_2 Pin=D6-3
+Added Pin To Net: NetName=NetD6_2 Pin=D6-4
+Added Pin To Net: NetName=NetD6_2 Pin=D7-1
+Added Pin To Net: NetName=NetD7_2 Pin=D7-2
+Added Pin To Net: NetName=NetD7_2 Pin=D7-3
+Added Pin To Net: NetName=NetD7_2 Pin=D7-4
+Added Pin To Net: NetName=NetD7_2 Pin=D8-1
+Added Pin To Net: NetName=GND Pin=D8-2
+Added Pin To Net: NetName=GND Pin=D8-3
+Added Pin To Net: NetName=GND Pin=D8-4
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=Net555?_2 Pin=R2-1
+Added Pin To Net: NetName=NetR1_1 Pin=R2-2
+Added Pin To Net: NetName=NetJ1_2 Pin=TRN1-1
+Added Pin To Net: NetName=NetJ2_2 Pin=TRN1-2
+Added Pin To Net: NetName=GND Pin=TRN1-3
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component * BUZZER
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component 555? IC555
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component C1 10uF
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D1 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D2 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D3 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D4 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D5 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D6 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D7 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D8 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component J1 CONNECTOR
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component J2 CONNECTOR
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R1 20K
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R2 20K
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component TRN1 TRANSISTOR
