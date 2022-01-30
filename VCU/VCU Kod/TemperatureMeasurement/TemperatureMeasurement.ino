@@ -1,7 +1,7 @@
 #include <math.h>
 #include <SoftwareSerial.h>
 
-SoftwareSerial Serial2(3, 6);
+SoftwareSerial Serial2(3, 6); //BMS
 #define LEDPIN 2
 
 void setup()

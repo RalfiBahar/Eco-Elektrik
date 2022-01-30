@@ -1,5 +1,6 @@
 #import "imports.ino"
 #import "variables.ino"
+#import "functions.ino"
 
 SoftwareSerial Serial2(7, 2); // MCU
 SoftwareSerial Serial3(3, 6); // BMS
