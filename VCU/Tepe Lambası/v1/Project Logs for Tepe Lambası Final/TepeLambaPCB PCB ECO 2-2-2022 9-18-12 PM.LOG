@@ -1,0 +1,159 @@
+Added Component: Designator=555(IC555)
+Added Component: Designator=B(BUZZER)
+Added Component: Designator=C1(CAP)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "CL31A106KACLNNC"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10uF"; VariantName = "[No Variations]"
+Added Component: Designator=D1(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D2(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D3(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D4(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D5(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D6(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D7(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=D8(LED)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "1510-1283-1-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "DigiKey-Purchase-URL"; Value = "https://snapeda.com/shop?store=DigiKey&id=551081"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "SPMWHT541ML5XARKS0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "SMD-4 Samsung Semiconductor,"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/SPMWHT541ML5XARKS0/Samsung%20Semiconductor,%20Inc./view-part/551081/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J1(CONNECTOR)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "277-1667-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.ca/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1935161"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1935161/Phoenix%20Contact/view-part/423515/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J2(CONNECTOR)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "277-1667-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.ca/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1935161"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1935161/Phoenix%20Contact/view-part/423515/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1(RESISTOR)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERJ1TNF2002U"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RESISTOR)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERJ1TNF2002U"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k"; VariantName = "[No Variations]"
+Added Component: Designator=TRN1(TRANSISTOR)
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=555-1
+Added Pin To Net: NetName=Net555_2 Pin=555-2
+Added Pin To Net: NetName=GND Pin=555-3
+Added Pin To Net: NetName=GND Pin=555-4
+Added Pin To Net: NetName=Net555_2 Pin=555-6
+Added Pin To Net: NetName=GND Pin=555-8
+Added Pin To Net: NetName=GND Pin=B-N
+Added Pin To Net: NetName=GND Pin=B-P
+Added Pin To Net: NetName=Net555_2 Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=D1-A
+Added Pin To Net: NetName=NetD1_C Pin=D1-C
+Added Pin To Net: NetName=NetD1_C Pin=D2-A
+Added Pin To Net: NetName=NetD2_C Pin=D2-C
+Added Pin To Net: NetName=NetD2_C Pin=D3-A
+Added Pin To Net: NetName=NetD3_C Pin=D3-C
+Added Pin To Net: NetName=NetD3_C Pin=D4-A
+Added Pin To Net: NetName=GND Pin=D4-C
+Added Pin To Net: NetName=GND Pin=D5-A
+Added Pin To Net: NetName=NetD5_C Pin=D5-C
+Added Pin To Net: NetName=NetD5_C Pin=D6-A
+Added Pin To Net: NetName=NetD6_C Pin=D6-C
+Added Pin To Net: NetName=NetD6_C Pin=D7-A
+Added Pin To Net: NetName=NetD7_C Pin=D7-C
+Added Pin To Net: NetName=NetD7_C Pin=D8-A
+Added Pin To Net: NetName=GND Pin=D8-C
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=NetJ1_2 Pin=J1-2
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Pin To Net: NetName=NetJ2_2 Pin=J2-2
+Added Pin To Net: NetName=NetR1_1 Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R1-2
+Added Pin To Net: NetName=Net555_2 Pin=R2-1
+Added Pin To Net: NetName=NetR1_1 Pin=R2-2
+Added Pin To Net: NetName=NetJ1_2 Pin=TRN1-1
+Added Pin To Net: NetName=NetJ2_2 Pin=TRN1-2
+Added Pin To Net: NetName=GND Pin=TRN1-3
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component 555 IC555
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component B BUZZER
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component C1 10uF
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D1 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D2 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D3 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D4 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D5 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D6 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D7 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component D8 LED
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component J1 CONNECTOR
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component J2 CONNECTOR
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R1 20K
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R2 20K
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component TRN1 TRANSISTOR
+Added Room: Name=TepeLambasiFinal
