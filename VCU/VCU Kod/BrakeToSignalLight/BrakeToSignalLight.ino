@@ -1,6 +1,6 @@
 const int SWITCH_PIN = 7;
-const int LEFT_SIGNAL_LED_PIN = 40;
-const int RIGHT_SIGNAL_LED_PIN = 41;
+const int LEFT_SIGNAL_LED_PIN = 12;
+const int RIGHT_SIGNAL_LED_PIN = 13;
 
 void setup() {
   Serial.begin(9600);
@@ -16,7 +16,7 @@ void loop() {
     Serial.println("Braked: Blinking signal lights.");
     digitalWrite(LEFT_SIGNAL_LED_PIN, HIGH);
     digitalWrite(RIGHT_SIGNAL_LED_PIN, HIGH);
-    delay(500);
+    delay(700);
     digitalWrite(LEFT_SIGNAL_LED_PIN, LOW);
     digitalWrite(RIGHT_SIGNAL_LED_PIN, LOW);
   }
