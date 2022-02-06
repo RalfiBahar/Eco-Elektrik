@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=GND Pin=555-1
+Removed Pin From Net: NetName=GND Pin=B-N
+Removed Pin From Net: NetName=GND Pin=C1-2
+Removed Pin From Net: NetName=GND Pin=D4-C
+Removed Pin From Net: NetName=GND Pin=D8-C
+Removed Pin From Net: NetName=GND Pin=J1-1
+Removed Pin From Net: NetName=GND Pin=J2-1
+Change Net Name : Old Net Name=GND New Net Name=Net555_3
+Added Pin To Net: NetName=GND Pin=555-1
+Added Pin To Net: NetName=GND Pin=B-N
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=GND Pin=D4-C
+Added Pin To Net: NetName=GND Pin=D8-C
+Added Pin To Net: NetName=GND Pin=J1-1
+Added Pin To Net: NetName=GND Pin=J2-1
+Added Net: Name=GND
+Added Room: Name=TepeLambasiFinal
