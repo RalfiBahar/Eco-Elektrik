@@ -1,0 +1,18 @@
+Added Component: Designator=DUE?(ARDUINO DUE)
+Added Component: Designator=S?(Rocker Button)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RR511D1121/E-Switch/view-part/351624/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "E-Switch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RR511D1121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RR511D1121/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RR511D1121/E-Switch/view-part/351624/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetDUE?_59 Pin=DUE?-59
+Added Pin To Net: NetName=NetDUE?_72 Pin=DUE?-72
+Added Pin To Net: NetName=NetDUE?_59 Pin=S?-1
+Added Pin To Net: NetName=NetDUE?_72 Pin=S?-2
+Added Member To Class: ClassName=VCUSheet Member=Component DUE? DUE
+Added Member To Class: ClassName=VCUSheet Member=Component S? Rocker Button
+Added Room: Name=VCUSheet
