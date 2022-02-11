@@ -1,0 +1,15 @@
+Component   : ARDUINO DUE
+PCB Library : VCUPcbLib.PcbLib
+Date        : 2/11/2022
+Time        : 8:37:32 PM
+
+
+
+Dimension : 4.074 x 2.146 in
+
+ Layer(s)              Pads(s)  Tracks(s)  Fill(s)  Arc(s)  Text(s)
+--------------------------------------------------------------------
+ Multi Layer               104          0        0       0        0
+ Top Overlay                 0        563       98       0       93
+--------------------------------------------------------------------
+ Total                     104        563       98       0       93
