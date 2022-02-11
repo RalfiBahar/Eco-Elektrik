@@ -10,21 +10,21 @@ void setup() {
 }
  
 void loop() {
- 
+  delay(50);
   if (digitalRead(SWITCH_PIN) == HIGH)
   {
     Serial.println("Braked: Blinking signal lights.");
     digitalWrite(LEFT_SIGNAL_LED_PIN, HIGH);
     digitalWrite(RIGHT_SIGNAL_LED_PIN, HIGH);
-    delay(700);
-    digitalWrite(LEFT_SIGNAL_LED_PIN, LOW);
-    digitalWrite(RIGHT_SIGNAL_LED_PIN, LOW);
+
   }
  
   else
   {
     Serial.println("Not braked");
+    digitalWrite(LEFT_SIGNAL_LED_PIN, LOW);
+    digitalWrite(RIGHT_SIGNAL_LED_PIN, LOW);
   }
    
-  delay(100);
+
 }
