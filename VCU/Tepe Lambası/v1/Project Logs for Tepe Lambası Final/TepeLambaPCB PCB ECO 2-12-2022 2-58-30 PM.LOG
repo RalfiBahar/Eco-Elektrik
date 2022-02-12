@@ -1,0 +1,23 @@
+Removed Pin From Net: NetName=Net555_3 Pin=555-3
+Removed Pin From Net: NetName=Net555_3 Pin=D1-A
+Removed Pin From Net: NetName=Net555_3 Pin=D5-A
+Removed Pin From Net: NetName=Net555_3 Pin=R1-2
+Added Component: Designator=R4(RESISTOR)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERJ1TNF2002U"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "20k"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=Net555_3 Pin=R4-2
+Change Net Name : Old Net Name=Net555_3 New Net Name=Net555_4
+Added Pin To Net: NetName=Net555_3 Pin=555-3
+Added Pin To Net: NetName=Net555_3 Pin=D1-A
+Added Pin To Net: NetName=Net555_3 Pin=D5-A
+Added Net: Name=Net555_3
+Added Pin To Net: NetName=Net555_7 Pin=555-7
+Added Pin To Net: NetName=Net555_7 Pin=R1-2
+Added Pin To Net: NetName=Net555_7 Pin=R4-1
+Added Net: Name=Net555_7
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R4 7K
+Added Room: Name=TepeLambasiFinal
