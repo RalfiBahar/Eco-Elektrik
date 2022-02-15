@@ -5,3 +5,5 @@ Altium PCB Rules: https://github.com/ayberkozgur/jlcpcb-design-rules-stackups/tr
 Footprints: https://www.snapeda.com/home/
 
 Parts: https://www.digikey.com/
+
+Creating Circular Polygon and Pouring: https://electronics.stackexchange.com/questions/426587/problem-placing-polygon-pour-on-board-altium-17-1
