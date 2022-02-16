@@ -1,0 +1,67 @@
+Change Component Designator: OldDesignator=J NewDesignator=J1
+Change Component Designator: OldDesignator=S? NewDesignator=S1
+Added Component: Designator=S2(Rocker Button)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RR511D1121/E-Switch/view-part/351624/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "E-Switch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RR511D1121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RR511D1121/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RR511D1121/E-Switch/view-part/351624/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S3(Push Button)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "D6R90 F1 LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/D6R90%20F1%20LFS/C&K/view-part/3077462/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S4(Push Button)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "D6R90 F1 LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/D6R90%20F1%20LFS/C&K/view-part/3077462/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S5(Rocker Button)
+Add component (AddParameter): Name = "Availability"; Value = "In Stock"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/RR511D1121/E-Switch/view-part/351624/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "E-Switch"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RR511D1121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Purchase-URL"; Value = "https://pricing.snapeda.com/search/part/RR511D1121/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RR511D1121/E-Switch/view-part/351624/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Change Net Name : Old Net Name=NetJ_1 New Net Name=NetJ1_1
+Added Pin To Net: NetName=GND Pin=DUE?-83
+Added Pin To Net: NetName=GND Pin=J1-2
+Added Pin To Net: NetName=GND Pin=S2-1
+Added Pin To Net: NetName=GND Pin=S3-3
+Added Pin To Net: NetName=GND Pin=S3-4
+Added Pin To Net: NetName=GND Pin=S4-3
+Added Pin To Net: NetName=GND Pin=S4-4
+Added Pin To Net: NetName=GND Pin=S5-1
+Added Net: Name=GND
+Added Pin To Net: NetName=Hiz Arttir Pin=DUE?-74
+Added Pin To Net: NetName=Hiz Arttir Pin=S4-1
+Added Pin To Net: NetName=Hiz Arttir Pin=S4-2
+Added Net: Name=Hiz Arttir
+Added Pin To Net: NetName=Hiz Azalt Pin=DUE?-73
+Added Pin To Net: NetName=Hiz Azalt Pin=S3-1
+Added Pin To Net: NetName=Hiz Azalt Pin=S3-2
+Added Net: Name=Hiz Azalt
+Added Pin To Net: NetName=ToggleBMS Pin=DUE?-72
+Added Pin To Net: NetName=ToggleBMS Pin=S2-2
+Added Net: Name=ToggleBMS
+Added Pin To Net: NetName=ToggleMCU Pin=DUE?-75
+Added Pin To Net: NetName=ToggleMCU Pin=S5-2
+Added Net: Name=ToggleMCU
+Added Member To Class: ClassName=VCUSheet Member=Component S2 Rocker Button
+Added Member To Class: ClassName=VCUSheet Member=Component S3 Push Button
+Added Member To Class: ClassName=VCUSheet Member=Component S4 Push Button
+Added Member To Class: ClassName=VCUSheet Member=Component S5 Rocker Button
+Added Room: Name=VCUSheet
