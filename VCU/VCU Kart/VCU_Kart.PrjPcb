@@ -128,7 +128,7 @@ ConfigParameters0=OP_Analysis=False|TRAN_Analysis=True|DC_Analysis=False|AC_Anal
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -235,11 +235,21 @@ OutputName21=Mixed Sim Netlist
 OutputDocumentPath21=
 OutputVariantName21=
 OutputDefault21=0
+OutputType22=SIMetrixNetlist
+OutputName22=SIMetrix
+OutputDocumentPath22=
+OutputVariantName22=
+OutputDefault22=0
+OutputType23=SIMPLISNetlist
+OutputName23=SIMPLIS
+OutputDocumentPath23=
+OutputVariantName23=
+OutputDefault23=0
 
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -248,6 +258,16 @@ OutputVariantName1=
 OutputDefault1=0
 Configuration1_Name1=OutputConfigurationParameter1
 Configuration1_Item1=OP_Analysis=False|TRAN_Analysis=True|DC_Analysis=False|AC_Analysis=False|TF_Analysis=False|PZ_Analysis=False|Noise_Analysis=False|TRAN_FourierAnalysis=False|TempSweep_Analysis=False|ParamSweep_Analysis=False|MonteCarlo_Analysis=False|TF_Enabled=False|TF_Source= |TF_Reference=0|PZ_Enabled=False|PZ_Node1= |PZ_Node2=0|PZ_Node3= |PZ_Node4=0|PZ_AnalType=PZ|PZ_TfType=VOL|AnalysesDataSavedIndex=4|DC_PrimarySource= |DC_PrimaryStart= |DC_PrimaryStop= |DC_PrimaryStep= |DC_EnableSecondary=False|DC_SecondarySource= |DC_SecondaryStart= |DC_SecondaryStop= |DC_SecondaryStep= |Noise_Enabled=False|Noise_Source= |Noise_Output= |Noise_Reference=0|Noise_Start_UserValue= |Noise_Start=1K|Noise_Stop_UserValue= |Noise_Stop=1G|Noise_TestPoints_UserValue= |Noise_TestPoints=10|Noise_PointsPerSummary=0|Noise_SweepType=DEC|AC_StartFrequency_UserValue= |AC_StartFrequency=1K|AC_StopFrequency_UserValue= |AC_StopFrequency=1G|AC_TestPoints_UserValue= |AC_TestPoints=10|AC_SweepType=DEC|TRAN_StartTime_UserValue= |TRAN_StartTime=0|TRAN_StopTime_UserValue= |TRAN_StopTime=5u|TRAN_StepTime_UserValue= |TRAN_StepTime=0.1u|TRAN_MaxStepTime_UserValue= |TRAN_MaxStepTime=0.1u|TRAN_AlwaysSetDefaults=False|TRAN_DefaultCycles_UserValue= |TRAN_DefaultCycles=5|TRAN_DefaultPointsPerCycle_UserValue= |TRAN_DefaultPointsPerCycle=25|TRAN_UseInitialConditions=False|TRAN_FourierEnabled=False|TRAN_FourierFundFreq_UserValue= |TRAN_FourierFundFreq=1Meg|TRAN_FourierNumHarmonics_UserValue= |TRAN_FourierNumHarmonics=10|TempSweep_Start_UserValue= |TempSweep_Start=-10|TempSweep_Stop_UserValue= |TempSweep_Stop=60|TempSweep_Step_UserValue= |TempSweep_Step=10|ParamSweep_Parameter1= |ParamSweep_Type1=LIN|ParamSweep_Start1= |ParamSweep_Stop1= |ParamSweep_Step1= |ParamSweep_SweepType1=False|ParamSweep_SecondaryEnabled=False|ParamSweep_Parameter2= |ParamSweep_Type2=LIN|ParamSweep_Start2= |ParamSweep_Stop2= |ParamSweep_Step2= |ParamSweep_SweepType2=False|MonteCarlo_NumberOfRuns=10|MonteCarlo_DistributionType=GAUSS|MonteCarlo_Seed=-1|MonteCarlo_ResistorTolerance=10%|MonteCarlo_ResistorTolerance_UserValue=10%|MonteCarlo_CapacitorTolerance=10%|MonteCarlo_CapacitorTolerance_UserValue=10%|MonteCarlo_InductorTolerance=10%|MonteCarlo_InductorTolerance_UserValue=10%|MonteCarlo_TransistorTolerance=10%|MonteCarlo_TransistorTolerance_UserValue=10%|MonteCarlo_DCSourceTolerance=10%|MonteCarlo_DCSourceTolerance_UserValue=10%|MonteCarlo_DigitalTpTolerance=10%|MonteCarlo_DigitalTpTolerance_UserValue=10%|OldCfgLoaded=True|SimViewSetup=ShowActiveSignalsProbes|OPTION_Method=Trapezoidal|OPTION_SpiceRefNode_UserValue= |OPTION_SpiceRefNode=GND|OPTION_DVCC_UserValue= |OPTION_DVCC=5|OPTION_DVDD_UserValue= |OPTION_DVDD=15|SheetsToNetlist=0|Record=AdvSimNetlistView|SimulationName=Mixed Sim Configuration|ProfileId=XOHKNELX
+OutputType2=SIMetrixSimulation
+OutputName2=SIMetrix
+OutputDocumentPath2=
+OutputVariantName2=
+OutputDefault2=0
+OutputType3=SIMPLISSimulation
+OutputName3=SIMPLIS
+OutputDocumentPath3=
+OutputVariantName3=
+OutputDefault3=0
 
 [OutputGroup3]
 Name=Documentation Outputs
@@ -324,7 +344,7 @@ PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -346,7 +366,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -418,7 +438,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -467,7 +487,7 @@ OutputDefault8=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -575,7 +595,7 @@ PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -619,7 +639,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -680,7 +700,7 @@ OutputDefault11=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=NPI09E1C9 (HP LaserJet MFP M130fw)
+TargetPrinter=HP Deskjet 1510 series
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1051,6 +1071,30 @@ SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
+ComponentLibIdentifierKind0=Library Name And Type
+ComponentLibraryIdentifier0=VCUSchlib.SchLib
+ComponentDesignItemID0=4 Pin Klemens
+ComponentSymbolReference0=4 Pin Klemens
+ComponentUpdate0=1
+ComponentIsDeviceSheet0=0
+ComponentLibIdentifierKind1=Library Name And Type
+ComponentLibraryIdentifier1=VCUSchlib.SchLib
+ComponentDesignItemID1=DUE
+ComponentSymbolReference1=DUE
+ComponentUpdate1=1
+ComponentIsDeviceSheet1=0
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=VCUSchlib.SchLib
+ComponentDesignItemID2=Push Button
+ComponentSymbolReference2=Push Button
+ComponentUpdate2=1
+ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=VCUSchlib.SchLib
+ComponentDesignItemID3=Rocker Button
+ComponentSymbolReference3=Rocker Button
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1064,6 +1108,54 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
+ParameterName0=Availability
+ParameterUpdate0=1
+ParameterName1=Centerline_Pitch
+ParameterUpdate1=1
+ParameterName2=Check_prices
+ParameterUpdate2=1
+ParameterName3=Comment
+ParameterUpdate3=1
+ParameterName4=Component Kind
+ParameterUpdate4=1
+ParameterName5=Description
+ParameterUpdate5=1
+ParameterName6=EU_RoHS_Compliance
+ParameterUpdate6=1
+ParameterName7=Library Reference
+ParameterUpdate7=1
+ParameterName8=MF
+ParameterUpdate8=1
+ParameterName9=MP
+ParameterUpdate9=1
+ParameterName10=Number_of_Positions
+ParameterUpdate10=1
+ParameterName11=Package
+ParameterUpdate11=1
+ParameterName12=Price
+ParameterUpdate12=1
+ParameterName13=Purchase-URL
+ParameterUpdate13=1
+ParameterName14=SnapEDA_Link
+ParameterUpdate14=1
+ParameterName15=TE_purchase_URL
+ParameterUpdate15=1
+ParameterName16=Value
+ParameterUpdate16=1
+ModelTypeGroup0=PCBLIB
+ModelTypeUpdate0=1
+ModelType0=PCBLIB
+ModelName0=4 PIN KLEMENS
+ModelUpdate0=1
+ModelType1=PCBLIB
+ModelName1=ARDUINO DUE
+ModelUpdate1=1
+ModelType2=PCBLIB
+ModelName2=Push Button
+ModelUpdate2=1
+ModelType3=PCBLIB
+ModelName3=Rocker Button
+ModelUpdate3=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
