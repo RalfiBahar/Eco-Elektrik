@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=Hiz Azalt Pin=DUE?-73
+Removed Pin From Net: NetName=ToggleMCU Pin=DUE?-75
+Added Pin To Net: NetName=ToggleMCU Pin=DUE?-73
+Added Pin To Net: NetName=Hiz Azalt Pin=DUE?-75
+Added Member To Class: ClassName=VCUSheet Member=Component S4 Push Button
+Added Room: Name=VCUSheet

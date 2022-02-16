@@ -1,0 +1,25 @@
+Removed Pin From Net: NetName=GND Pin=J1-2
+Removed Pin From Net: NetName=GND Pin=S2-1
+Removed Pin From Net: NetName=GND Pin=S3-3
+Removed Pin From Net: NetName=GND Pin=S3-4
+Removed Pin From Net: NetName=GND Pin=S4-3
+Removed Pin From Net: NetName=GND Pin=S4-4
+Removed Pin From Net: NetName=GND Pin=S5-1
+Change Component Designator: OldDesignator=S3 NewDesignator=S4
+Change Component Designator: OldDesignator=S4 NewDesignator=S5
+Change Component Designator: OldDesignator=S5 NewDesignator=S3
+Added Pin To Net: NetName=NetJ1_2 Pin=S3-1
+Added Net: Name=NetJ1_2
+Added Pin To Net: NetName=NetJ1_3 Pin=S2-1
+Added Net: Name=NetJ1_3
+Added Pin To Net: NetName=NetJ1_4 Pin=S1-1
+Added Net: Name=NetJ1_4
+Added Pin To Net: NetName=NetJ2_3 Pin=S5-3
+Added Pin To Net: NetName=NetJ2_3 Pin=S5-4
+Added Net: Name=NetJ2_3
+Added Pin To Net: NetName=NetJ2_4 Pin=S4-3
+Added Pin To Net: NetName=NetJ2_4 Pin=S4-4
+Added Net: Name=NetJ2_4
+Added Pin To Net: NetName=ToggleTepeLambasi Pin=DUE?-76
+Added Net: Name=ToggleTepeLambasi
+Added Room: Name=VCUSheet
