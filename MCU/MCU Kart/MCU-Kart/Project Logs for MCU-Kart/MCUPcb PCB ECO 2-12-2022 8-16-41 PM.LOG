@@ -1,0 +1,191 @@
+Added Component: Designator=C1(Capacitor)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FCA0805C104M-J2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=C2(Capacitor)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FCA0805C104M-J2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=C3(Capacitor)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FCA0805C104M-J2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=C4(Capacitor)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FCA0805C104M-J2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=C5(Capacitor)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FCA0805C104M-J2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=C6(Capacitor)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FCA0805C104M-J2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=C7(Capacitor)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "FCA0805C104M-J2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Cornell Dubilier"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(Power Mosfet - duplicate)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "IRLZ34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220 Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRLZ34/Vishay%20Siliconix/view-part/2881317/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q2(Power Mosfet - duplicate)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "IRLZ34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220 Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRLZ34/Vishay%20Siliconix/view-part/2881317/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q3(Power Mosfet - duplicate)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "IRLZ34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220 Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRLZ34/Vishay%20Siliconix/view-part/2881317/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q4(Power Mosfet - duplicate)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "IRLZ34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220 Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRLZ34/Vishay%20Siliconix/view-part/2881317/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q5(Power Mosfet - duplicate)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "IRLZ34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220 Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRLZ34/Vishay%20Siliconix/view-part/2881317/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=Q6(Power Mosfet - duplicate)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "IRLZ34"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "TO-220 Vishay Siliconix"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/IRLZ34/Vishay%20Siliconix/view-part/2881317/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R1(Resistor)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "Y16245K00000T9R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R2(Resistor)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "Y16245K00000T9R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R3(Resistor)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "Y16245K00000T9R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R4(Resistor)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "Y16245K00000T9R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R5(Resistor)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "Y16245K00000T9R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(Resistor)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "Y16245K00000T9R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=NetC1_2 Pin=C2-2
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=NetC1_2 Pin=C3-2
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=GND Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-1
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=Q1-GND
+Added Pin To Net: NetName=NetQ1_IN Pin=Q1-IN
+Added Pin To Net: NetName=NetPAD5_PAD Pin=Q1-OUT
+Added Pin To Net: NetName=NetPAD5_PAD Pin=Q2-GND
+Added Pin To Net: NetName=NetQ2_IN Pin=Q2-IN
+Added Pin To Net: NetName=GND Pin=Q2-OUT
+Added Pin To Net: NetName=GND Pin=Q3-GND
+Added Pin To Net: NetName=NetQ3_IN Pin=Q3-IN
+Added Pin To Net: NetName=NetPAD4_PAD Pin=Q3-OUT
+Added Pin To Net: NetName=NetPAD4_PAD Pin=Q4-GND
+Added Pin To Net: NetName=NetQ4_IN Pin=Q4-IN
+Added Pin To Net: NetName=GND Pin=Q4-OUT
+Added Pin To Net: NetName=GND Pin=Q5-GND
+Added Pin To Net: NetName=NetQ5_IN Pin=Q5-IN
+Added Pin To Net: NetName=NetPAD3_PAD Pin=Q5-OUT
+Added Pin To Net: NetName=NetPAD3_PAD Pin=Q6-GND
+Added Pin To Net: NetName=NetQ6_IN Pin=Q6-IN
+Added Pin To Net: NetName=GND Pin=Q6-OUT
+Added Pin To Net: NetName=NetQ1_IN Pin=R1-2
+Added Pin To Net: NetName=NetQ2_IN Pin=R2-2
+Added Pin To Net: NetName=NetQ3_IN Pin=R3-2
+Added Pin To Net: NetName=NetQ4_IN Pin=R4-2
+Added Pin To Net: NetName=NetQ5_IN Pin=R5-2
+Added Pin To Net: NetName=NetQ6_IN Pin=R6-2
+Added Member To Class: ClassName=Voltage Regulator Devresi Member=Component C1 1uF
+Added Member To Class: ClassName=Voltage Regulator Devresi Member=Component C2 1uF
+Added Member To Class: ClassName=Voltage Regulator Devresi Member=Component C3 1uF
+Added Member To Class: ClassName=Voltage Regulator Devresi Member=Component C4 1uF
+Added Member To Class: ClassName=Power Stage Member=Component C5 470uF
+Added Member To Class: ClassName=Power Stage Member=Component C6 470uF
+Added Member To Class: ClassName=Power Stage Member=Component C7 470uF
+Added Member To Class: ClassName=Power Stage Member=Component Q1 Power Mosfet
+Added Member To Class: ClassName=Power Stage Member=Component Q2 Power Mosfet
+Added Member To Class: ClassName=Power Stage Member=Component Q3 Power Mosfet
+Added Member To Class: ClassName=Power Stage Member=Component Q4 Power Mosfet
+Added Member To Class: ClassName=Power Stage Member=Component Q5 Power Mosfet
+Added Member To Class: ClassName=Power Stage Member=Component Q6 Power Mosfet
+Added Member To Class: ClassName=Power Stage Member=Component R1 22
+Added Member To Class: ClassName=Power Stage Member=Component R2 22
+Added Member To Class: ClassName=Power Stage Member=Component R3 22
+Added Member To Class: ClassName=Power Stage Member=Component R4 22
+Added Member To Class: ClassName=Power Stage Member=Component R5 22
+Added Member To Class: ClassName=Power Stage Member=Component R6 22
+Added Room: Name=Power Stage
+Added Room: Name=Voltage Regulator Devresi
