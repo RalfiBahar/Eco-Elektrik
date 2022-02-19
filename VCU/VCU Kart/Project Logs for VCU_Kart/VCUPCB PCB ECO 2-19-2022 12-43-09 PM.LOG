@@ -1,0 +1,6 @@
+Removed Pin From Net: NetName=Hiz Arttir Pin=J2-3
+Removed Pin From Net: NetName=Hiz Azalt Pin=J2-4
+Added Pin To Net: NetName=Hiz Azalt Pin=J2-3
+Added Pin To Net: NetName=Hiz Arttir Pin=J2-4
+Change Net Name : Old Net Name=ToggleTepeLambasi New Net Name=Hiz Sifirla
+Added Room: Name=VCUSheet

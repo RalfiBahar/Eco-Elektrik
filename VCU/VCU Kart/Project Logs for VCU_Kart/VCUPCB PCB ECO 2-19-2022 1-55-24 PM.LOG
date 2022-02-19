@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=NetJ4_2 Pin=S7-1
+Removed Pin From Net: NetName=NetR6_2 Pin=S7-2
+Removed Pin From Net: NetName=NetJ4_4 Pin=S9-1
+Removed Pin From Net: NetName=NetR4_2 Pin=S9-2
+Added Pin To Net: NetName=NetJ4_4 Pin=S7-1
+Added Pin To Net: NetName=NetR4_2 Pin=S7-2
+Added Pin To Net: NetName=NetJ4_2 Pin=S9-1
+Added Pin To Net: NetName=NetR6_2 Pin=S9-2
+Added Room: Name=VCUSheet
