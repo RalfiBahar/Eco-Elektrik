@@ -1,0 +1,20 @@
+Removed Pin From Net: NetName=SGND Pin=U3-22
+Removed Pin From Net: NetName=SGND Pin=U3-60
+Removed Pin From Net: NetName=SGND Pin=U3-62
+Removed Member From Class: ClassName=TI_F28069MSheet Member=U3
+Added Component: Designator=U?(TI_LAUNCHXL-F28069M)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/LAUNCHXL-F28069M/Texas%20Instruments/view-part/418774/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "LAUNCHXL-F28069M"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/LAUNCHXL-F28069M/Texas%20Instruments/view-part/418774/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Texas_Instruments-Purchase-URL"; Value = "https://snapeda.com/shop?store=Texas+Instruments&id=418774"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=SGND Pin=U?-22
+Added Pin To Net: NetName=SGND Pin=U?-60
+Added Pin To Net: NetName=SGND Pin=U?-62
+Added Member To Class: ClassName=TI_F28069MSheet Member=Component U? TI LAUNCHXL-F28069M
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
