@@ -1,0 +1,96 @@
+Change Component Designator: OldDesignator=U? NewDesignator=U3
+Added Component: Designator=C9(5.6uF Capacitor (250VDC) - RR2750W80L3100T1180H2100)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ECQE2565JF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C10(5.6uF Capacitor (250VDC) - RR2750W80L3100T1180H2100)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ECQE2565JF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C11(5.6uF Capacitor (250VDC) - RR2750W80L3100T1180H2100)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ECQE2565JF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C12(5.6uF Capacitor (250VDC) - RR2750W80L3100T1180H2100)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ECQE2565JF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C13(5.6uF Capacitor (250VDC) - RR2750W80L3100T1180H2100)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ECQE2565JF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C14(5.6uF Capacitor (250VDC) - RR2750W80L3100T1180H2100)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ECQE2565JF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=GND Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-1
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-1
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=GND Pin=C13-1
+Added Pin To Net: NetName=GND Pin=C13-2
+Added Pin To Net: NetName=GND Pin=C14-1
+Added Pin To Net: NetName=GND Pin=C14-2
+Added Pin To Net: NetName=5V Pin=U5-1
+Added Pin To Net: NetName=SGND Pin=U5-2
+Added Pin To Net: NetName=5V Pin=U6-1
+Added Pin To Net: NetName=SGND Pin=U6-2
+Added Pin To Net: NetName=ADC_CURRENT2 Pin=U3-29
+Added Pin To Net: NetName=ADC_CURRENT2 Pin=U4-3
+Added Net: Name=ADC_CURRENT2
+Added Pin To Net: NetName=ADC_CURRENT3 Pin=U3-25
+Added Pin To Net: NetName=ADC_CURRENT3 Pin=U5-3
+Added Net: Name=ADC_CURRENT3
+Added Pin To Net: NetName=ADC_CURRENT4 Pin=U3-67
+Added Pin To Net: NetName=ADC_CURRENT4 Pin=U6-3
+Added Net: Name=ADC_CURRENT4
+Added Pin To Net: NetName=ADC_CURRENT Pin=U3-27
+Added Pin To Net: NetName=ADC_CURRENT Pin=U7-3
+Added Net: Name=ADC_CURRENT
+Added Pin To Net: NetName=ADC_VOLTAGE Pin=T-3
+Added Pin To Net: NetName=ADC_VOLTAGE Pin=U3-69
+Added Net: Name=ADC_VOLTAGE
+Added Pin To Net: NetName=B_CURRENT_IN Pin=Q3-OUT
+Added Pin To Net: NetName=B_CURRENT_IN Pin=Q4-GND
+Added Pin To Net: NetName=B_CURRENT_IN Pin=U5-4
+Added Net: Name=B_CURRENT_IN
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=J-2
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=U5-5
+Added Net: Name=B_CURRENT_OUT
+Added Pin To Net: NetName=C_CURRENT_IN Pin=Q1-OUT
+Added Pin To Net: NetName=C_CURRENT_IN Pin=Q2-GND
+Added Pin To Net: NetName=C_CURRENT_IN Pin=U6-4
+Added Net: Name=C_CURRENT_IN
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=J-3
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=U6-5
+Added Net: Name=C_CURRENT_OUT
+Added Member To Class: ClassName=PowerStageSheet Member=Component C9 5.6uF Capacitor (250VDC) - ECQE2565JF
+Added Member To Class: ClassName=PowerStageSheet Member=Component C10 5.6uF Capacitor (250VDC) - ECQE2565JF
+Added Member To Class: ClassName=PowerStageSheet Member=Component C11 5.6uF Capacitor (250VDC) - ECQE2565JF
+Added Member To Class: ClassName=PowerStageSheet Member=Component C12 5.6uF Capacitor (250VDC) - ECQE2565JF
+Added Member To Class: ClassName=PowerStageSheet Member=Component C13 5.6uF Capacitor (250VDC) - ECQE2565JF
+Added Member To Class: ClassName=PowerStageSheet Member=Component C14 5.6uF Capacitor (250VDC) - ECQE2565JF
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet

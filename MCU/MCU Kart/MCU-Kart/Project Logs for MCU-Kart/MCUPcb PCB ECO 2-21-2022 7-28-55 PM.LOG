@@ -1,0 +1,36 @@
+Change Component Designator: OldDesignator=U? NewDesignator=U3
+Added Pin To Net: NetName=5V Pin=U5-1
+Added Pin To Net: NetName=SGND Pin=U5-2
+Added Pin To Net: NetName=5V Pin=U6-1
+Added Pin To Net: NetName=SGND Pin=U6-2
+Added Pin To Net: NetName=ADC_CURRENT2 Pin=U3-29
+Added Pin To Net: NetName=ADC_CURRENT2 Pin=U4-3
+Added Net: Name=ADC_CURRENT2
+Added Pin To Net: NetName=ADC_CURRENT3 Pin=U3-25
+Added Pin To Net: NetName=ADC_CURRENT3 Pin=U5-3
+Added Net: Name=ADC_CURRENT3
+Added Pin To Net: NetName=ADC_CURRENT4 Pin=U3-67
+Added Pin To Net: NetName=ADC_CURRENT4 Pin=U6-3
+Added Net: Name=ADC_CURRENT4
+Added Pin To Net: NetName=ADC_CURRENT Pin=U3-27
+Added Pin To Net: NetName=ADC_CURRENT Pin=U7-3
+Added Net: Name=ADC_CURRENT
+Added Pin To Net: NetName=ADC_VOLTAGE Pin=T-3
+Added Pin To Net: NetName=ADC_VOLTAGE Pin=U3-69
+Added Net: Name=ADC_VOLTAGE
+Added Pin To Net: NetName=B_CURRENT_IN Pin=Q3-OUT
+Added Pin To Net: NetName=B_CURRENT_IN Pin=Q4-GND
+Added Pin To Net: NetName=B_CURRENT_IN Pin=U5-4
+Added Net: Name=B_CURRENT_IN
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=J-2
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=U5-5
+Added Net: Name=B_CURRENT_OUT
+Added Pin To Net: NetName=C_CURRENT_IN Pin=Q1-OUT
+Added Pin To Net: NetName=C_CURRENT_IN Pin=Q2-GND
+Added Pin To Net: NetName=C_CURRENT_IN Pin=U6-4
+Added Net: Name=C_CURRENT_IN
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=J-3
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=U6-5
+Added Net: Name=C_CURRENT_OUT
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet

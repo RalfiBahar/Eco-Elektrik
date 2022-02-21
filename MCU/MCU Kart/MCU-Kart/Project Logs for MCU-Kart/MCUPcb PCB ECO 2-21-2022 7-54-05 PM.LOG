@@ -1,0 +1,11 @@
+Change Component Footprint: Designator=C5 Old Footprint=470uF CAP - WCAP-AI3H_D30H40_PinLength_4mm New Footprint=470uF Capacitor (200V) - WCAP-AIG8_D25H30
+Change Component Footprint: Designator=C6 Old Footprint=470uF CAP - WCAP-AI3H_D30H40_PinLength_4mm New Footprint=470uF Capacitor (200V) - WCAP-AIG8_D25H30
+Change Component Footprint: Designator=C7 Old Footprint=470uF CAP - WCAP-AI3H_D30H40_PinLength_4mm New Footprint=470uF Capacitor (200V) - WCAP-AIG8_D25H30
+Change Component Comment : Designator=C5 Old Comment=470uF, 450V New Comment=470uF, 200V
+Change Component Comment : Designator=C6 Old Comment=470uF, 450V New Comment=470uF, 200V
+Change Component Comment : Designator=C7 Old Comment=470uF, 450V New Comment=470uF, 200V
+Change Component Description : Designator=C5 Old Description=WCAP-AI3H Aluminum Electrolytic Capacitor, Snap-In, THT, D30xH40mm, 470uF, 450V New Description=WCAP-AI3H Aluminum Electrolytic Capacitor, Snap-In, THT, D20xH30mm, 470uF, 200V
+Change Component Description : Designator=C6 Old Description=WCAP-AI3H Aluminum Electrolytic Capacitor, Snap-In, THT, D30xH40mm, 470uF, 450V New Description=WCAP-AI3H Aluminum Electrolytic Capacitor, Snap-In, THT, D20xH30mm, 470uF, 200V
+Change Component Description : Designator=C7 Old Description=WCAP-AI3H Aluminum Electrolytic Capacitor, Snap-In, THT, D30xH40mm, 470uF, 450V New Description=WCAP-AI3H Aluminum Electrolytic Capacitor, Snap-In, THT, D20xH30mm, 470uF, 200V
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
