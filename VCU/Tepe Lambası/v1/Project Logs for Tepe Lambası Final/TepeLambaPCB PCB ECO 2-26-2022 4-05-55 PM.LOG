@@ -1,0 +1,123 @@
+Removed Pin From Net: NetName=Net555_3 Pin=D1-A
+Removed Pin From Net: NetName=Net555_3 Pin=D5-A
+Added Component: Designator=R5(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R6(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R8(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R9(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R10(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R11(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R12(470 OHM RES_ERA3AEB471V)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "P470DBCT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "ERA-3AEB471V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "1608-2 Panasonic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/ERA-3AEB471V/Panasonic%20Electronic%20Components/view-part/329551/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=TRN2(TRANSISTOR)
+Add component (AddParameter): Name = "VALUE"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=D1-C
+Added Pin To Net: NetName=GND Pin=D2-C
+Added Pin To Net: NetName=GND Pin=D3-C
+Added Pin To Net: NetName=GND Pin=D5-C
+Added Pin To Net: NetName=GND Pin=D6-C
+Added Pin To Net: NetName=GND Pin=D7-C
+Added Pin To Net: NetName=Net555_3 Pin=TRN2-2
+Added Pin To Net: NetName=LEDTRNPIN1 Pin=J1-2
+Added Pin To Net: NetName=LEDTRNPIN1 Pin=TRN1-1
+Added Pin To Net: NetName=LEDTRNPIN1 Pin=TRN2-1
+Added Net: Name=LEDTRNPIN1
+Added Pin To Net: NetName=NetD1_A Pin=D1-A
+Added Pin To Net: NetName=NetD1_A Pin=R5-1
+Added Net: Name=NetD1_A
+Added Pin To Net: NetName=NetD2_A Pin=D2-A
+Added Pin To Net: NetName=NetD2_A Pin=R6-1
+Added Net: Name=NetD2_A
+Added Pin To Net: NetName=NetD3_A Pin=D3-A
+Added Pin To Net: NetName=NetD3_A Pin=R7-1
+Added Net: Name=NetD3_A
+Added Pin To Net: NetName=NetD4_A Pin=D4-A
+Added Pin To Net: NetName=NetD4_A Pin=R8-1
+Added Net: Name=NetD4_A
+Added Pin To Net: NetName=NetD5_A Pin=D5-A
+Added Pin To Net: NetName=NetD5_A Pin=R9-1
+Added Net: Name=NetD5_A
+Added Pin To Net: NetName=NetD6_A Pin=D6-A
+Added Pin To Net: NetName=NetD6_A Pin=R10-1
+Added Net: Name=NetD6_A
+Added Pin To Net: NetName=NetD7_A Pin=D7-A
+Added Pin To Net: NetName=NetD7_A Pin=R11-1
+Added Net: Name=NetD7_A
+Added Pin To Net: NetName=NetD8_A Pin=D8-A
+Added Pin To Net: NetName=NetD8_A Pin=R12-1
+Added Net: Name=NetD8_A
+Added Pin To Net: NetName=NetR5_2 Pin=R5-2
+Added Pin To Net: NetName=NetR5_2 Pin=R6-2
+Added Pin To Net: NetName=NetR5_2 Pin=R7-2
+Added Pin To Net: NetName=NetR5_2 Pin=R8-2
+Added Pin To Net: NetName=NetR5_2 Pin=R9-2
+Added Pin To Net: NetName=NetR5_2 Pin=R10-2
+Added Pin To Net: NetName=NetR5_2 Pin=R11-2
+Added Pin To Net: NetName=NetR5_2 Pin=R12-2
+Added Pin To Net: NetName=NetR5_2 Pin=TRN2-3
+Added Net: Name=NetR5_2
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R5 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R6 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R7 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R8 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R9 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R10 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R11 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component R12 470ohm ERA3AEB471V
+Added Member To Class: ClassName=TepeLambasiFinal Member=Component TRN2 TRANSISTOR
+Added Room: Name=TepeLambasiFinal
