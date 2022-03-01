@@ -1,0 +1,30 @@
+Removed Pin From Net: NetName=GND Pin=C5-2
+Removed Pin From Net: NetName=GND Pin=C6-2
+Removed Pin From Net: NetName=GND Pin=C7-2
+Removed Pin From Net: NetName=GND Pin=C9-1
+Removed Pin From Net: NetName=GND Pin=C10-1
+Removed Pin From Net: NetName=GND Pin=C11-1
+Removed Pin From Net: NetName=GND Pin=C12-1
+Removed Pin From Net: NetName=GND Pin=C13-1
+Removed Pin From Net: NetName=GND Pin=C14-1
+Removed Pin From Net: NetName=GND Pin=Q1-GND
+Removed Pin From Net: NetName=GND Pin=Q3-GND
+Removed Pin From Net: NetName=GND Pin=Q5-GND
+Removed Pin From Net: NetName=GND Pin=U7-5
+Added Pin To Net: NetName=NetC5_2 Pin=C5-2
+Added Pin To Net: NetName=NetC5_2 Pin=C6-2
+Added Pin To Net: NetName=NetC5_2 Pin=C7-2
+Added Pin To Net: NetName=NetC5_2 Pin=C9-1
+Added Pin To Net: NetName=NetC5_2 Pin=C10-1
+Added Pin To Net: NetName=NetC5_2 Pin=C11-1
+Added Pin To Net: NetName=NetC5_2 Pin=C12-1
+Added Pin To Net: NetName=NetC5_2 Pin=C13-1
+Added Pin To Net: NetName=NetC5_2 Pin=C14-1
+Added Pin To Net: NetName=NetC5_2 Pin=Q1-GND
+Added Pin To Net: NetName=NetC5_2 Pin=Q3-GND
+Added Pin To Net: NetName=NetC5_2 Pin=Q5-GND
+Added Pin To Net: NetName=NetC5_2 Pin=U7-5
+Added Net: Name=NetC5_2
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
+Added Room: Name=VoltageRegulatorSheet

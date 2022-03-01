@@ -1,0 +1,5 @@
+Change Net Name : Old Net Name=A_CURRENT_IN New Net Name=A_PHASE
+Change Net Name : Old Net Name=B_CURRENT_IN New Net Name=B_PHASE
+Change Net Name : Old Net Name=C_CURRENT_IN New Net Name=C_PHASE
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
