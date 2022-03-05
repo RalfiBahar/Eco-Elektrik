@@ -47,7 +47,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=0
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -58,7 +58,7 @@ GenerateClassCluster=0
 DocumentUniqueId=JTJOTFBP
 
 [Document2]
-DocumentPath=VCUPCB.PcbDoc
+DocumentPath=VCUPCB(Old).PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -115,7 +115,7 @@ AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
 AnnotateSuffix=
 AnnotateScope=All
-AnnotateOrder=-1
+AnnotateOrder=1
 DoLibraryUpdate=1
 DoDatabaseUpdate=1
 ClassGenCCAutoEnabled=1
@@ -142,6 +142,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=NGGHAFXV
 
+[Document7]
+DocumentPath=VCUPCB.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=JWFLUXQX
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -162,7 +179,7 @@ ConfigParameters0=OP_Analysis=False|TRAN_Analysis=True|DC_Analysis=False|AC_Anal
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -283,7 +300,7 @@ OutputDefault23=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AdvSimNetlist
 OutputName1=Mixed Sim
@@ -378,7 +395,7 @@ PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Assembly
 OutputName1=Assembly Drawings
@@ -400,7 +417,7 @@ OutputDefault3=0
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Board Stack Report
 OutputName1=Report Board Stack
@@ -472,7 +489,7 @@ OutputDefault12=0
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -521,7 +538,7 @@ OutputDefault8=0
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -629,7 +646,7 @@ PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -673,7 +690,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -734,7 +751,7 @@ OutputDefault11=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=HP Deskjet 1510 series
+TargetPrinter=Foxit Reader PDF Printer
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
@@ -1107,28 +1124,46 @@ UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
 ComponentLibraryIdentifier0=VCUSchlib.SchLib
-ComponentDesignItemID0=4 Pin Klemens
-ComponentSymbolReference0=4 Pin Klemens
+ComponentDesignItemID0=1k Resistor
+ComponentSymbolReference0=1k Resistor
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 ComponentLibIdentifierKind1=Library Name And Type
 ComponentLibraryIdentifier1=VCUSchlib.SchLib
-ComponentDesignItemID1=DUE
-ComponentSymbolReference1=DUE
+ComponentDesignItemID1=1uF Cap - 1206YC105KAT2A
+ComponentSymbolReference1=1uF Cap - 1206YC105KAT2A
 ComponentUpdate1=1
 ComponentIsDeviceSheet1=0
 ComponentLibIdentifierKind2=Library Name And Type
 ComponentLibraryIdentifier2=VCUSchlib.SchLib
-ComponentDesignItemID2=Push Button
-ComponentSymbolReference2=Push Button
+ComponentDesignItemID2=2 Pin Klemens
+ComponentSymbolReference2=2 Pin Klemens
 ComponentUpdate2=1
 ComponentIsDeviceSheet2=0
 ComponentLibIdentifierKind3=Library Name And Type
 ComponentLibraryIdentifier3=VCUSchlib.SchLib
-ComponentDesignItemID3=Rocker Button
-ComponentSymbolReference3=Rocker Button
+ComponentDesignItemID3=4 Pin Klemens
+ComponentSymbolReference3=4 Pin Klemens
 ComponentUpdate3=1
 ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=VCUSchlib.SchLib
+ComponentDesignItemID4=DUE
+ComponentSymbolReference4=DUE
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=VCUSchlib.SchLib
+ComponentDesignItemID5=Push Button
+ComponentSymbolReference5=Push Button
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=VCUSchlib.SchLib
+ComponentDesignItemID6=Rocker Button
+ComponentSymbolReference6=Rocker Button
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -1154,42 +1189,55 @@ ParameterName4=Component Kind
 ParameterUpdate4=1
 ParameterName5=Description
 ParameterUpdate5=1
-ParameterName6=EU_RoHS_Compliance
+ParameterName6=Digi-Key_Part_Number
 ParameterUpdate6=1
-ParameterName7=Library Reference
+ParameterName7=Digi-Key_Purchase_URL
 ParameterUpdate7=1
-ParameterName8=MF
+ParameterName8=EU_RoHS_Compliance
 ParameterUpdate8=1
-ParameterName9=MP
+ParameterName9=Library Reference
 ParameterUpdate9=1
-ParameterName10=Number_of_Positions
+ParameterName10=MF
 ParameterUpdate10=1
-ParameterName11=Package
+ParameterName11=MP
 ParameterUpdate11=1
-ParameterName12=Price
+ParameterName12=Number_of_Positions
 ParameterUpdate12=1
-ParameterName13=Purchase-URL
+ParameterName13=Package
 ParameterUpdate13=1
-ParameterName14=SnapEDA_Link
+ParameterName14=Price
 ParameterUpdate14=1
-ParameterName15=TE_purchase_URL
+ParameterName15=Purchase-URL
 ParameterUpdate15=1
-ParameterName16=Value
+ParameterName16=SnapEDA_Link
 ParameterUpdate16=1
+ParameterName17=TE_purchase_URL
+ParameterUpdate17=1
+ParameterName18=Value
+ParameterUpdate18=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=4 PIN KLEMENS
+ModelName0=1k RESISTOR
 ModelUpdate0=1
 ModelType1=PCBLIB
-ModelName1=ARDUINO DUE
+ModelName1=1uF CAP - CAPC3216X127N
 ModelUpdate1=1
 ModelType2=PCBLIB
-ModelName2=Push Button
+ModelName2=2 Pin Klemens
 ModelUpdate2=1
 ModelType3=PCBLIB
-ModelName3=Rocker Button
+ModelName3=4 PIN KLEMENS
 ModelUpdate3=1
+ModelType4=PCBLIB
+ModelName4=ARDUINO DUE
+ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=Push Button
+ModelUpdate5=1
+ModelType6=PCBLIB
+ModelName6=Rocker Button
+ModelUpdate6=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
