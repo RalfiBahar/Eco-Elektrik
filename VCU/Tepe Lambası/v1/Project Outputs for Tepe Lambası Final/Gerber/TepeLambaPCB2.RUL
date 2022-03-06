@@ -1,0 +1,5 @@
+DRC Rules Export File for PCB: C:\Users\ralfi\Desktop\Eco-Elektrik\VCU\Tepe Lambasi\v1\TepeLambaPCB2.PcbDoc
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=23.62
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
