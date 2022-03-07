@@ -1,3 +1,4 @@
-Record=TopLevelDocument|FileName=PowerStageSheet.SchDoc|SheetNumber=2
-Record=NoMainPathDocument|SourceDocument=PowerStageSheet.SchDoc|FileName=TI_F28069MSheet.SchDoc|SheetNumber=3
-Record=NoMainPathDocument|SourceDocument=PowerStageSheet.SchDoc|FileName=VoltageRegulatorSheet.SchDoc|SheetNumber=1
+Record=TopLevelDocument|FileName=Hall Sensors & BJT.SchDoc|SheetNumber= 
+Record=NoMainPathDocument|SourceDocument=Hall Sensors & BJT.SchDoc|FileName=PowerStageSheet.SchDoc|SheetNumber=2
+Record=NoMainPathDocument|SourceDocument=Hall Sensors & BJT.SchDoc|FileName=TI_F28069MSheet.SchDoc|SheetNumber=3
+Record=NoMainPathDocument|SourceDocument=Hall Sensors & BJT.SchDoc|FileName=VoltageRegulatorSheet.SchDoc|SheetNumber=1

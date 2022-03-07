@@ -1,0 +1,10 @@
+Change Component Designator: OldDesignator=CreeGateDriver? NewDesignator=CreeGateDriver1
+Change Component Designator: OldDesignator=CreeGateDriver? NewDesignator=CreeGateDriver2
+Change Component Designator: OldDesignator=CreeGateDriver? NewDesignator=CreeGateDriver3
+Change Component Designator: OldDesignator=CreeGateDriver? NewDesignator=CreeGateDriver4
+Change Component Designator: OldDesignator=CreeGateDriver? NewDesignator=CreeGateDriver5
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver1 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver2 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver3 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver5 CreeGateDriver
+Added Room: Name=PowerStageSheet
