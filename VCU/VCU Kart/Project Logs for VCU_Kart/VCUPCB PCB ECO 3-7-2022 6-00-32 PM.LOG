@@ -1,0 +1,167 @@
+Removed Pin From Net: NetName=GND Pin=J5-1
+Change Component Footprint: Designator=J5 Old Footprint=2 Pin Klemens New Footprint=4 PIN KLEMENS
+Change Component Comment : Designator=J5 Old Comment=2 Pin Klemens New Comment=4 Pin Klemens
+Change component parameters: Designator = "J5" ("J5"); Footprint = "2 Pin Klemens"; UniqueID = "\GOXOBMDB" ("\GOXOBMDB")
+Change component parameters (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Centerline_Pitch"; Value = "2.54 mm[.1 in]"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant with Exemptions"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MP"; Value = "282834-4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Number_of_Positions"; Value = "4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/282834-4/TE%20Connectivity%20AMP%20Connectors/view-part/448422/?ref=snap"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-282834-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=C7(1uF CAP - CAPC3216X127N)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1206YC105KAT2A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J3(4 PIN KLEMENS)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Centerline_Pitch"; Value = "2.54 mm[.1 in]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant with Exemptions"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "282834-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number_of_Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/282834-4/TE%20Connectivity%20AMP%20Connectors/view-part/448422/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-282834-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J6(4 PIN KLEMENS)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Centerline_Pitch"; Value = "2.54 mm[.1 in]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant with Exemptions"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "282834-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number_of_Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/282834-4/TE%20Connectivity%20AMP%20Connectors/view-part/448422/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-282834-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J7(4 PIN KLEMENS)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Centerline_Pitch"; Value = "2.54 mm[.1 in]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "EU_RoHS_Compliance"; Value = "Compliant with Exemptions"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "TE Connectivity"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "282834-4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Number_of_Positions"; Value = "4"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/282834-4/TE%20Connectivity%20AMP%20Connectors/view-part/448422/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TE_purchase_URL"; Value = "https://www.te.com/usa-en/product-282834-4.html?te_bu=Cor&te_type=disp&te_campaign=seda_glo_cor-seda-global-disp-prtnr-fy19-seda-model-bom-cta_sma-317_1&elqCampaignId=32493"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=J8(2 Pin Klemens)
+Add component (AddParameter): Name = "Digi-Key_Part_Number"; Value = "277-1667-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Digi-Key_Purchase_URL"; Value = "https://www.digikey.ca/product-detail/en/phoenix-contact/1935161/277-1667-ND/568614?utm_source=snapeda&utm_medium=aggregator&utm_campaign=symbol"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "1935161"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/1935161/Phoenix%20Contact/view-part/423515/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=R7(1k RESISTOR)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "RC0805FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "2012 Rohm Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/RC0805FR-071KL/Yageo/view-part/379333/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S4(Push Button)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "D6R90 F1 LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/D6R90%20F1%20LFS/C&K/view-part/3077462/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S5(Push Button)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "D6R90 F1 LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/D6R90%20F1%20LFS/C&K/view-part/3077462/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=S6(Push Button)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "D6R90 F1 LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/D6R90%20F1%20LFS/C&K/view-part/3077462/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=J3-1
+Added Pin To Net: NetName=NetJ3_2 Pin=J3-2
+Added Pin To Net: NetName=NetJ3_3 Pin=J3-3
+Added Pin To Net: NetName=NetJ3_4 Pin=J3-4
+Added Pin To Net: NetName=GND Pin=J5-4
+Added Pin To Net: NetName=GND Pin=J6-4
+Added Pin To Net: NetName=GND Pin=J7-4
+Added Pin To Net: NetName=GND Pin=J8-2
+Added Pin To Net: NetName=GND Pin=S4-1
+Added Pin To Net: NetName=GND Pin=S4-2
+Added Pin To Net: NetName=NetJ3_4 Pin=S4-3
+Added Pin To Net: NetName=NetJ3_4 Pin=S4-4
+Added Pin To Net: NetName=GND Pin=S5-1
+Added Pin To Net: NetName=GND Pin=S5-2
+Added Pin To Net: NetName=NetJ3_3 Pin=S5-3
+Added Pin To Net: NetName=NetJ3_3 Pin=S5-4
+Added Pin To Net: NetName=GND Pin=S6-1
+Added Pin To Net: NetName=GND Pin=S6-2
+Added Pin To Net: NetName=NetJ3_2 Pin=S6-3
+Added Pin To Net: NetName=NetJ3_2 Pin=S6-4
+Change Net Name : Old Net Name=WindshieldWipers New Net Name=WindshieldWipersButton
+Added Pin To Net: NetName=EXTRA_BUTTON Pin=C7-1
+Added Pin To Net: NetName=EXTRA_BUTTON Pin=DUE1-30
+Added Pin To Net: NetName=EXTRA_BUTTON Pin=R7-1
+Added Net: Name=EXTRA_BUTTON
+Added Pin To Net: NetName=EXTRA_GPIO_1 Pin=DUE1-46
+Added Pin To Net: NetName=EXTRA_GPIO_1 Pin=J6-3
+Added Net: Name=EXTRA_GPIO_1
+Added Pin To Net: NetName=EXTRA_GPIO_2 Pin=DUE1-44
+Added Pin To Net: NetName=EXTRA_GPIO_2 Pin=J5-1
+Added Net: Name=EXTRA_GPIO_2
+Added Pin To Net: NetName=EXTRA_GPIO_3 Pin=DUE1-42
+Added Pin To Net: NetName=EXTRA_GPIO_3 Pin=J5-2
+Added Net: Name=EXTRA_GPIO_3
+Added Pin To Net: NetName=EXTRA_GPIO_4 Pin=DUE1-40
+Added Pin To Net: NetName=EXTRA_GPIO_4 Pin=J5-3
+Added Net: Name=EXTRA_GPIO_4
+Added Pin To Net: NetName=EXTRA_GPIO_5 Pin=DUE1-36
+Added Pin To Net: NetName=EXTRA_GPIO_5 Pin=DUE1-38
+Added Pin To Net: NetName=EXTRA_GPIO_5 Pin=J7-1
+Added Net: Name=EXTRA_GPIO_5
+Added Pin To Net: NetName=EXTRA_GPIO_6 Pin=DUE1-34
+Added Pin To Net: NetName=EXTRA_GPIO_6 Pin=J7-2
+Added Net: Name=EXTRA_GPIO_6
+Added Pin To Net: NetName=NetJ8_1 Pin=J8-1
+Added Pin To Net: NetName=NetJ8_1 Pin=R7-2
+Added Net: Name=NetJ8_1
+Added Pin To Net: NetName=TEPE_LAMBASI_BUZZER Pin=DUE1-50
+Added Pin To Net: NetName=TEPE_LAMBASI_BUZZER Pin=J6-1
+Added Net: Name=TEPE_LAMBASI_BUZZER
+Added Pin To Net: NetName=TEPE_LAMBASI_LED Pin=DUE1-48
+Added Pin To Net: NetName=TEPE_LAMBASI_LED Pin=J6-2
+Added Net: Name=TEPE_LAMBASI_LED
+Added Pin To Net: NetName=WINDSHIELDWIPERS Pin=DUE1-32
+Added Pin To Net: NetName=WINDSHIELDWIPERS Pin=J7-3
+Added Net: Name=WINDSHIELDWIPERS
+Added Member To Class: ClassName=VCUSheet Member=Component C7 1uF Cap - 1206YC105KAT2A
+Added Member To Class: ClassName=ButtonsSheet Member=Component J3 4 Pin Klemens
+Added Member To Class: ClassName=VCUSheet Member=Component J6 4 Pin Klemens
+Added Member To Class: ClassName=VCUSheet Member=Component J7 4 Pin Klemens
+Added Member To Class: ClassName=VCUSheet Member=Component J8 2 Pin Klemens
+Added Member To Class: ClassName=VCUSheet Member=Component R7 1k Resistor
+Added Member To Class: ClassName=VCUSheet Member=Component S1 Rocker Button
+Added Member To Class: ClassName=ButtonsSheet Member=Component S4 Push Button
+Added Member To Class: ClassName=ButtonsSheet Member=Component S5 Push Button
+Added Member To Class: ClassName=ButtonsSheet Member=Component S6 Push Button
+Added Room: Name=ButtonsSheet
+Added Room: Name=VCUSheet
