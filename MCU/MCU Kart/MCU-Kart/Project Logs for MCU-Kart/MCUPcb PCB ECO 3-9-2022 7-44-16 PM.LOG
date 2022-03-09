@@ -1,0 +1,26 @@
+Added Component: Designator=C15(100pF CAP - CAPC220145_88N_KEM-M)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "C0805C101K5RACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Kemet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Component: Designator=C16(100pF CAP - CAPC220145_88N_KEM-M)
+Add component (AddParameter): Name = "Copyright"; Value = "Copyright (C) 2022 Ultra Librarian. All rights reserved."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "C0805C101K5RACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mfr_Name"; Value = "Kemet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RefDes"; Value = "RefDes"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "DEV"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=-12V_Sens Pin=C15-1
+Added Pin To Net: NetName=SGND Pin=C15-2
+Added Pin To Net: NetName=-12V_Sens Pin=C16-1
+Added Pin To Net: NetName=SGND Pin=C16-2
+Added Member To Class: ClassName=VoltageRegulatorSheet Member=Component C15 100nF
+Added Member To Class: ClassName=VoltageRegulatorSheet Member=Component C16 100nF
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
+Added Room: Name=VoltageRegulatorSheet
