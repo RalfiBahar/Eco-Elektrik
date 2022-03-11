@@ -1,0 +1,12 @@
+Added Component: Designator=CreeGateDriver1(Cree_Gate_Driver)
+Added Component: Designator=CreeGateDriver2(Cree_Gate_Driver)
+Added Component: Designator=CreeGateDriver3(Cree_Gate_Driver)
+Added Component: Designator=CreeGateDriver4(Cree_Gate_Driver)
+Added Component: Designator=CreeGateDriver5(Cree_Gate_Driver)
+Added Component: Designator=CreeGateDriver6(Cree_Gate_Driver)
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver1 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver2 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver3 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver4 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver5 CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver6 CreeGateDriver

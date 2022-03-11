@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=BJT-2-Out Pin=J4-2
+Removed Pin From Net: NetName=BJT-3-Out Pin=J4-3
+Added Pin To Net: NetName=BJT-3-Out Pin=J4-2
+Added Pin To Net: NetName=BJT-2-Out Pin=J4-3
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver

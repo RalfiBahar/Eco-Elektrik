@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=J? NewDesignator=J5
+Change Component Designator: OldDesignator=R NewDesignator=R28
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Room: Name=Hall Sensors & BJT
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
+Added Room: Name=VoltageRegulatorSheet

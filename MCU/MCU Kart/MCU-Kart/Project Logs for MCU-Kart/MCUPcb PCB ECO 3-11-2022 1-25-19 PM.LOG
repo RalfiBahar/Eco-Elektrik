@@ -1,0 +1,7 @@
+Added Pin To Net: NetName=ADC-B3 Pin=U3-68
+Change Net Name : Old Net Name=ADC-B3 New Net Name=ADC-B3_Temp
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver

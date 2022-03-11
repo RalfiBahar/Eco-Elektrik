@@ -1,0 +1,13 @@
+Added Pin To Net: NetName=BJT-4 Pin=U3-37
+Added Pin To Net: NetName=BJT-3 Pin=U3-38
+Added Pin To Net: NetName=BJT-2 Pin=U3-39
+Added Pin To Net: NetName=BJT-1 Pin=U3-40
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Member To Class: ClassName=PowerStageSheet Member=Component CreeGateDriver
+Added Room: Name=Hall Sensors & BJT
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
+Added Room: Name=VoltageRegulatorSheet
