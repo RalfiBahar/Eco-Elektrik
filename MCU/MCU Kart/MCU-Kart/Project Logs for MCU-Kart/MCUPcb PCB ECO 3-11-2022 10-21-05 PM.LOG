@@ -1,0 +1,10 @@
+Change Component Comment : Designator=R20 Old Comment=10k Ohm New Comment=10k Ohm - RNCP0603FTD10K0
+Change Component Comment : Designator=R21 Old Comment=10k Ohm New Comment=10k Ohm - RNCP0603FTD10K0
+Change Component Comment : Designator=R23 Old Comment=10k Ohm New Comment=10k Ohm - RNCP0603FTD10K0
+Change Component Comment : Designator=R24 Old Comment=10k Ohm New Comment=10k Ohm - RNCP0603FTD10K0
+Change Component Comment : Designator=R26 Old Comment=10k Ohm New Comment=10k Ohm - RNCP0603FTD10K0
+Added Member To Class: ClassName=PowerStageSheet Member=Component U6 Current Sensor
+Added Room: Name=Hall Sensors & BJT
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
+Added Room: Name=VoltageRegulatorSheet
