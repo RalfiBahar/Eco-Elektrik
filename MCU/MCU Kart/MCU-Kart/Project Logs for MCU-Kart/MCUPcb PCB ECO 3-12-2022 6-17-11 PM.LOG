@@ -1,0 +1,12 @@
+Removed Pin From Net: NetName=EXTRA_GPIO2 Pin=U3-35
+Removed Pin From Net: NetName=EXTRA_GPIO1 Pin=U3-36
+Removed Pin From Net: NetName=EXTRA_GPIO4 Pin=U3-79
+Removed Pin From Net: NetName=EXTRA_GPIO3 Pin=U3-80
+Added Pin To Net: NetName=EXTRA_GPIO1 Pin=U3-11
+Added Pin To Net: NetName=EXTRA_GPIO2 Pin=U3-12
+Added Pin To Net: NetName=EXTRA_GPIO3 Pin=U3-13
+Added Pin To Net: NetName=EXTRA_GPIO4 Pin=U3-14
+Added Room: Name=Hall Sensors & BJT
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
+Added Room: Name=VoltageRegulatorSheet

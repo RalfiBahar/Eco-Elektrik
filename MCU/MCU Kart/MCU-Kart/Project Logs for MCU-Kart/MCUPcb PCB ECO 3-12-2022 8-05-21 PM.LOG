@@ -1,0 +1,54 @@
+Removed Pin From Net: NetName=A_CURRENT_OUT Pin=J2-1
+Removed Pin From Net: NetName=B_CURRENT_OUT Pin=J2-2
+Removed Pin From Net: NetName=C_CURRENT_OUT Pin=J2-3
+Removed Pin From Net: NetName=SGND Pin=J2-4
+Removed Member From Class: ClassName=TI_F28069MSheet Member=J2
+Added Component: Designator=H3(SCREW CONNECTOR_8197)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Radial Magnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "8197"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/8197/Keystone%20Electronics/view-part/474380/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=H4(SCREW CONNECTOR_8197)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Radial Magnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "8197"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/8197/Keystone%20Electronics/view-part/474380/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Component: Designator=H5(SCREW CONNECTOR_8197)
+Add component (AddParameter): Name = "Availability"; Value = "Unavailable"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "Radial Magnet"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "8197"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Price"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/8197/Keystone%20Electronics/view-part/474380/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=A_CURRENT_OUT Pin=H3-1
+Added Pin To Net: NetName=A_CURRENT_OUT Pin=H3-2
+Added Pin To Net: NetName=A_CURRENT_OUT Pin=H3-3
+Added Pin To Net: NetName=A_CURRENT_OUT Pin=H3-4
+Added Pin To Net: NetName=A_CURRENT_OUT Pin=H3-5
+Added Pin To Net: NetName=A_CURRENT_OUT Pin=H3-6
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=H4-1
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=H4-2
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=H4-3
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=H4-4
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=H4-5
+Added Pin To Net: NetName=B_CURRENT_OUT Pin=H4-6
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=H5-1
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=H5-2
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=H5-3
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=H5-4
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=H5-5
+Added Pin To Net: NetName=C_CURRENT_OUT Pin=H5-6
+Added Member To Class: ClassName=PowerStageSheet Member=Component H3 Screw Connector 8197
+Added Member To Class: ClassName=PowerStageSheet Member=Component H4 Screw Connector 8197
+Added Member To Class: ClassName=PowerStageSheet Member=Component H5 Screw Connector 8197
+Added Room: Name=Hall Sensors & BJT
+Added Room: Name=PowerStageSheet
+Added Room: Name=TI_F28069MSheet
+Added Room: Name=VoltageRegulatorSheet
