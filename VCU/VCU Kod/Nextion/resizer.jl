@@ -1,3 +1,3 @@
 using Images
 
-save("onepixel.jpg", Gray(0.0))
+save("onepixel.jpg", (0.0))
