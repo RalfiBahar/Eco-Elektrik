@@ -1,0 +1,12 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [Tepe Lambasi Final.PrjPcb]
+   Generated File[TepeLambaPCB3.TXT]
+   Generated File[TepeLambaPCB3.LDP]
+   Generated File[TepeLambaPCB3.DRR]
+
+
+Files Generated   : 3
+Documents Printed : 0
+
+Finished Output Generation At 11:29:24 AM On 3/14/2022
