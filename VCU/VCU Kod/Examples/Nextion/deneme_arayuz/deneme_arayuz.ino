@@ -23,7 +23,7 @@ void loop() {
     Serial.print('\n'); 
 
     if (info == 1) {
-      digitalWrite(LED_SAG, !digitalRead(LED_SAG)); // sol ve sağ için ayrı aç/kapat byte'ı yerine toggle ile yaptım (şimdilik) 
+      digitalWrite(LED_SOL, !digitalRead(LED_SOL)); // sol ve sağ için ayrı aç/kapat byte'ı yerine toggle ile yaptım (şimdilik) 
     }                                               // daha komplike işlerde "state" tarzı bi değişken yaratılabilir. 
 
     else if (info == 0) {
