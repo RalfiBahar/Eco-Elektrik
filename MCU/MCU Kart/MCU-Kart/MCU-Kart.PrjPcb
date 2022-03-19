@@ -159,6 +159,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=AAQHJAWY
 
+[GeneratedDocument1]
+DocumentPath=..\..\..\..\MCUSchlib.doc
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0

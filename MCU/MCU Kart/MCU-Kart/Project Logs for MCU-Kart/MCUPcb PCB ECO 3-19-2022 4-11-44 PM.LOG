@@ -1,0 +1,54 @@
+Removed Member From Class: ClassName=PowerStageSheet Member=CreeGateDriver1
+Removed Member From Class: ClassName=PowerStageSheet Member=CreeGateDriver2
+Removed Member From Class: ClassName=PowerStageSheet Member=CreeGateDriver3
+Removed Member From Class: ClassName=PowerStageSheet Member=CreeGateDriver4
+Removed Member From Class: ClassName=PowerStageSheet Member=CreeGateDriver5
+Removed Member From Class: ClassName=PowerStageSheet Member=CreeGateDriver6
+Added Component: Designator=CGD?(Cree_Gate_Driver)
+Added Component: Designator=CGD?(Cree_Gate_Driver)
+Added Component: Designator=CGD?(Cree_Gate_Driver)
+Added Component: Designator=CGD?(Cree_Gate_Driver)
+Added Component: Designator=CGD?(Cree_Gate_Driver)
+Added Component: Designator=CGD?(Cree_Gate_Driver)
+Added Pin To Net: NetName=DRV_AH Pin=CGD?-7
+Added Pin To Net: NetName=DRV_AL Pin=CGD?-7
+Added Pin To Net: NetName=DRV_BH Pin=CGD?-7
+Added Pin To Net: NetName=DRV_BL Pin=CGD?-7
+Added Pin To Net: NetName=DRV_CH Pin=CGD?-7
+Added Pin To Net: NetName=DRV_CL Pin=CGD?-7
+Added Pin To Net: NetName=DRV_AH Pin=CGD?-8
+Added Pin To Net: NetName=DRV_AL Pin=CGD?-8
+Added Pin To Net: NetName=DRV_BH Pin=CGD?-8
+Added Pin To Net: NetName=DRV_BL Pin=CGD?-8
+Added Pin To Net: NetName=DRV_CH Pin=CGD?-8
+Added Pin To Net: NetName=DRV_CL Pin=CGD?-8
+Added Pin To Net: NetName=DRV_AH Pin=CGD?-9
+Added Pin To Net: NetName=DRV_AL Pin=CGD?-9
+Added Pin To Net: NetName=DRV_BH Pin=CGD?-9
+Added Pin To Net: NetName=DRV_BL Pin=CGD?-9
+Added Pin To Net: NetName=DRV_CH Pin=CGD?-9
+Added Pin To Net: NetName=DRV_CL Pin=CGD?-9
+Added Pin To Net: NetName=A_PHASE Pin=CGD?-10
+Added Pin To Net: NetName=A_PHASE Pin=CGD?-10
+Added Pin To Net: NetName=B_PHASE Pin=CGD?-10
+Added Pin To Net: NetName=B_PHASE Pin=CGD?-10
+Added Pin To Net: NetName=C_PHASE Pin=CGD?-10
+Added Pin To Net: NetName=C_PHASE Pin=CGD?-10
+Added Pin To Net: NetName=A_PHASE Pin=CGD?-11
+Added Pin To Net: NetName=A_PHASE Pin=CGD?-11
+Added Pin To Net: NetName=B_PHASE Pin=CGD?-11
+Added Pin To Net: NetName=B_PHASE Pin=CGD?-11
+Added Pin To Net: NetName=C_PHASE Pin=CGD?-11
+Added Pin To Net: NetName=C_PHASE Pin=CGD?-11
+Added Pin To Net: NetName=A_PHASE Pin=CGD?-12
+Added Pin To Net: NetName=A_PHASE Pin=CGD?-12
+Added Pin To Net: NetName=B_PHASE Pin=CGD?-12
+Added Pin To Net: NetName=B_PHASE Pin=CGD?-12
+Added Pin To Net: NetName=C_PHASE Pin=CGD?-12
+Added Pin To Net: NetName=C_PHASE Pin=CGD?-12
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD? GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD? GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD? GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD? GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD? GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD? GateDriver Component

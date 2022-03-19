@@ -1,0 +1,11 @@
+Change Component Designator: OldDesignator=CGD? NewDesignator=CGD1
+Change Component Designator: OldDesignator=CGD? NewDesignator=CGD2
+Change Component Designator: OldDesignator=CGD? NewDesignator=CGD3
+Change Component Designator: OldDesignator=CGD? NewDesignator=CGD4
+Change Component Designator: OldDesignator=CGD? NewDesignator=CGD5
+Change Component Designator: OldDesignator=CGD? NewDesignator=CGD6
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD1 GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD2 GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD3 GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD4 GateDriver Component
+Added Member To Class: ClassName=PowerStageSheet Member=Component CGD5 GateDriver Component
