@@ -1,0 +1,13 @@
+Output: NC Drill Files
+Type  : NC Drill
+From  : Project [VCU_Kart.PrjPcb]
+   Generated File[VCUPCB-RoundHoles.TXT]
+   Generated File[VCUPCB-SlotHoles.TXT]
+   Generated File[VCUPCB.LDP]
+   Generated File[VCUPCB.DRR]
+
+
+Files Generated   : 4
+Documents Printed : 0
+
+Finished Output Generation At 8:34:05 AM On 3/25/2022
