@@ -1,0 +1,19 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: ButtonsPCB.PcbDoc   3/25/2022  8:42:10 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : ButtonsPCB-RoundHoles.TXT
+ASCII SlotHoles File : ButtonsPCB-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      16mil (0.4mm)                                             Round             12        PTH        6.27inch (159.21mm)
+T2      42mil (1.06mm)                                            Round             4         PTH        0.30inch (7.62mm)
+T3      43mil (1.1mm)                                             Round             16        PTH        4.13inch (104.87mm)
+T4      51mil (1.3mm)                                             Round             2         PTH        0.20inch (5.00mm)
+T5      126mil (3.2mm)                                            Slot              3         NPTH       6.38inch (162.05mm)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              37
+
+Total Processing Time (hh:mm:ss) : 00:00:00

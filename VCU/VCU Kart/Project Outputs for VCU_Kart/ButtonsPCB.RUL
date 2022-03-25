@@ -1,4 +1,4 @@
-DRC Rules Export File for PCB: C:\Users\ralfi\Desktop\Eco-Elektrik\VCU\VCU Kart\VCUPCB.PcbDoc
+DRC Rules Export File for PCB: C:\Users\ralfi\Desktop\Eco-Elektrik\VCU\VCU Kart\ButtonsPCB.PcbDoc
 RuleKind=MinimumAnnularRing|RuleName=MinimumAnnularRing|Scope=Board|Minimum=10.00
 RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
 RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
