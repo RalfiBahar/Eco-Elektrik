@@ -67,10 +67,4 @@ void loop() {
       }
     } 
    }
-
-   void nextionSend(String cmd) {
-    Serial.write(cmd);
-    Serial.write("\xFF\xFF\xFF");
-    
-   }
 }
