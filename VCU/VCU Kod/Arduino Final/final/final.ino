@@ -12,6 +12,8 @@ int SoH; // n3
 int bmsCurrent; // x0
 int bmsVoltage; // n4
 
+const int brakeInput = 45;
+const int brakeTransistorOutput = 46;
 
 
 void setup(){
@@ -19,7 +21,32 @@ void setup(){
   Serial2.begin(9600); // bms (baud kontrol edilecek)
   Serial3.begin(9600); // mcu
   //SoftwareSerial dbgSerial(5, 6); dummy serial
+
+  pinMode(brakeInput, INPUT);
+  pinMode(brakeTransistorOutput, OUTPUT);
 }
+
+void brakeSignalLight()
+{   
+    int buttonState = 0;
+    buttonState = digitalRead(brakeInput);
+    if (buttonState == HIGH)
+    {
+        delay(50);
+        digitalWrite(brakeTransistorOutput, HIGH);
+        //Serial.print("high\n");
+        
+    }
+    else
+    {
+        delay(50);
+        digitalWrite(brakeTransistorOutput, LOW);
+        //Serial.print("low\n");
+        
+    }
+}
+  
+
 
 void sendNextionCmd(String cmd, int value) // nextiona komut yollarken nextion dilinde komut satiri yollamak yetiyor
 {
