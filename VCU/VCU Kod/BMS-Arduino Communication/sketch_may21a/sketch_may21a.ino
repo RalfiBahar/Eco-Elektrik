@@ -35,8 +35,6 @@ void loop(){
   uint16_t soc_soh[2];
   uint16_t flags[1];
 
-
-  
   uint8_t temp_result = node.readHoldingRegisters(14, 5);
   if (temp_result == node.ku8MBSuccess)
     {
@@ -47,17 +45,17 @@ void loop(){
     }
   
   uint8_t cells_result = node.readHoldingRegisters(1, 13);
-  /*
-  Serial.print("No: "); //General State Print
-  Serial.print(node.ku8MBSuccess, HEX);
-  Serial.println(result,HEX);
-  */
+  Serial.print("V1");
+  Serial.print(cells_result);
+  Serial.print(" ");
+  Serial.println(node.ku8MBSuccess);
   if (cells_result == node.ku8MBSuccess)
   {
-    for (j = 0; j < 13; j++)
+    Serial.println("Voltages: ");
+    for (int k = 0; k < 13; k++)
     {
-      cells_voltage[j] = node.getResponseBuffer(j);
-
+      cells_voltage[k] = node.getResponseBuffer(k);
+      Serial.println(cells_voltage[k]);
     }
   }
 
@@ -83,16 +81,22 @@ void loop(){
   uint8_t flags_result = node.readHoldingRegisters(38, 1);
   if (flags_result == node.ku8MBSuccess)
   {
+    Serial.println("Here");
     for (j = 0; j < 13; j++)
     {
       flags[j] = node.getResponseBuffer(j);
     }
   }
 
-  
-  delay(200);
-}
+  for (j = 0; j < 5; j++)
+  {
+    Serial.print("Temp: ");
+    Serial.println(temperature[j]);
+  }
 
+  delay(100);
+}
+/*
 int[] flag_checker(uint16_t flags){
   int flagIndexes[16];
   int j = 0;
@@ -103,4 +107,4 @@ int[] flag_checker(uint16_t flags){
       }
   }
   return flagIndexes;
-}
+}*/
