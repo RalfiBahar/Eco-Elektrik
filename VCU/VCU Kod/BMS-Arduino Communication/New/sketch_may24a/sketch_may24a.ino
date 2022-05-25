@@ -34,7 +34,7 @@ void setup(){
   node.postTransmission(postTransmission);
 }
 
-void loop(){
+int *get_BMS_data(){
   uint16_t cells_voltage[CELL_LEN];
   uint8_t cell_ind = 0; 
   
@@ -52,6 +52,7 @@ void loop(){
   
   uint16_t flags[FLAGS_LEN];
   uint8_t flags_ind = 0;
+  int BMS_data[] = [cells_voltage, cells_id, temperature, ah_cur_pack, soc_soh, flags]
 
   uint8_t result = node.readHoldingRegisters(1, 41);
   if (result == node.ku8MBSuccess)
@@ -142,6 +143,6 @@ void loop(){
       Serial.print(soc_soh[k]);  
       Serial.println("%");
     }
-
   delay(200);
+  return(BMS_data);
 }
