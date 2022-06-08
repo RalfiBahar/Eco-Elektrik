@@ -9,6 +9,14 @@
 #define SOC_SOH_LEN 2
 #define FLAGS_LEN 1
 
+Serial_CAN can;
+
+#define MCU_TX  18          
+#define MCU_RX  19       
+
+unsigned long id = 0;
+unsigned char dta[8];
+
 int speedRequested = 0;
 
 int speedIncreaseButtonPin = 0;
@@ -54,7 +62,8 @@ void setup() {
   digitalWrite(MAX485_DE, 0);
 
   Serial.begin(38400);             
-
+  can.begin(MCU_TX, MCU_RX, 9600);
+    
   node.begin(1, Serial);            
   node.preTransmission(preTransmission);         
   node.postTransmission(postTransmission);
@@ -176,4 +185,13 @@ void get_data_BMS(){
     if(bitRead(flags, 16 - 2) == 1 or bitRead(flags, 16 - 3) == 1 or bitRead(flags, 16 - 4) == 1 or bitRead(flags, 16 - 5) == 1){
         shutSystem = true;
       }
+}
+
+void send_data_MCU(){
+  //send(unsigned long id, byte ext, byte rtrBit, byte len, const byte *buf);
+  can.send(0x55, 0, 0, 8, requestedSpeed); 
+}
+
+void get_data_MCU(){
+  can.recv(&id, dta)
 }
