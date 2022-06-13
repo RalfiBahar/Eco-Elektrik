@@ -14,9 +14,6 @@ Serial_CAN can;
 #define MCU_TX  18          
 #define MCU_RX  19       
 
-unsigned long id = 0;
-unsigned char dta[8];
-
 int speedRequested = 0;
 
 int speedIncreaseButtonPin = 0;
@@ -31,8 +28,16 @@ int speedResetButtonPin = 0;
 int speedResetButtonState = 0;
 int speedResetButtonPrevState = 0;
 
+int MCUStartButtonPin = 0;
+int MCUStartButtonState = 0;
+//int MCUStartButtonPrevState = 0;
+
+boolean wakeUp = false;
+boolean wakeUpFirst = true;
 boolean ignition = false;
-int actualSpeed = 0;
+int speedRequested = 0x00;
+byte MCU_dynamic_data[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+byte MCU_shut_data[8] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
 
 int totalVoltage = 0;
 boolean shutSystem = false;
@@ -55,16 +60,22 @@ void setup() {
   pinMode(speedIncreaseButtonPin, INPUT_PULLUP);
   pinMode(speedDecreaseButtonPin, INPUT_PULLUP);
   pinMode(speedResetButtonPin, INPUT_PULLUP);
+  pinMode(MCUStartButtonPin, INPUT_PULLUP);
   
   pinMode(MAX485_RE_NEG, OUTPUT);
   pinMode(MAX485_DE, OUTPUT);
   digitalWrite(MAX485_RE_NEG, 0);
   digitalWrite(MAX485_DE, 0);
 
-  Serial.begin(38400);             
-  can.begin(MCU_TX, MCU_RX, 9600);
+  Serial.begin(38400);  //baudları ayarla           
+  can.begin(Serial3, 9600);
+  int a = can.canRate(15);
+  if(a == 1){
+    Serial.println("Succesfull");  
+  }
+  Serial.println("begin");
     
-  node.begin(1, Serial);            
+  node.begin(1, Serial1);            
   node.preTransmission(preTransmission);         
   node.postTransmission(postTransmission);
 }
@@ -72,13 +83,24 @@ void setup() {
 void loop() {
 
   if(shutSystem){
-     send_data_MCU(0, 0);
+     send_data_MCU();
      while(1);
   }
+
   check_buttons();
-  
-  send_data_MCU(speedRequested, ignition);
-  get_data_MCU();
+
+  if(wakeUp && wakeUpFirst){
+    delay(4000);
+    MCU_dynamic_data[0] = 0xFF;
+    delay(15000);
+    MCU_dynamic_data[1] = 0xFF;
+    wakeUpFirst = false;
+  }
+
+  if(wakeUp){
+    MCU_dynamic_data[2] = speedRequested;
+  }
+  send_data_MCU();
 
   send_data_NEXTION(speedRequested, actualSpeed, totalVoltage);
   get_data_NEXTION();
@@ -89,10 +111,17 @@ void loop() {
 }
 
 void check_buttons(){
+
+  //MCU Start Check
+  MCUStartButtonState = digitalRead(MCUStartButtonPin);
+  if(MCUStartButtonState == LOW){
+    wakeUp = true;  
+  }
+  
   //Speed Increase Check
   speedIncreaseButtonState = digitalRead(speedIncreaseButtonPin);
   if (speedIncreaseButtonState == LOW && speedIncreaseButtonPrevState == 0) {
-      speedRequested++;
+      speedRequested += 0x1;
       //Serial.println("LOW");
       speedIncreaseButtonPrevState = 1;
   } else {
@@ -103,7 +132,7 @@ void check_buttons(){
   //Speed Decrease Check
   speedDecreaseButtonState = digitalRead(speedDecreaseButtonPin);
   if (speedDecreaseButtonState == LOW && speedDecreaseButtonPrevState == 0) {
-      speedRequested--;
+      speedRequested -= 0x1;
       speedDecreaseButtonPrevState = 1;
   } else {
       speedDecreaseButtonPrevState = 0;  
@@ -112,7 +141,7 @@ void check_buttons(){
   //Speed Reset Check
   speedResetButtonState = digitalRead(speedResetButtonPin);
   if (speedResetButtonState == LOW && speedResetButtonPrevState == 0) {
-      speedRequested = 0;
+      speedRequested = 0x00;
       speedResetButtonPrevState = 1;
   } else {
       speedResetButtonPrevState = 0;  
@@ -187,11 +216,10 @@ void get_data_BMS(){
       }
 }
 
-void send_data_MCU(){
+void send_data_MCU(boolean shutSystem){
   //send(unsigned long id, byte ext, byte rtrBit, byte len, const byte *buf);
-  can.send(0x55, 0, 0, 8, requestedSpeed); 
-}
-
-void get_data_MCU(){
-  can.recv(&id, dta)
+  can.send(0x15550000, 1, 0, 8, MCU_dynamic_data);
+  if(shutSystem){
+    can.send(0x15550000, 1, 0, 8, MCU_shut_data);
+  }
 }
