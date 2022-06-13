@@ -28,7 +28,7 @@ int speedResetButtonPin = 0;
 int speedResetButtonState = 0;
 int speedResetButtonPrevState = 0;
 
-int MCUStartButtonPin = 0;
+int MCUStartButtonPin = 4;
 int MCUStartButtonState = 0;
 //int MCUStartButtonPrevState = 0;
 
