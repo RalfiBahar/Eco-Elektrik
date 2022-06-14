@@ -1,6 +1,6 @@
 #include <Serial_CAN_Module.h>
 #include <ModbusMaster.h>
-#define MAX485_DE      3
+#define MAX485_DE 49
 #define MAX485_RE_NEG  2
 #define CELL_LEN 13 
 #define TEMP_LEN 5
