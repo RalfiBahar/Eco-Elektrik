@@ -8,8 +8,19 @@
 #define SOC_SOH_LEN 2
 #define FLAGS_LEN 1
 
+/*void addVoltages(int BMS_data) {
+  int total_voltage = 0;
+  for (int l = 0; l < 13; l++)
+  {
+    total_voltage += BMS_data[0][l];
+  }
+
+  return total_voltage
+}*/
+int BMS_data[6][28];
 
 ModbusMaster node;
+
 void preTransmission(){
   digitalWrite(MAX485_RE_NEG, 1);             
   digitalWrite(MAX485_DE, 1);
@@ -27,14 +38,16 @@ void setup(){
   digitalWrite(MAX485_RE_NEG, 0);
   digitalWrite(MAX485_DE, 0);
 
-  Serial.begin(38400);             
+  Serial.begin(38400); // BMS
+  Serial1.begin(9600); // nextion           
   node.begin(1, Serial);            
 
   node.preTransmission(preTransmission);         
   node.postTransmission(postTransmission);
 }
 
-void loop(){
+
+void get_BMS_data(){
   uint16_t cells_voltage[CELL_LEN];
   uint8_t cell_ind = 0; 
   
@@ -52,8 +65,8 @@ void loop(){
   
   uint16_t flags[FLAGS_LEN];
   uint8_t flags_ind = 0;
-  int BMS_data[] = {cells_voltage, cells_id, temperature, ah_cur_pack, soc_soh, flags};
-
+  int BMS_data_new[6][28] = {cells_voltage, cells_id, temperature, ah_cur_pack, soc_soh, flags};
+  BMS_data = BMS_data_new;
   uint8_t result = node.readHoldingRegisters(1, 41);
   if (result == node.ku8MBSuccess)
     {
@@ -144,5 +157,25 @@ void loop(){
       Serial.println("%");
     }
   delay(200);
-  
+}
+void loop() {
+  get_BMS_data();
+  /*int total_voltage = addVoltages(BMS_data);
+  bmsDataNextion(total_voltage, 0, 0, 0, 0);*/
+
+}
+
+void sendNextionCmd(String cmd, int value) // nextiona komut yollarken nextion dilinde komut satiri yollamak yetiyor
+{
+  Serial1.print(cmd);
+  Serial1.print(value);
+  Serial1.write("\xFF\xFF\xFF"); //3 tane bu 
+                                // byte gelmedikce nextion komut almiyor
+
+void bmsDataNextion(int bmsVoltage, int bmsCurrent, int SoH, int SoC, int bmsTemp) {
+  sendNextionCmd("n4.val=", bmsVoltage);
+  sendNextionCmd("x0.val=", bmsCurrent);
+  sendNextionCmd("n3.val=", SoH);
+  sendNextionCmd("n1.val=", SoC);
+  sendNextionCmd("n2.val=", bmsTemp);
 }
