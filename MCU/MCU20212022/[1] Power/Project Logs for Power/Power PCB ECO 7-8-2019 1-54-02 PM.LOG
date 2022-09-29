@@ -1,0 +1,4 @@
+Added Component: Designator=DISCHARGE(Rocker Button 15mm)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=DC_BUS Pin=DISCHARGE-1
+Added Class: Name=[8] - Filter

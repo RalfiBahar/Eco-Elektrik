@@ -1,0 +1,30 @@
+Change Component Designator: OldDesignator=U? NewDesignator=U5
+Change Component Designator: OldDesignator=U? NewDesignator=U8
+Change Component Designator: OldDesignator=U? NewDesignator=U9
+Added Component: Designator=U1(Isolated_Gate_Driver)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "AESK Gate Driver"; VariantName = "[No Variations]"
+Added Component: Designator=U2(Isolated_Gate_Driver)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "AESK Gate Driver"; VariantName = "[No Variations]"
+Added Component: Designator=U3(Isolated_Gate_Driver)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "AESK Gate Driver"; VariantName = "[No Variations]"
+Added Component: Designator=U4(Isolated_Gate_Driver)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "AESK Gate Driver"; VariantName = "[No Variations]"
+Added Component: Designator=U6(Isolated_Gate_Driver)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "AESK Gate Driver"; VariantName = "[No Variations]"
+Added Component: Designator=U7(Isolated_Gate_Driver)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Value"; Value = "AESK Gate Driver"; VariantName = "[No Variations]"
+Added Member To Class: ClassName=[3] - Inverter Member=Component U1 Isolated Gate Driver
+Added Member To Class: ClassName=[3] - Inverter Member=Component U2 Isolated Gate Driver
+Added Member To Class: ClassName=[3] - Inverter Member=Component U3 Isolated Gate Driver
+Added Member To Class: ClassName=[3] - Inverter Member=Component U4 Isolated Gate Driver
+Added Member To Class: ClassName=[3] - Inverter Member=Component U5 ACS770LCB-050B-PFF-T
+Added Member To Class: ClassName=[3] - Inverter Member=Component U6 Isolated Gate Driver
+Added Member To Class: ClassName=[3] - Inverter Member=Component U7 Isolated Gate Driver
+Added Member To Class: ClassName=[3] - Inverter Member=Component U8 ACS770LCB-050B-PFF-T
+Added Room: Name=[3] - Inverter

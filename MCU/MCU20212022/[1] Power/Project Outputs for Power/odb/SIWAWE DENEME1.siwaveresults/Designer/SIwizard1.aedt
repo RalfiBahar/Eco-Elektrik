@@ -1,0 +1,180 @@
+$begin 'AnsoftProject'
+	Created='Tue Apr 20 08:41:24 2021'
+	FileOwnedByWorkbench=false
+	Product='Designer'
+	NextUniqueID=0
+	MoveBackwards=false
+	$begin 'Desktop'
+		Version(8, 0)
+		InfrastructureVersion(1, 0)
+	$end 'Desktop'
+	$begin 'PlanarEMEnvironment'
+		Version(1, 0)
+	$end 'PlanarEMEnvironment'
+	$begin 'SystemEnvironment'
+		Version(1, 0)
+	$end 'SystemEnvironment'
+	$begin 'NexximEnvironment'
+		Version(1, 0)
+	$end 'NexximEnvironment'
+	$begin 'NexximNetlistEnvironment'
+		Version(1, 0)
+	$end 'NexximNetlistEnvironment'
+	$begin 'FilterDesignEnvironment'
+	$end 'FilterDesignEnvironment'
+	$begin 'SchematicEnvironment'
+		Version(1, 0)
+	$end 'SchematicEnvironment'
+	$begin 'DesignMgrEnvironment'
+		CompInstCounter=1
+		GPortCounter=0
+		NetCounter=0
+	$end 'DesignMgrEnvironment'
+	$begin 'ProjectDatasets'
+		NextUniqueID=0
+		MoveBackwards=false
+		DatasetType='ProjectDatasetType'
+		$begin 'DatasetDefinitions'
+		$end 'DatasetDefinitions'
+	$end 'ProjectDatasets'
+	$begin 'Definitions'
+		$begin 'Folders'
+			Definitions(1104, 10000, 1, 1, 0, false, false)
+			Materials(1104, 9500, 9, 2, 1, false, false)
+			Scripts(1104, 9501, 33500, 3, 1, false, false)
+			Padstacks(1104, 9003, 12, 105, 1, false, false)
+			Symbols(1104, 9001, 10, 103, 1, false, false)
+			Footprints(1104, 9002, 11, 104, 1, false, false)
+			Models(1104, 9004, 40502, 40502, 1, false, false)
+			Components(1104, 9000, 8, 102, 1, false, false)
+		$end 'Folders'
+		$begin 'Materials'
+		$end 'Materials'
+		$begin 'Scripts'
+		$end 'Scripts'
+		$begin 'Symbols'
+			$begin 'SIWAWE DENEME1_SIwizard1'
+				ModTime=1343163689
+				Library=''
+				ModSinceLib=false
+				LibLocation='Project'
+				HighestLevel=1
+				Normalize=true
+				InitialLevels(0, 1)
+				$begin 'Graphics'
+					Rect(0, 1, 0, 0, 0.000423333333333333, 0.00254, 0.000423333333333333, 0.000423333333333333, 0, 0, 0)
+					Rect(0, 0, 0, 0, 0.00254, 0.00254, 0.00508, 0.00508, 0, 0, 0)
+				$end 'Graphics'
+			$end 'SIWAWE DENEME1_SIwizard1'
+		$end 'Symbols'
+		$begin 'DefInfo'
+			'SIWAWE DENEME1_SIwizard1'(0, 0, '', 1343163689, '', 'SIWAWE DENEME1_SIwizard1', '', '', '', '', '', 'Design.bmp', '', 'Project', '', '', 1343163689, '')
+		$end 'DefInfo'
+		$begin 'Compdefs'
+			$begin 'SIWAWE DENEME1_SIwizard1'
+				ModTime=1343163689
+				Library=''
+				Refbase='U'
+				NumParts=1
+				ModSinceLib=false
+				$begin 'Properties'
+					TextProp('Representation', 'SRD', '', 'SIWAWE DENEME1_SIwizard1')
+					TextProp('Owner', 'SRD', '', 'Circuit Netlist')
+				$end 'Properties'
+			$end 'SIWAWE DENEME1_SIwizard1'
+		$end 'Compdefs'
+	$end 'Definitions'
+	DesignIDServer=3
+	MoveBackwards=false
+  	$begin 'NexximNetlist'
+		RepRewriteV2=true
+		Name='SIWAWE DENEME1_SIwizard1'
+		DesignID=1
+		$begin 'DesignDatasets'
+			NextUniqueID=0
+			MoveBackwards=false
+			DatasetType='DesignDatasetType'
+			$begin 'DatasetDefinitions'
+			$end 'DatasetDefinitions'
+		$end 'DesignDatasets'
+		Language='HSPICE'
+		AlternateFilename='C:/Users/guven/Desktop/-AESK-/ALL Documents/Drive Electric 2020/Elektrik/Motor Driver/BLDC Driver/[1] Hardware/[1] Power/Project Outputs for Power/odb/SIWAWE DENEME1.siwaveresults/Designer/SIwizard1.sp'
+		$begin 'OutputVariable'
+			NextUniqueID=0
+			MoveBackwards=false
+		$end 'OutputVariable'
+		$begin 'SolutionManager'
+			$begin 'SimDataExtractors'
+				$begin 'Version ID Map'
+					V=0
+				$end 'Version ID Map'
+			$end 'SimDataExtractors'
+			$begin 'Variations'
+			$end 'Variations'
+		$end 'SolutionManager'
+		IntegrationMethod='FFT'
+		Use32bitEngine=false
+		$begin 'UserDefinedSolutionMgr'
+			NextUniqueID=1000000
+			MoveBackwards=false
+		$end 'UserDefinedSolutionMgr'
+		$begin 'DatasetSolutionMgr'
+			NextUniqueID=2000000
+			MoveBackwards=false
+		$end 'DatasetSolutionMgr'
+		Notes=$begin_cdata$		$end_cdata$
+		$begin 'AnimationSetups'
+		$end 'AnimationSetups'
+	$end 'NexximNetlist'
+	$begin 'DataInstances'
+		DesignEditor='TopLevel'
+		RefDes('0', 'U1')
+		$begin 'CompInstances'
+			$begin 'Compinst'
+				ID='0'
+				Status='Status'
+				CompName='SIWAWE DENEME1_SIwizard1'
+				GatesInUse()
+				$begin 'Properties'
+					TextProp('ID', 'SRID', '', '0')
+				$end 'Properties'
+			$end 'Compinst'
+		$end 'CompInstances'
+		$begin 'Instance'
+			DesignEditor='SIWAWE DENEME1_SIwizard1'
+			ID='0'
+			$begin 'NexximNetlist'
+				DesignInstanceID=1
+				$begin 'WindowPosition'
+					$begin 'EditorWindow'
+						Netlist(Netlist(View(WindowPos(3, -1, -1, -8, -30, 0, 0, 1046, 524))))
+					$end 'EditorWindow'
+				$end 'WindowPosition'
+				$begin 'ReportSetup'
+					$begin 'ReportManager'
+						$begin 'Reports'
+						$end 'Reports'
+						NextUniqueID=0
+						MoveBackwards=false
+						$begin 'NextVersID'
+							NextUniqueID=0
+							MoveBackwards=false
+						$end 'NextVersID'
+					$end 'ReportManager'
+					$begin 'Reports'
+					$end 'Reports'
+					$begin 'ReportsWindowInfoList'
+					$end 'ReportsWindowInfoList'
+				$end 'ReportSetup'
+			$end 'NexximNetlist'
+		$end 'Instance'
+		$begin 'SODInfo'
+		$end 'SODInfo'
+	$end 'DataInstances'
+	$begin 'WBSystemIDToDesignInstanceIDMap'
+	$end 'WBSystemIDToDesignInstanceIDMap'
+	$begin 'WBSysIDSysDetails'
+	$end 'WBSysIDSysDetails'
+	$begin 'WBConnIDConnDetails'
+	$end 'WBConnIDConnDetails'
+$end 'AnsoftProject'

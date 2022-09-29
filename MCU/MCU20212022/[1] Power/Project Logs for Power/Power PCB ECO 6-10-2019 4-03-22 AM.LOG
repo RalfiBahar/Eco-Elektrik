@@ -1,0 +1,37 @@
+Removed Pin From Net: NetName=DC_BUS Pin=C7-1
+Removed Pin From Net: NetName=GND Pin=C7-2
+Removed Pin From Net: NetName=DC_BUS Pin=C8-1
+Removed Pin From Net: NetName=GND Pin=C8-2
+Removed Pin From Net: NetName=DC_BUS Pin=C9-1
+Removed Pin From Net: NetName=GND Pin=C9-2
+Change Component Footprint: Designator=C7 Old Footprint=Film_Cap New Footprint=Film_Cap_15u
+Change Component Footprint: Designator=C8 Old Footprint=Film_Cap New Footprint=Film_Cap_15u
+Change Component Footprint: Designator=C9 Old Footprint=Film_Cap New Footprint=Film_Cap_15u
+Change component parameters: Designator = "C7"; Footprint = "Film_Cap_15u"; UniqueID = "\GUNYYXIN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Digikey"; Value = "https://www.digikey.com/product-detail/en/kemet/C4AQLBU5150A11K/399-16978-ND/8345941"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = "6 mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolarence"; Value = "+-10 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15 uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "500 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C8"; Footprint = "Film_Cap_15u"; UniqueID = "\FVSAIHFE"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Digikey"; Value = "https://www.digikey.com/product-detail/en/kemet/C4AQLBU5150A11K/399-16978-ND/8345941"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = "6 mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolarence"; Value = "+-10 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15 uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "500 V"; VariantName = "[No Variations]"
+Change component parameters: Designator = "C9"; Footprint = "Film_Cap_15u"; UniqueID = "\OMJHCYTD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Digikey"; Value = "https://www.digikey.com/product-detail/en/kemet/C4AQLBU5150A11K/399-16978-ND/8345941"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ESR"; Value = "6 mOhm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolarence"; Value = "+-10 %"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "15 uF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage"; Value = "500 V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=DC_BUS Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=DC_BUS Pin=C8-2
+Added Pin To Net: NetName=GND Pin=C9-1
+Added Pin To Net: NetName=DC_BUS Pin=C9-2
+Added Room: Name=[3] - Inverter

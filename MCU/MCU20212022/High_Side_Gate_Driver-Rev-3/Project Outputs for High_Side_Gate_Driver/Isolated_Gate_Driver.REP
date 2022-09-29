@@ -1,0 +1,438 @@
+*************************************************************
+FileName = Isolated_Gate_Driver.GBR
+AutoAperture = True
+*************************************************************
+Generating : Bottom Overlay
+      File : Isolated_Gate_Driver.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D63
+    D64
+    D65
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : Isolated_Gate_Driver.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D25
+    D26
+    D29
+    D31
+    D33
+    D34
+    D35
+    D48
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 5
+      File : Isolated_Gate_Driver.GM5
+
+    Adding Layer      : Mechanical 5
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 1
+      File : Isolated_Gate_Driver.GM1
+
+    Adding Layer      : Mechanical 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : Isolated_Gate_Driver.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D22
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 27
+      File : Isolated_Gate_Driver.GM27
+
+    Adding Layer      : Mechanical 27
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D64
+    D69
+    D70
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 12
+      File : Isolated_Gate_Driver.GM12
+
+    Adding Layer      : Mechanical 12
+
+
+Used DCodes :
+    D11
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : Isolated_Gate_Driver.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D23
+    D46
+    D47
+    D49
+    D50
+    D51
+    D52
+    D62
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : Isolated_Gate_Driver.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : Isolated_Gate_Driver.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : Isolated_Gate_Driver.GML
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 16
+      File : Isolated_Gate_Driver.GM16
+
+    Adding Layer      : Mechanical 16
+
+
+Used DCodes :
+    D68
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 7
+      File : Isolated_Gate_Driver.GM7
+
+    Adding Layer      : Mechanical 7
+
+
+Used DCodes :
+    D66
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : Isolated_Gate_Driver.GPT
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D27
+    D28
+    D42
+    D43
+    D44
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 10
+      File : Isolated_Gate_Driver.GM10
+
+    Adding Layer      : Mechanical 10
+
+
+Used DCodes :
+    D10
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : Isolated_Gate_Driver.GPB
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D23
+    D42
+    D43
+    D44
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : Isolated_Gate_Driver.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D66
+    D67
+    D68
+    D69
+*************************************************************
+
+*************************************************************
+Generating : Bottom Layer
+      File : Isolated_Gate_Driver.GBL
+
+    Adding Layer      : Bottom Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D23
+    D36
+    D37
+    D38
+    D40
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D54
+    D55
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : Isolated_Gate_Driver.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D10
+    D63
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 1
+      File : Isolated_Gate_Driver.1
+
+    Adding Layer      : Dielectric 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : Isolated_Gate_Driver.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D64
+    D68
+    D69
+    D70
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : Isolated_Gate_Driver.GM4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D10
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Top Layer
+      File : Isolated_Gate_Driver.GTL
+
+    Adding Layer      : Top Layer
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D27
+    D28
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : Isolated_Gate_Driver.GD1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D71
+    D72
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : Isolated_Gate_Driver.GG1
+
+    Adding Drill Pair : Top Layer-Bottom Layer
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D71
+*************************************************************
+

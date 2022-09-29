@@ -1,0 +1,122 @@
+[Tue Apr 20 08:38:12 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0050 siwave_ng 2020 R2 (Built: May 29 2020 00:50:42):
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Loading project...:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Initializing layout database...:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0050 Simulation "Resonant Mode Sim 1" started on host DESKTOP-BUERGON at Tue Apr 20 08:38:16 2021:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Generating solver input files...:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  5.000000:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0050 [Simulation Directory]: "C:/Users/guven/Desktop/-AESK-/ALL Documents/Drive Electric 2020/Elektrik/Motor Driver/BLDC Driver/[1] Hardware/[1] Power/Project Outputs for Power/odb/SIWAWE DENEME1.siwaveresults/0001_Resonant_Mode_Sim_1/":
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0050 [Simulation Log File]: "C:/Users/guven/Desktop/-AESK-/ALL Documents/Drive Electric 2020/Elektrik/Motor Driver/BLDC Driver/[1] Hardware/[1] Power/Project Outputs for Power/odb/SIWAWE DENEME1.siwaveresults/0001_Resonant_Mode_Sim_1/0001_Resonant_Mode_Sim_1.simlog":
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:warning 0117 All geometry on net "DUMMY" will be ignored:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Identifying non-functional pads...:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  10.000000:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Identifying nets for inclusion in simulation...:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 +5V_ISO:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 +5V_ISO_1:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 +5V_ISO_2:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 +5V_ISO_3:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 +12V_ISO:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 -12V_ISO:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 CS_PHASE_A:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 CS_PHASE_B:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 CS_PHASE_C:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 DC_BUS:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 DC_BUS_IN:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 GND_ISO:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 GND_ISO_1:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 GND_ISO_2:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 GND_ISO_3:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 Gate.A.H:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 Gate.A.L:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 Gate.B.H:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 Gate.B.L:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 Gate.C.H:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 Gate.C.L:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 I_DC_BUS:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 NetR_BUS_2:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 PHASE_A:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 PHASE_B:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 PHASE_C:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 PHASE_U:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 PHASE_V:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 PHASE_W:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0051 Source.A.L:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  15.000000:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Performing basic DRC...:
+[Tue Apr 20 08:38:16 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Merging appropriate traces...:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Identifying traces to process...:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Identifying planes to process...:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  17.000000:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Generating antipads in planes...:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Modeling appropriate pads as planes...:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  20.000000:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  24.000000:
+[Tue Apr 20 08:38:17 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Uniting geometry...:
+[Tue Apr 20 08:38:18 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  30.000000:
+[Tue Apr 20 08:38:18 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Running geometry preprocessor...:
+[Tue Apr 20 08:38:19 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Processing facets...:
+[Tue Apr 20 08:38:19 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  50.000000:
+[Tue Apr 20 08:38:19 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Identifying traces to process...:
+[Tue Apr 20 08:38:19 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Processing traces...:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  55.000000:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  60.000000:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Processing circuit elements...:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:warning 0104 R1: positive node at (163.195000,85.678000)mm on layer top_layer is not attached to any net included in this simulation:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  70.000000:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  80.000000:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Writing solver input files...:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  90.000000:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  95.000000:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:progress  100.000000:
+[Tue Apr 20 08:38:20 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:message Solving for resonant modes... :
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Initializing solution setup: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 1.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 2.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Creating initial mesh: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\geomproc.exe:PID 3064: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 5.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Reading solver input files: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Importing material definitions: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Importing stackup definition: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Importing model information: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Importing circuit information: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Initializing transmission lines: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 6.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Initializing vias: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Initializing Bondwires: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Identifying nets: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Processing circuit nodes: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Initializing plane edges: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 7.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Performing smart coupling detection: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Detecting coupled segments: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 8.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Processing coupled segments: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Detecting coupled vias: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 10.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Setting up cavities: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Processing defeatured voids: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 11.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Processing trace cross sections: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 12.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Solving cross sections: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 15.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Extracting via parameters: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 20.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Refining mesh: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 21.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Initializing unknowns: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 22.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Constructing system matrix: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Filling finite element matrix: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 23.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message   Adding circuit elements to the matrix: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 25.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 30.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message Computing resonant frequencies: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\ira_solver.exe:PID 18916: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 40.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 80.000000: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:message SIwave finished: 
+C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe:progress 100.000000: 
+[Tue Apr 20 08:38:25 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0050 Eigen solver completed with return code 0:
+[Tue Apr 20 08:38:25 2021] C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_ng.exe:information 0050 Simulation "Resonant Mode Sim 1" completed on host DESKTOP-BUERGON at Tue Apr 20 08:38:25 2021:

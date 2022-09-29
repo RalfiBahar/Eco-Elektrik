@@ -1,0 +1,133 @@
+Added Component: Designator=T1(Screw_M5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Brand"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Terminals"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.mouser.com/ds/2/215/807-741218.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.mouser.com/ds/2/215/807-741218.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Brass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation"; Value = "Not Insulated"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "7807"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Brass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.01, 10=0.974, 50=0.781, 100=0.749, 200=0.683, 500=0.650, 1000=0.539, 2500=0.485, 5000=0.472 (AUD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Screw Terminals"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "Screw Terminals and Screw Blocks"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standard Pack Qty"; Value = "100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "4521"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Power Element"; VariantName = "[No Variations]"
+Added Component: Designator=T2(Screw_M5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Brand"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Terminals"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.mouser.com/ds/2/215/807-741218.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.mouser.com/ds/2/215/807-741218.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Brass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation"; Value = "Not Insulated"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "7807"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Brass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.01, 10=0.974, 50=0.781, 100=0.749, 200=0.683, 500=0.650, 1000=0.539, 2500=0.485, 5000=0.472 (AUD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Screw Terminals"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "Screw Terminals and Screw Blocks"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standard Pack Qty"; Value = "100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "4521"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Power Element"; VariantName = "[No Variations]"
+Added Component: Designator=T3(Screw_M5)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Brand"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Category"; Value = "Terminals"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.mouser.com/ds/2/215/807-741218.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.mouser.com/ds/2/215/807-741218.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Material"; Value = "Brass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Contact Plating"; Value = "Tin"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Insulation"; Value = "Not Insulated"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Keystone Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "7807"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Material"; Value = "Brass"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Minimum Order Quantity"; Value = "1"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Bulk"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=1.01, 10=0.974, 50=0.781, 100=0.749, 200=0.683, 500=0.650, 1000=0.539, 2500=0.485, 5000=0.472 (AUD)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product"; Value = "Screw Terminals"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Category"; Value = "Screw Terminals and Screw Blocks"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Reeling"; Value = "False"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "RoHS Compliant"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS - Mouser"; Value = "Y"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Standard Pack Qty"; Value = "100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "4521"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Termination Style"; Value = "Screw"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Type"; Value = "Power Element"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q4-D
+Added Pin To Net: NetName=PHASE_A Pin=T1-1
+Added Pin To Net: NetName=PHASE_A Pin=T1-2
+Added Pin To Net: NetName=PHASE_A Pin=T1-3
+Added Pin To Net: NetName=PHASE_A Pin=T1-4
+Added Pin To Net: NetName=PHASE_A Pin=T1-5
+Added Pin To Net: NetName=PHASE_A Pin=T1-6
+Added Net: Name=PHASE_A
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q5-D
+Added Pin To Net: NetName=PHASE_B Pin=T2-1
+Added Pin To Net: NetName=PHASE_B Pin=T2-2
+Added Pin To Net: NetName=PHASE_B Pin=T2-3
+Added Pin To Net: NetName=PHASE_B Pin=T2-4
+Added Pin To Net: NetName=PHASE_B Pin=T2-5
+Added Pin To Net: NetName=PHASE_B Pin=T2-6
+Added Net: Name=PHASE_B
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q6-D
+Added Pin To Net: NetName=PHASE_C Pin=T3-1
+Added Pin To Net: NetName=PHASE_C Pin=T3-2
+Added Pin To Net: NetName=PHASE_C Pin=T3-3
+Added Pin To Net: NetName=PHASE_C Pin=T3-4
+Added Pin To Net: NetName=PHASE_C Pin=T3-5
+Added Pin To Net: NetName=PHASE_C Pin=T3-6
+Added Net: Name=PHASE_C
+Added Member To Class: ClassName=[3] - Inverter Member=Component T1 terminalscrew
+Added Member To Class: ClassName=[3] - Inverter Member=Component T2 terminalscrew
+Added Member To Class: ClassName=[3] - Inverter Member=Component T3 terminalscrew
+Added Room: Name=[3] - Inverter

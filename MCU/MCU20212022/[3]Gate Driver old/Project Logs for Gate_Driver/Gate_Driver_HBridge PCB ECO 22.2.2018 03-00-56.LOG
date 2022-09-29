@@ -1,0 +1,115 @@
+Added Component: Designator=C1(SM/C0805N)
+Added Component: Designator=C2(SM/C0805N)
+Added Component: Designator=C3(SM/C0805N)
+Added Component: Designator=C4(SM/C0805N)
+Added Component: Designator=C5(SM/C0805N)
+Added Component: Designator=C6(SM/C0805N)
+Added Component: Designator=C7(SM/C0805N)
+Added Component: Designator=C8(SM/C0805N)
+Added Component: Designator=D1(SMB)
+Added Component: Designator=D2(SMB)
+Added Component: Designator=D3(SMB)
+Added Component: Designator=P1(HDR1X3)
+Added Component: Designator=P2(HDR1X6)
+Added Component: Designator=P3(HDR1X3)
+Added Component: Designator=R1(SM/R0805N)
+Added Component: Designator=R2(SM/R0805N)
+Added Component: Designator=R3(SM/R0805N)
+Added Component: Designator=R4(SM/R0805N)
+Added Component: Designator=R5(SM/R0805N)
+Added Component: Designator=R6(SM/R0805N)
+Added Component: Designator=R7(SM/R0805N)
+Added Component: Designator=R8(SM/R0805N)
+Added Component: Designator=R9(SM/R0805N)
+Added Component: Designator=R10(SM/R0805N)
+Added Component: Designator=TP1(TEST POINT GREEN)
+Added Component: Designator=TP2(TEST POINT GREEN)
+Added Component: Designator=U1(SOIC127P1030X265-16N)
+Added Pin To Net: NetName=+12V Pin=C5-1
+Added Pin To Net: NetName=+12V Pin=C6-1
+Added Pin To Net: NetName=+12V Pin=P2-1
+Added Pin To Net: NetName=+12V Pin=R1-2
+Added Pin To Net: NetName=+12V Pin=U1-11
+Added Net: Name=+12V
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Pin To Net: NetName=3V3 Pin=C3-2
+Added Pin To Net: NetName=3V3 Pin=P2-2
+Added Pin To Net: NetName=3V3 Pin=P2-5
+Added Pin To Net: NetName=3V3 Pin=U1-3
+Added Pin To Net: NetName=3V3 Pin=U1-8
+Added Net: Name=3V3
+Added Pin To Net: NetName=A_HIGH_REF Pin=C1-2
+Added Pin To Net: NetName=A_HIGH_REF Pin=P1-3
+Added Pin To Net: NetName=A_HIGH_REF Pin=R3-1
+Added Pin To Net: NetName=A_HIGH_REF Pin=U1-14
+Added Net: Name=A_HIGH_REF
+Added Pin To Net: NetName=A_LOW_REF Pin=C5-2
+Added Pin To Net: NetName=A_LOW_REF Pin=C6-2
+Added Pin To Net: NetName=A_LOW_REF Pin=P1-1
+Added Pin To Net: NetName=A_LOW_REF Pin=R7-1
+Added Pin To Net: NetName=A_LOW_REF Pin=U1-9
+Added Net: Name=A_LOW_REF
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=GND Pin=P2-4
+Added Pin To Net: NetName=GND Pin=P2-6
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Net: Name=GND
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=D1-1
+Added Pin To Net: NetName=NetC1_1 Pin=U1-16
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=NetC4_2 Pin=R5-2
+Added Pin To Net: NetName=NetC4_2 Pin=U1-6
+Added Net: Name=NetC4_2
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R1-1
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=NetD2_2 Pin=R4-2
+Added Net: Name=NetD2_2
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=R8-2
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=NetR2_1 Pin=R4-1
+Added Pin To Net: NetName=NetR2_1 Pin=U1-15
+Added Net: Name=NetR2_1
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=NetR6_1 Pin=R8-1
+Added Pin To Net: NetName=NetR6_1 Pin=U1-10
+Added Net: Name=NetR6_1
+Added Pin To Net: NetName=PHA_HI Pin=D2-1
+Added Pin To Net: NetName=PHA_HI Pin=P3-1
+Added Pin To Net: NetName=PHA_HI Pin=R2-2
+Added Pin To Net: NetName=PHA_HI Pin=R3-2
+Added Pin To Net: NetName=PHA_HI Pin=TP1-TP
+Added Net: Name=PHA_HI
+Added Pin To Net: NetName=PHA_LO Pin=D3-1
+Added Pin To Net: NetName=PHA_LO Pin=P3-2
+Added Pin To Net: NetName=PHA_LO Pin=R6-2
+Added Pin To Net: NetName=PHA_LO Pin=R7-2
+Added Pin To Net: NetName=PHA_LO Pin=TP2-TP
+Added Net: Name=PHA_LO
+Added Pin To Net: NetName=PWM1A_IN Pin=C7-2
+Added Pin To Net: NetName=PWM1A_IN Pin=R9-2
+Added Pin To Net: NetName=PWM1A_IN Pin=U1-1
+Added Net: Name=PWM1A_IN
+Added Pin To Net: NetName=PWM1A Pin=P3-3
+Added Pin To Net: NetName=PWM1A Pin=R9-1
+Added Net: Name=PWM1A
+Added Pin To Net: NetName=PWM1B_IN Pin=C8-2
+Added Pin To Net: NetName=PWM1B_IN Pin=R10-2
+Added Pin To Net: NetName=PWM1B_IN Pin=U1-2
+Added Net: Name=PWM1B_IN
+Added Pin To Net: NetName=PWM1B Pin=P2-3
+Added Pin To Net: NetName=PWM1B Pin=R10-1
+Added Net: Name=PWM1B
+Added Class: Name=Gate_Drive
+Added Room: Name=Gate_Drive

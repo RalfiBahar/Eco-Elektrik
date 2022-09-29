@@ -1,0 +1,27 @@
+Added Component: Designator=R1(Power Resistor - NEW)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/1610601.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/1610601.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE CONNECTIVITY"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "352124KFT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MSL"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power Rating"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pricing 1"; Value = "1=0.481, 150=0.1603, 400=0.1374, 1000=0.1069, 2000=0.0875, 4000=0.0764, 20000=0.0749, 40000=0.0733 (GBP)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Product Range"; Value = "3520 Series"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = "24"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance Tolerance"; Value = "± 1%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Case Style"; Value = "2512 [6432 Metric]"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Element Material"; Value = "-"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistor Mounting"; Value = "SMD<!--FANDB--><div class="features-and-benefits-container"></div>"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS"; Value = "YES"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Stock 1"; Value = "6653"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SVHC"; Value = "No SVHC (15-Jun-2015)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Temperature Coefficient"; Value = "± 100"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "250"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetDISCHARGE_2 Pin=R1-1
+Added Pin To Net: NetName=Source.A.L Pin=R1-2
+Added Member To Class: ClassName=[8] - Filter Member=Component R1 1K 5W
+Added Member To Class: ClassName=[9] - Logo,MH etc. Member=Component  AESK Amblem Vector
+Added Member To Class: ClassName=[9] - Logo,MH etc. Member=Component  AESK Manufacturing

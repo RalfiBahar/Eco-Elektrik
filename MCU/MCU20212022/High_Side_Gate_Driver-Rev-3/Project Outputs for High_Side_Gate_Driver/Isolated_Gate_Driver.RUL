@@ -1,0 +1,10 @@
+DRC Rules Export File for PCB: D:\drive\AESK Workspace\ORTAK ALAN\Muhammet Ali\High_Side_Gate_Driver-Rev-3\Isolated_Gate_Driver.PcbDoc
+RuleKind=Clearance|RuleName=Clearance_1|Scope=Board|Minimum=2.00
+RuleKind=Clearance|RuleName=Low side Gate btwn Drain|Scope=Board|Minimum=55.00
+RuleKind=Clearance|RuleName=High side Source btwn Drain|Scope=Board|Minimum=55.00
+RuleKind=Clearance|RuleName=Low side Source btwn Drain|Scope=Board|Minimum=55.00
+RuleKind=Clearance|RuleName=High side Gate btwn Drain|Scope=Board|Minimum=55.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=10.00
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0

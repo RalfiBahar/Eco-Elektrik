@@ -1,0 +1,31 @@
+# Validation Check Errors/Warnings
+# BEGIN LIST
+
+Disjoint Net Error
+ net "GND_ISO"
+Disjoint Net Error
+ net "+5V_ISO"
+Misalignment Warning
+ The centerline of a trace (195.648003, 13.155999) mm on layer top_layer is not connected to the center of a via (193.548003, 13.096999) mm
+Misalignment Warning
+ The centerline of a trace on layer top_layer is not connected to a plane (69.510485, 33.614153) mm net "Gate.B.H"
+Misalignment Warning
+ The centerline of a trace on layer top_layer is not connected to a plane (137.836485, 33.614153) mm net "Gate.C.H"
+Misalignment Warning
+ The centerline of a trace (195.676002, 15.066000) mm on layer top_layer is not connected to the center of a via (193.548003, 15.097001) mm
+Misalignment Warning
+ The centerline of a trace (58.614998, 13.155999) mm on layer bottom_layer is not connected to the center of a via (56.641997, 13.096999) mm
+Misalignment Warning
+ The centerline of a trace (122.833300, -3.175000) mm on layer bottom_layer is not connected to the center of a via (122.807898, -3.175000) mm
+Misalignment Warning
+ The centerline of a trace (126.813998, 13.155999) mm on layer bottom_layer is not connected to the center of a via (124.840997, 13.096999) mm
+Misalignment Warning
+ The centerline of a trace (58.642997, 15.066000) mm on layer bottom_layer is not connected to the center of a via (56.641997, 15.097001) mm
+Misalignment Warning
+ The centerline of a trace (109.982000, 84.439001) mm on layer bottom_layer is not connected to the center of a via (110.808000, 84.375000) mm
+Misalignment Warning
+ The centerline of a trace (109.982000, 84.439001) mm on layer bottom_layer is not connected to the center of a via (110.808000, 84.375000) mm
+Misalignment Warning
+ The centerline of a trace (126.841997, 15.066000) mm on layer bottom_layer is not connected to the center of a via (124.840997, 15.097001) mm
+
+# END LIST

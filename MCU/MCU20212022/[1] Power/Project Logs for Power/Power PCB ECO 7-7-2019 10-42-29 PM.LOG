@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=+12V_ISO Pin=V_DC_BUS-1
+Removed Pin From Net: NetName=-12V_ISO Pin=V_DC_BUS-2
+Added Pin To Net: NetName=-12V_ISO Pin=V_DC_BUS-1
+Added Pin To Net: NetName=+12V_ISO Pin=V_DC_BUS-2

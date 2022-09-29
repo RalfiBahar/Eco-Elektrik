@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=PWM1A Pin=P2-3
+Removed Pin From Net: NetName=PWM1B Pin=P3-3
+Added Pin To Net: NetName=PWM1B Pin=P2-3
+Added Pin To Net: NetName=PWM1A Pin=P3-3
+Added Room: Name=Gate_Drive

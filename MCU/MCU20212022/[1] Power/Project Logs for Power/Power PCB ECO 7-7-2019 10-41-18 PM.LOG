@@ -1,0 +1,5 @@
+Change Component Designator: OldDesignator=P1 NewDesignator=V_DC_BUS
+Change Component Designator: OldDesignator=P2 NewDesignator=PHASE_A
+Change Component Designator: OldDesignator=P3 NewDesignator=BUS_Current
+Change Component Designator: OldDesignator=P4 NewDesignator=PHASE_B
+Change Component Designator: OldDesignator=P5 NewDesignator=PHASE_C

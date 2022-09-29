@@ -1,0 +1,19 @@
+Added Component: Designator=C7(SM/C0805N)
+Added Component: Designator=C8(SM/C0805N)
+Added Component: Designator=R9(SM/R0805N)
+Added Component: Designator=R10(SM/R0805N)
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=PWM1A_IN Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=PWM1B_IN Pin=C8-2
+Added Pin To Net: NetName=PWM1A_IN Pin=R9-2
+Added Pin To Net: NetName=PWM1B_IN Pin=R10-2
+Added Pin To Net: NetName=PWM1A Pin=R9-1
+Added Net: Name=PWM1A
+Added Pin To Net: NetName=PWM1B Pin=R10-1
+Added Net: Name=PWM1B
+Added Member To Class: ClassName=Gate_Drive Member=Component C7 100nF
+Added Member To Class: ClassName=Gate_Drive Member=Component C8 100nF
+Added Member To Class: ClassName=Gate_Drive Member=Component R9 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R10 1K
+Added Room: Name=Gate_Drive

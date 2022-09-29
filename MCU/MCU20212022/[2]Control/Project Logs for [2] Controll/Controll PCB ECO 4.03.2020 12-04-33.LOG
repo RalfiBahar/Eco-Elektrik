@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=EQEPB-1 Pin=U7-12
+Added Pin To Net: NetName=EQEPB-1 Pin=U7-13
+Added Pin To Net: NetName=EQEPI-1 Pin=SLOT1-91
+Added Pin To Net: NetName=EQEPI-1 Pin=U7-12
+Added Net: Name=EQEPI-1
+Added Room: Name=[3] - DIMM
+Added Room: Name=[4] - Regulator
+Added Room: Name=[5] - USB Emulator
+Added Room: Name=[6] - Gate Driver
+Added Room: Name=[7] - Current Sensor
+Added Room: Name=[8] - Voltage Sensor
+Added Room: Name=[9] - Comm, UART,CAN etc
+Added Room: Name=[10] - Logo, HM etc
+Added Room: Name=[12] - Manual Interface
+Added Room: Name=[13] - Torque Sensor Interface
+Added Room: Name=[14] - BJTs
+Added Room: Name=[15] - Hall and Encoder Isolation

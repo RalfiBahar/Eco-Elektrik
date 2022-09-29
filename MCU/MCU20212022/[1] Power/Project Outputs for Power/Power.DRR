@@ -1,0 +1,27 @@
+----------------------------------------------------------------------------------------------------------------------------------
+NCDrill File Report For: Power.PcbDoc   7/19/2019  11:00:32 AM
+----------------------------------------------------------------------------------------------------------------------------------
+
+Layer Pair : Top Layer to Bottom Layer
+ASCII RoundHoles File : Power-RoundHoles.TXT
+ASCII SlotHoles File : Power-SlotHoles.TXT
+
+Tool       Hole Size               Hole Tolerance               Hole Type       Hole Count   Plated         Tool Travel
+----------------------------------------------------------------------------------------------------------------------------------
+T1      0.3mm (12mil)                                             Round             128       PTH        368.68mm (14.52inch)
+T2      0.4mm (16mil)                                             Round             2646      PTH        6835.08mm (269.10inch)
+T3      0.6mm (24mil)                                             Slot              3         PTH        32.06mm (1.26inch)
+T4      0.8mm (31mil)                                             Round             12        PTH        238.25mm (9.38inch)
+T5      0.9mm (35mil)                                             Round             51        PTH        774.19mm (30.48inch)
+T6      1mm (39mil)                                               Round             2         PTH        5.00mm (0.20inch)
+T7      1.1mm (43mil)                                             Round             2         PTH        15.24mm (0.60inch)
+T8      1.2mm (47mil)                                             Round             6         PTH        164.08mm (6.46inch)
+T9      1.5mm (59mil)                                             Round             3         PTH        15.24mm (0.60inch)
+T10     2mm (79mil)                                               Slot              8         PTH        532.74mm (20.97inch)
+T11     2.2mm (87mil)                                             Round             12        PTH        209.32mm (8.24inch)
+T12     2.57mm (101mil)                                           Round             30        PTH        569.12mm (22.41inch)
+T13     3.1mm (122mil)                                            Round             17        PTH        981.21mm (38.63inch)
+----------------------------------------------------------------------------------------------------------------------------------
+Totals                                                                              2920
+
+Total Processing Time (hh:mm:ss) : 00:00:01

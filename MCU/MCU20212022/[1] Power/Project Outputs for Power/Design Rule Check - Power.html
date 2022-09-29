@@ -1,0 +1,436 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD17\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">7/19/2019</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">11:00:43 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:08</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc" class="file"><acronym title="D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc">D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">20</td></tr>
+</table>
+</td>
+</table><a name="IDN0KE21KEHM23EMDOUVVM4SAU5G4U13PYJ1VDUZK1Q4XOXUPFLS1G"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDRWUZ1F5XNNWLGHPRJNINRIXXNFEOZHHBQQJTRSIB4IRJC05OIRXI">Clearance Constraint (Gap=1mm) (InNet('DC_BUS')),(InNet('PHASE_B'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDU44G01NFZF4QHNDT5V04AS3G0P3VJY0HL0T0RWJA5XIRV1AZBU2J">Clearance Constraint (Gap=1mm) (InNet('DC_BUS')),(InNet('PHASE_C'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDZ34KTWCDG3RLF3EW214M3ODT3PQZK02NPVST2EKAHJA1AFUKYLAB">Clearance Constraint (Gap=1mm) (InNet('DC_BUS')),(InNet('GND_ISO'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXTE2PCZCQQZDDJFPHN3YEHO0CENMLK15OFLAH3J2OXA1S2O2ANLE">Clearance Constraint (Gap=0.35mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID4BFAYSNHQAIFCUMY4RFRU1GYOCRPUZJLEKKULAJHORUCQRXCMILD">Clearance Constraint (Gap=1mm) (InNet('Source.A.L')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDN2W0F30ONOZHIJAUL3I3U0MVTNBJDXAI0QRBTLGNZZRWZ2BV2NVJ">Clearance Constraint (Gap=1mm) (InNet('DC_BUS')),(InNet('PHASE_A'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDSAAZDCQ05CFQI5QPBR3EC2FAJPIVKSOYHYU2SWMRYL2OOGGSQQND">Clearance Constraint (Gap=0.44mm) (InNet('Source.A.L')),(InNet('Gate.A.L'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDCTDYJ5UBSTKPCWYOWSMM2KILKML0Z3DFDQN4YTL4TAB434VX30UI">Clearance Constraint (Gap=0.44mm) (InNet('Source.A.L')),(InNet('Gate.B.L'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDELIOFNXJFGOPEHJZEN15M4YEALSVZBD0XHYYDWF3WEYH25V2TDE">Clearance Constraint (Gap=0.44mm) (InNet('Source.A.L')),(InNet('Gate.C.L'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDT54HVVUGIGFID5V2MMEZS43GTHFY4B0EG5PJTJC5U4RGLDJ5225B">Clearance Constraint (Gap=1mm) (InNet('DC_BUS')),(InNet('+5V_ISO'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID11UXVE2NVVEJDY31KNYXSZKO3LONVUVMUXR3BYEKMGMBCRGGQ0EK">Clearance Constraint (Gap=1mm) (InNet('DC_BUS')),(InNet('I_DC_BUS'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID2V0NNVG0TNU0NOZ0H4JT20BTWLEL51NOSEYJCOJKN3BXWZUVDG4L">Clearance Constraint (Gap=1mm) (InNet('DC_BUS')),(InNet('NetR_BUS_2'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDHQUHKHIFCWGUOPJNCACQNFA10GOC0GFHQJFC5XEZDUZJ34B0EN4D">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDATNK53VZHKU3H0KN5Z2XOQWUTPCMLY5TBCJOJNH523FKRHDQE41H">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">6</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEUCRHHD2XEB4JYJSKUCZCHAJYMVBZ3FQMOERJKMDCB0Q0P13FBBH">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYRISKBAJ44ULC33F5G4WFB40LB0RUGELM2Y5TZBQLOVT0UHLFFZ">Width Constraint (Min=0.254mm) (Max=25.4mm) (Preferred=0.254mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDMLOBNSBFD43CP0DN053NPIKUCI3LCJCNBGX23FG0B2MY1KRJAPSK">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIZAHJATJOFGLCJYBWJR34O2BEDDWUCU4DYPGBCAFT5OBJKWJSFN">Hole Size Constraint (Min=0.3mm) (Max=10mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID0JTGW31EDZT4NYMS1HOQC23WOFLLBBBOYUBWTOKAW3E4PY1WBR5B">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDI2KB41UKYS35B2CYCDM3MZUYWBKLFAAZWRDVP3G0ZVYTOJ0KPEJH">Minimum Solder Mask Sliver (Gap=0.1mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUU50KEJCUMPKB4P34BSFYAUOTMS24KCIIVJLIIH0CK34OMWVOUTK">Silk To Solder Mask (Clearance=0mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDWVMHB1TUHCJDJRLQIBRI5Z5TMLOHODO1T434RQNVRD4JXMQGQ5AG">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">14</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDNWBHZXYC4CQICRNH0W2MCGIB0NPXYKX4HCKGLKMQAUOQVWRJ3HZF">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDGVDYN0CRFKKIHLFRCRFO0SZ51OF1NSA5FJJUUDNQCDMPJKS3FPP">Height Constraint (Min=0mm) (Max=100mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">20</td>
+</tr>
+</table><br><a name="IDATNK53VZHKU3H0KN5Z2XOQWUTPCMLY5TBCJOJNH523FKRHDQE41H"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Un-Routed Net Constraint ( (All) )</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8677.642mil|Location2.X=11271.52mil|Location1.Y=4927.654mil|Location2.Y=4995.654mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8677.642mil|Location2.X=11271.52mil|Location1.Y=4927.654mil|Location2.Y=4995.654mil|Absolute=True">Un-Routed Net Constraint: Net +5V_ISO Between Pad C13-2(58.674mm,13.097mm) on Bottom Layer And Pad U3-1(122.833mm,13.156mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11362.642mil|Location2.X=13968.083mil|Location1.Y=4927.654mil|Location2.Y=4995.654mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11362.642mil|Location2.X=13968.083mil|Location1.Y=4927.654mil|Location2.Y=4995.654mil|Absolute=True">Un-Routed Net Constraint: Net +5V_ISO Between Pad C17-2(126.873mm,13.097mm) on Bottom Layer And Pad U4-1(191.326mm,13.156mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10730.083mil|Location2.X=11271.52mil|Location1.Y=4927.654mil|Location2.Y=7724.354mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10730.083mil|Location2.X=11271.52mil|Location1.Y=4927.654mil|Location2.Y=7724.354mil|Absolute=True">Un-Routed Net Constraint: Net +5V_ISO Between Pad U2-1(110.808mm,82.465mm) on Multi-Layer And Pad U3-1(122.833mm,13.156mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8677.642mil|Location2.X=11271.52mil|Location1.Y=5002.85mil|Location2.Y=5070.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8677.642mil|Location2.X=11271.52mil|Location1.Y=5002.85mil|Location2.Y=5070.85mil|Absolute=True">Un-Routed Net Constraint: Net GND_ISO Between Pad C13-1(58.674mm,15.097mm) on Bottom Layer And Pad U3-2(122.833mm,15.066mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11362.642mil|Location2.X=13968.083mil|Location1.Y=5002.85mil|Location2.Y=5070.85mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11362.642mil|Location2.X=13968.083mil|Location1.Y=5002.85mil|Location2.Y=5070.85mil|Absolute=True">Un-Routed Net Constraint: Net GND_ISO Between Pad C17-1(126.873mm,15.097mm) on Bottom Layer And Pad U4-2(191.326mm,15.066mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10730.083mil|Location2.X=11271.52mil|Location1.Y=5002.85mil|Location2.Y=7799.551mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10730.083mil|Location2.X=11271.52mil|Location1.Y=5002.85mil|Location2.Y=7799.551mil|Absolute=True">Un-Routed Net Constraint: Net GND_ISO Between Pad U2-2(110.808mm,84.375mm) on Multi-Layer And Pad U3-2(122.833mm,15.066mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDWVMHB1TUHCJDJRLQIBRI5Z5TMLOHODO1T434RQNVRD4JXMQGQ5AG"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9426.895mil|Location2.X=9427.895mil|Location1.Y=6531.829mil|Location2.Y=6532.829mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9426.895mil|Location2.X=9427.895mil|Location1.Y=6531.829mil|Location2.Y=6532.829mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "Q2" (76.643mm,52.941mm) on Top Overlay And Arc (78.588mm,63.914mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12116.895mil|Location2.X=12117.895mil|Location1.Y=6531.829mil|Location2.Y=6532.829mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12116.895mil|Location2.X=12117.895mil|Location1.Y=6531.829mil|Location2.Y=6532.829mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "Q3" (144.969mm,52.941mm) on Top Overlay And Arc (146.914mm,63.914mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10409.264mil|Location2.X=10410.264mil|Location1.Y=6324.765mil|Location2.Y=6325.765mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10409.264mil|Location2.X=10410.264mil|Location1.Y=6324.765mil|Location2.Y=6325.765mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "Q5" (100.163mm,47.658mm) on Top Overlay And Track (101.808mm,17.686mm)(101.808mm,49.684mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10389.736mil|Location2.X=10390.736mil|Location1.Y=6329.562mil|Location2.Y=6330.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10389.736mil|Location2.X=10390.736mil|Location1.Y=6329.562mil|Location2.Y=6330.562mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "Q5" (100.163mm,47.658mm) on Top Overlay And Track (101.185mm,17.692mm)(101.185mm,49.69mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10812.004mil|Location2.X=10813.004mil|Location1.Y=8343.516mil|Location2.Y=8344.516mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10812.004mil|Location2.X=10813.004mil|Location1.Y=8343.516mil|Location2.Y=8344.516mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "IN -" (106.045mm,99.568mm) on Top Overlay And Track (112.141mm,83.941mm)(112.141mm,102.61mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10812.004mil|Location2.X=10813.004mil|Location1.Y=8482.965mil|Location2.Y=8483.965mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10812.004mil|Location2.X=10813.004mil|Location1.Y=8482.965mil|Location2.Y=8483.965mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "IN -" (106.045mm,99.568mm) on Top Overlay And Track (112.141mm,102.61mm)(129.921mm,102.61mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12980.866mil|Location2.X=12981.866mil|Location1.Y=4338.201mil|Location2.Y=4339.201mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12980.866mil|Location2.X=12981.866mil|Location1.Y=4338.201mil|Location2.Y=4339.201mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE C" (167.513mm,-2.667mm) on Top Overlay And Track (167mm,-3.145mm)(167mm,15.524mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12980.866mil|Location2.X=12981.866mil|Location1.Y=4319.382mil|Location2.Y=4320.382mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12980.866mil|Location2.X=12981.866mil|Location1.Y=4319.382mil|Location2.Y=4320.382mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE C" (167.513mm,-2.667mm) on Top Overlay And Track (149.22mm,-3.145mm)(167mm,-3.145mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10280.866mil|Location2.X=10281.866mil|Location1.Y=4338.201mil|Location2.Y=4339.201mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10280.866mil|Location2.X=10281.866mil|Location1.Y=4338.201mil|Location2.Y=4339.201mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE B" (98.933mm,-2.667mm) on Top Overlay And Track (98.42mm,-3.145mm)(98.42mm,15.524mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10280.866mil|Location2.X=10281.866mil|Location1.Y=4319.382mil|Location2.Y=4320.382mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10280.866mil|Location2.X=10281.866mil|Location1.Y=4319.382mil|Location2.Y=4320.382mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE B" (98.933mm,-2.667mm) on Top Overlay And Track (80.64mm,-3.145mm)(98.42mm,-3.145mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7599.303mil|Location2.X=7600.303mil|Location1.Y=4338.201mil|Location2.Y=4339.201mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7599.303mil|Location2.X=7600.303mil|Location1.Y=4338.201mil|Location2.Y=4339.201mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE A" (30.861mm,-2.667mm) on Top Overlay And Track (30.308mm,-3.145mm)(30.308mm,15.524mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7599.303mil|Location2.X=7600.303mil|Location1.Y=4319.382mil|Location2.Y=4320.382mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=7599.303mil|Location2.X=7600.303mil|Location1.Y=4319.382mil|Location2.Y=4320.382mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE A" (30.861mm,-2.667mm) on Top Overlay And Track (12.528mm,-3.145mm)(30.308mm,-3.145mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13079.736mil|Location2.X=13080.736mil|Location1.Y=6337.459mil|Location2.Y=6338.46mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13079.736mil|Location2.X=13080.736mil|Location1.Y=6337.459mil|Location2.Y=6338.46mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "Q6" (168.489mm,47.658mm) on Top Overlay And Track (169.511mm,17.692mm)(169.511mm,49.69mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13099.264mil|Location2.X=13100.264mil|Location1.Y=6325.584mil|Location2.Y=6326.584mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13099.264mil|Location2.X=13100.264mil|Location1.Y=6325.584mil|Location2.Y=6326.584mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "Q6" (168.489mm,47.658mm) on Top Overlay And Track (170.134mm,17.686mm)(170.134mm,49.684mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

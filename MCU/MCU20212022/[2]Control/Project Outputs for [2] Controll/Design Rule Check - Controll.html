@@ -1,0 +1,682 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">4.03.2020</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">13:03:08</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:02</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc" class="file"><acronym title="D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc">D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">110</td></tr>
+</table>
+</td>
+</table><a name="IDKA5DRJRCHQ5F1B0M5RDLZEGLKFVOL0D5DFWPGBIRWIFNSBUWLC"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDPSCB4FSH4IITMZ343KL5TYOVEDFNCU5VCWDZZOFQURRT412F5XTD">Clearance Constraint (Gap=0.203mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAIADLUWG1WZ0IV1QIGCXC2J32K1JQ4CSPQKEU5FYRPSJ0LSP5NHO">Clearance Constraint (Gap=1mm) (InNetClass('Toruqe Sensor')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDIELMJEMVNDYLE5PU5GV2JVAK1JDDXKPAZSPRWIX1FKG2TMZCUIB">Clearance Constraint (Gap=1mm) (InNetClass('Undefined')),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDR12VPVWR5RRFNXDFKH0Z1ACJSNU5AE45OQPE1XIUUAX22BGS1A5">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID3LJIVKFMZNWPMOWEKLSGRD11MJSKEOAZ3PFBPTBNTUPNFZNMLKTJ">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDIBFNFXL1CAD2LH1D532WTNEQMCRVCYL44RHLTMB4UUTDGEOCZEDO">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBIBCTUMFZT3QHYYGCE3BQLZP0GYR2FN40VY4L4M0EHQZ5XUYVCDN">Width Constraint (Min=0.254mm) (Max=5mm) (Preferred=0.508mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDM2Y54S3YPDOUP5QRKT04E4BEEMMZJTOXZUD13BJMDSHQ1ITDFGXP">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDBL0EARMBE22SDDDJOFMXIPMMLF3P5PTXOEPPKBPLCHVKZ0CCWD1G">Hole Size Constraint (Min=0.3mm) (Max=500mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDXDK4YKYXZEUUNABOOAYTC0QWGCRSKIFON01OYDN02PQWWSS4XVIH">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEYWFAKMWBRUJJOBVBHYPT400QC1MXKH2RYCEZDLAS1D03KMKZELF">Minimum Solder Mask Sliver (Gap=0.025mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQKBSOGYCSFRIL0NAUWOQE4HH2FNL1W03VCKERQNO3M3IA4XSZJIE">Silk To Solder Mask (Clearance=0.025mm) (IsPad),(All)</a></td>
+<td class="column2">63</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDUG2TAP2NKO4CLEJZOJDYFSRWIMFPEXDIXTMM25CGU5V3DXYSFGY">Silk to Silk (Clearance=0mm) (All),(All)</a></td>
+<td class="column2">45</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDAMFVI0PT53VICEVWSH04DAQL5CP5A15UAZIVIDOLGVUHFMZF1ATD">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDN3X3VE2JHWYYMBOWCIHSRHJ1XDG0B2JZRYZF1NINBE2DAX04RACE">Length Constraint (Min=0mm) (Max=9.804mm) (InNet('CANL_A') Or InNet('CANH_A'))</a></td>
+<td class="column2">2</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDVFYK5NX11XHRFQAWJNXGFX4FLLWVFV3OWDBUTFPI2QIWKBEIN25H">Matched Lengths(Tolerance=0.254mm) (InNetClass('CAN-BUS'))</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID1WAB2XQIMLFNOQKUWJKLOQTB3GCZAVVNHWW5JKCE4ZDJ1N5RDAQO">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">110</td>
+</tr>
+</table><br><a name="IDQKBSOGYCSFRIL0NAUWOQE4HH2FNL1W03VCKERQNO3M3IA4XSZJIE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk To Solder Mask (Clearance=0.025mm) (IsPad),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11571.845mil|Location2.X=11573.511mil|Location1.Y=6398.209mil|Location2.Y=6399.875mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11571.845mil|Location2.X=11573.511mil|Location1.Y=6398.209mil|Location2.Y=6399.875mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Arc (179.376mm,74.084mm) on Bottom Overlay And Pad C115-2(178.543mm,74.294mm) on Bottom Layer [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12014.141mil|Location2.X=12015.808mil|Location1.Y=6505.87mil|Location2.Y=6507.536mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12014.141mil|Location2.X=12015.808mil|Location1.Y=6505.87mil|Location2.Y=6507.536mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Arc (190.257mm,76.747mm) on Top Overlay And Pad C38-2(190.7mm,76.111mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12483.167mil|Location2.X=12484.834mil|Location1.Y=5296.166mil|Location2.Y=5297.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12483.167mil|Location2.X=12484.834mil|Location1.Y=5296.166mil|Location2.Y=5297.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Arc (202.159mm,45.771mm) on Top Overlay And Pad C51-1(201.84mm,46.2mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12544.779mil|Location2.X=12546.446mil|Location1.Y=4194.396mil|Location2.Y=4196.062mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12544.779mil|Location2.X=12546.446mil|Location1.Y=4194.396mil|Location2.Y=4196.062mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Arc (202.15mm,18.313mm) on Top Overlay And Pad P4-6(204.18mm,17.85mm) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12495.539mil|Location2.X=12497.205mil|Location1.Y=5295.033mil|Location2.Y=5296.7mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12495.539mil|Location2.X=12497.205mil|Location1.Y=5295.033mil|Location2.Y=5296.7mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Arc (202.183mm,44.297mm) on Top Overlay And Pad C51-1(201.84mm,46.2mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.724mil|Location2.X=12539.974mil|Location1.Y=4214.866mil|Location2.Y=4217.116mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.724mil|Location2.X=12539.974mil|Location1.Y=4214.866mil|Location2.Y=4217.116mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.008mm &lt; 0.025mm) Between Arc (203.683mm,18.313mm) on Top Overlay And Pad P4-6(204.18mm,17.85mm) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0.008mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.724mil|Location2.X=12539.974mil|Location1.Y=4214.872mil|Location2.Y=4217.122mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.724mil|Location2.X=12539.974mil|Location1.Y=4214.872mil|Location2.Y=4217.122mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.008mm &lt; 0.025mm) Between Arc (203.683mm,18.313mm) on Top Overlay And Pad P4-6(204.18mm,17.85mm) on Multi-Layer [Top Overlay] to [Top Solder] clearance [0.008mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4774.751mil|Location2.X=4777.001mil|Location1.Y=5016.36mil|Location2.Y=5018.61mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4774.751mil|Location2.X=4777.001mil|Location1.Y=5016.36mil|Location2.Y=5018.61mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.011mm &lt; 0.025mm) Between Arc (6.757mm,38.671mm) on Top Overlay And Pad R35-2(6.01mm,38.281mm) on Top Layer [Top Overlay] to [Top Solder] clearance [0.011mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6733.37mil|Location2.X=6735.62mil|Location1.Y=3368.718mil|Location2.Y=3370.968mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6733.37mil|Location2.X=6735.62mil|Location1.Y=3368.718mil|Location2.Y=3370.968mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.023mm &lt; 0.025mm) Between Pad C102-2(56.692mm,-3.297mm) on Top Layer And Region (0 hole(s)) Top Overlay [Top Overlay] to [Top Solder] clearance [0.023mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6728.06mil|Location2.X=6729.727mil|Location1.Y=3352.896mil|Location2.Y=3354.562mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6728.06mil|Location2.X=6729.727mil|Location1.Y=3352.896mil|Location2.Y=3354.562mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad C102-2(56.692mm,-3.297mm) on Top Layer And Track (55.879mm,-4.445mm)(55.879mm,-1.905mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9420.099mil|Location2.X=9421.766mil|Location1.Y=3369.768mil|Location2.Y=3371.435mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9420.099mil|Location2.X=9421.766mil|Location1.Y=3369.768mil|Location2.Y=3371.435mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad C104-2(125.019mm,-3.25mm) on Top Layer And Region (0 hole(s)) Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5134.125mil|Location2.X=5136.375mil|Location1.Y=6946.303mil|Location2.Y=6948.553mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5134.125mil|Location2.X=5136.375mil|Location1.Y=6946.303mil|Location2.Y=6948.553mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.013mm &lt; 0.025mm) Between Pad C14-1(15.494mm,88.392mm) on Multi-Layer And Track (15.57mm,86.004mm)(15.57mm,90.78mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.013mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12403.422mil|Location2.X=12405.088mil|Location1.Y=5296.166mil|Location2.Y=5297.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12403.422mil|Location2.X=12405.088mil|Location1.Y=5296.166mil|Location2.Y=5297.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad C50-1(199.54mm,46.2mm) on Top Layer And Track (175.818mm,45.771mm)(202.159mm,45.771mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12483.167mil|Location2.X=12484.833mil|Location1.Y=5296.166mil|Location2.Y=5297.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12483.167mil|Location2.X=12484.833mil|Location1.Y=5296.166mil|Location2.Y=5297.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad C51-1(201.84mm,46.2mm) on Top Layer And Track (175.818mm,45.771mm)(202.159mm,45.771mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12486.992mil|Location2.X=12494.484mil|Location1.Y=5297.124mil|Location2.Y=5302.488mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12486.992mil|Location2.X=12494.484mil|Location1.Y=5297.124mil|Location2.Y=5302.488mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.02mm &lt; 0.025mm) Between Pad C51-1(201.84mm,46.2mm) on Top Layer And Track (202.159mm,45.771mm)(202.183mm,45.771mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.02mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12261.526mil|Location2.X=12263.776mil|Location1.Y=6187.637mil|Location2.Y=6189.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12261.526mil|Location2.X=12263.776mil|Location1.Y=6187.637mil|Location2.Y=6189.887mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.022mm &lt; 0.025mm) Between Pad C56-1(196mm,68.9mm) on Bottom Layer And Track (196.611mm,68.422mm)(196.611mm,69.692mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12261.526mil|Location2.X=12263.776mil|Location1.Y=6187.637mil|Location2.Y=6189.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12261.526mil|Location2.X=12263.776mil|Location1.Y=6187.637mil|Location2.Y=6189.887mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.022mm &lt; 0.025mm) Between Pad C56-1(196mm,68.9mm) on Bottom Layer And Track (196.611mm,68.422mm)(196.865mm,68.168mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6917.04mil|Location2.X=6918.706mil|Location1.Y=6936.167mil|Location2.Y=6937.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=6917.04mil|Location2.X=6918.706mil|Location1.Y=6936.167mil|Location2.Y=6937.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad C80-1(61.341mm,87.503mm) on Multi-Layer And Track (58.953mm,87.427mm)(63.729mm,87.427mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8726.603mil|Location2.X=8728.269mil|Location1.Y=5135.675mil|Location2.Y=5137.342mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8726.603mil|Location2.X=8728.269mil|Location1.Y=5135.675mil|Location2.Y=5137.342mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad D6-2(107.04mm,42.3mm) on Bottom Layer And Text "C90" (107.213mm,41.25mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8794.509mil|Location2.X=8796.175mil|Location1.Y=4857.227mil|Location2.Y=4858.894mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8794.509mil|Location2.X=8796.175mil|Location1.Y=4857.227mil|Location2.Y=4858.894mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad D8-2(108.84mm,34mm) on Top Layer And Text "PWM+" (104.9mm,34.196mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12551.222mil|Location2.X=12553.472mil|Location1.Y=4982.379mil|Location2.Y=4984.629mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12551.222mil|Location2.X=12553.472mil|Location1.Y=4982.379mil|Location2.Y=4984.629mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.004mm &lt; 0.025mm) Between Pad P10-5(204.18mm,37.05mm) on Multi-Layer And Text "C17" (204.2mm,37.8mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.004mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12543.073mil|Location2.X=12544.74mil|Location1.Y=4927.714mil|Location2.Y=4929.38mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12543.073mil|Location2.X=12544.74mil|Location1.Y=4927.714mil|Location2.Y=4929.38mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P10-5(204.18mm,37.05mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.013mil|Location2.X=12538.679mil|Location1.Y=5089.712mil|Location2.Y=5091.379mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.013mil|Location2.X=12538.679mil|Location1.Y=5089.712mil|Location2.Y=5091.379mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P10-6(204.18mm,40.05mm) on Multi-Layer And Text "C18" (204.4mm,39.9mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12543.073mil|Location2.X=12544.74mil|Location1.Y=5045.824mil|Location2.Y=5047.49mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12543.073mil|Location2.X=12544.74mil|Location1.Y=5045.824mil|Location2.Y=5047.49mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P10-6(204.18mm,40.05mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12547.302mil|Location2.X=12548.969mil|Location1.Y=5164.126mil|Location2.Y=5165.793mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12547.302mil|Location2.X=12548.969mil|Location1.Y=5164.126mil|Location2.Y=5165.793mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P10-7(204.18mm,43.05mm) on Multi-Layer And Text "R63" (204.2mm,42mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12543.073mil|Location2.X=12544.74mil|Location1.Y=5163.934mil|Location2.Y=5165.601mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12543.073mil|Location2.X=12544.74mil|Location1.Y=5163.934mil|Location2.Y=5165.601mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P10-7(204.18mm,43.05mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5172.807mil|Location2.X=5174.474mil|Location1.Y=7100.946mil|Location2.Y=7102.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5172.807mil|Location2.X=5174.474mil|Location1.Y=7100.946mil|Location2.Y=7102.613mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P1-1(16.764mm,93.536mm) on Multi-Layer And Track (8.144mm,91.536mm)(20.304mm,91.536mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4972.807mil|Location2.X=4974.474mil|Location1.Y=7100.946mil|Location2.Y=7102.613mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4972.807mil|Location2.X=4974.474mil|Location1.Y=7100.946mil|Location2.Y=7102.613mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P1-2(11.684mm,93.536mm) on Multi-Layer And Track (8.144mm,91.536mm)(20.304mm,91.536mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4602.95mil|Location2.Y=4605.2mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4602.95mil|Location2.Y=4605.2mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.006mm &lt; 0.025mm) Between Pad P3-10(-1.5mm,28.5mm) on Multi-Layer And Track (-0.635mm,23.114mm)(-0.635mm,49.276mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.006mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=5075.391mil|Location2.Y=5077.641mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=5075.391mil|Location2.Y=5077.641mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.006mm &lt; 0.025mm) Between Pad P3-6(-1.5mm,40.5mm) on Multi-Layer And Track (-0.635mm,23.114mm)(-0.635mm,49.276mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.006mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4957.28mil|Location2.Y=4959.53mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4957.28mil|Location2.Y=4959.53mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.006mm &lt; 0.025mm) Between Pad P3-7(-1.5mm,37.5mm) on Multi-Layer And Track (-0.635mm,23.114mm)(-0.635mm,49.276mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.006mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4839.17mil|Location2.Y=4841.42mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4839.17mil|Location2.Y=4841.42mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.006mm &lt; 0.025mm) Between Pad P3-8(-1.5mm,34.5mm) on Multi-Layer And Track (-0.635mm,23.114mm)(-0.635mm,49.276mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.006mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4721.06mil|Location2.Y=4723.31mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4493.759mil|Location2.X=4496.009mil|Location1.Y=4721.06mil|Location2.Y=4723.31mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.006mm &lt; 0.025mm) Between Pad P3-9(-1.5mm,31.5mm) on Multi-Layer And Track (-0.635mm,23.114mm)(-0.635mm,49.276mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.006mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4666.364mil|Location2.Y=4668.031mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4666.364mil|Location2.Y=4668.031mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P4-10(204.18mm,29.85mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.725mil|Location2.X=12539.975mil|Location1.Y=4214.877mil|Location2.Y=4217.127mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12537.725mil|Location2.X=12539.975mil|Location1.Y=4214.877mil|Location2.Y=4217.127mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.008mm &lt; 0.025mm) Between Pad P4-6(204.18mm,17.85mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.008mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4312.033mil|Location2.Y=4313.7mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4312.033mil|Location2.Y=4313.7mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P4-7(204.18mm,20.85mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4430.144mil|Location2.Y=4431.81mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4430.144mil|Location2.Y=4431.81mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P4-8(204.18mm,23.85mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4548.254mil|Location2.Y=4549.92mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12541.888mil|Location2.X=12543.554mil|Location1.Y=4548.254mil|Location2.Y=4549.92mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad P4-9(204.18mm,26.85mm) on Multi-Layer And Track (203.683mm,18.313mm)(203.683mm,44.247mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12391.152mil|Location2.X=12393.402mil|Location1.Y=4149.44mil|Location2.Y=4151.69mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12391.152mil|Location2.X=12393.402mil|Location1.Y=4149.44mil|Location2.Y=4151.69mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.022mm &lt; 0.025mm) Between Pad Q4-1(200.5mm,16.17mm) on Multi-Layer And Track (169.894mm,16.789mm)(202.159mm,16.789mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.022mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.143mil|Location2.X=11214.809mil|Location1.Y=5651.647mil|Location2.Y=5653.314mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.143mil|Location2.X=11214.809mil|Location1.Y=5651.647mil|Location2.Y=5653.314mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R27-2(169.4mm,54.35mm) on Bottom Layer And Text "R25" (172.99mm,53.388mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11173.773mil|Location2.X=11175.44mil|Location1.Y=5630.092mil|Location2.Y=5631.758mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11173.773mil|Location2.X=11175.44mil|Location1.Y=5630.092mil|Location2.Y=5631.758mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R27-2(169.4mm,54.35mm) on Bottom Layer And Text "R26" (171.288mm,53.388mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11127.842mil|Location2.X=11129.508mil|Location1.Y=5646.033mil|Location2.Y=5647.699mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11127.842mil|Location2.X=11129.508mil|Location1.Y=5646.033mil|Location2.Y=5647.699mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R28-1(167.7mm,54.35mm) on Bottom Layer And Text "R26" (171.288mm,53.388mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.143mil|Location2.X=11214.81mil|Location1.Y=5813.064mil|Location2.Y=5814.731mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.143mil|Location2.X=11214.81mil|Location1.Y=5813.064mil|Location2.Y=5814.731mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R29-2(169.4mm,58.45mm) on Bottom Layer And Text "R27" (173.003mm,57.496mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11173.773mil|Location2.X=11175.44mil|Location1.Y=5792.375mil|Location2.Y=5794.042mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11173.773mil|Location2.X=11175.44mil|Location1.Y=5792.375mil|Location2.Y=5794.042mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R29-2(169.4mm,58.45mm) on Bottom Layer And Text "R28" (171.302mm,57.496mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11235.349mil|Location2.X=11237.015mil|Location1.Y=5797.784mil|Location2.Y=5799.45mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11235.349mil|Location2.X=11237.015mil|Location1.Y=5797.784mil|Location2.Y=5799.45mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R30-1(170.8mm,58.45mm) on Bottom Layer And Text "R27" (173.003mm,57.496mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.261mil|Location2.X=11269.928mil|Location1.Y=5777.631mil|Location2.Y=5779.298mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.261mil|Location2.X=11269.928mil|Location1.Y=5777.631mil|Location2.Y=5779.298mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R30-1(170.8mm,58.45mm) on Bottom Layer And Text "R28" (171.302mm,57.496mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4695.87mil|Location2.X=4697.537mil|Location1.Y=5249.167mil|Location2.Y=5250.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4695.87mil|Location2.X=4697.537mil|Location1.Y=5249.167mil|Location2.Y=5250.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R46-2(3.633mm,44.45mm) on Top Layer And Track (4.445mm,44.577mm)(26.543mm,44.577mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4695.87mil|Location2.X=4697.537mil|Location1.Y=5249.167mil|Location2.Y=5250.833mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4695.87mil|Location2.X=4697.537mil|Location1.Y=5249.167mil|Location2.Y=5250.833mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R46-2(3.633mm,44.45mm) on Top Layer And Track (4.445mm,44.577mm)(4.445mm,61.341mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12261.492mil|Location2.X=12263.742mil|Location1.Y=6277.637mil|Location2.Y=6279.887mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12261.492mil|Location2.X=12263.742mil|Location1.Y=6277.637mil|Location2.Y=6279.887mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.024mm &lt; 0.025mm) Between Pad R88-1(196mm,70.9mm) on Bottom Layer And Track (196.611mm,70.708mm)(196.611mm,72.105mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0.024mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11563.537mil|Location2.X=11565.203mil|Location1.Y=6713.41mil|Location2.Y=6715.077mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11563.537mil|Location2.X=11565.203mil|Location1.Y=6713.41mil|Location2.Y=6715.077mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R89-2(178.3mm,82.05mm) on Bottom Layer And Text "R31" (181.383mm,80.499mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11556.501mil|Location2.X=11558.168mil|Location1.Y=6723.194mil|Location2.Y=6724.86mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11556.501mil|Location2.X=11558.168mil|Location1.Y=6723.194mil|Location2.Y=6724.86mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R89-2(178.3mm,82.05mm) on Bottom Layer And Text "R32" (180.399mm,80.494mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11466.531mil|Location2.X=11468.197mil|Location1.Y=6708.2mil|Location2.Y=6709.867mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11466.531mil|Location2.X=11468.197mil|Location1.Y=6708.2mil|Location2.Y=6709.867mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R90-1(176.8mm,82.05mm) on Bottom Layer And Text "R32" (180.399mm,80.494mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11525.218mil|Location2.X=11526.885mil|Location1.Y=6897.78mil|Location2.Y=6899.447mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11525.218mil|Location2.X=11526.885mil|Location1.Y=6897.78mil|Location2.Y=6899.447mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R91-2(178.3mm,86.55mm) on Bottom Layer And Text "R89" (181.889mm,85.182mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11526.455mil|Location2.X=11528.122mil|Location1.Y=6898.236mil|Location2.Y=6899.903mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11526.455mil|Location2.X=11528.122mil|Location1.Y=6898.236mil|Location2.Y=6899.903mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R91-2(178.3mm,86.55mm) on Bottom Layer And Text "R90" (180.397mm,85.194mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11496.465mil|Location2.X=11498.131mil|Location1.Y=6908.233mil|Location2.Y=6909.899mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11496.465mil|Location2.X=11498.131mil|Location1.Y=6908.233mil|Location2.Y=6909.899mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (Collision &lt; 0.025mm) Between Pad R92-1(176.8mm,86.55mm) on Bottom Layer And Text "R90" (180.397mm,85.194mm) on Bottom Overlay [Bottom Overlay] to [Bottom Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5593.073mil|Location2.Y=5595.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5593.073mil|Location2.Y=5595.323mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0mm &lt; 0.025mm) Between Pad U6-11(194.098mm,53.3mm) on Top Layer And Track (193.173mm,52.205mm)(193.173mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5643.073mil|Location2.Y=5645.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5643.073mil|Location2.Y=5645.323mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0mm &lt; 0.025mm) Between Pad U6-12(194.098mm,54.57mm) on Top Layer And Track (193.173mm,52.205mm)(193.173mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5693.073mil|Location2.Y=5695.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5693.073mil|Location2.Y=5695.323mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0mm &lt; 0.025mm) Between Pad U6-13(194.098mm,55.84mm) on Top Layer And Track (193.173mm,52.205mm)(193.173mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5743.073mil|Location2.Y=5745.323mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=12133.048mil|Location2.X=12135.298mil|Location1.Y=5743.073mil|Location2.Y=5745.323mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0mm &lt; 0.025mm) Between Pad U6-14(194.098mm,57.11mm) on Top Layer And Track (193.173mm,52.205mm)(193.173mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5740.757mil|Location2.Y=5743.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5740.757mil|Location2.Y=5743.007mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.002mm &lt; 0.025mm) Between Pad U6-3(188.648mm,57.11mm) on Top Layer And Track (189.573mm,52.205mm)(189.573mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5690.757mil|Location2.Y=5693.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5690.757mil|Location2.Y=5693.007mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.002mm &lt; 0.025mm) Between Pad U6-4(188.648mm,55.84mm) on Top Layer And Track (189.573mm,52.205mm)(189.573mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5640.757mil|Location2.Y=5643.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5640.757mil|Location2.Y=5643.007mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.002mm &lt; 0.025mm) Between Pad U6-5(188.648mm,54.57mm) on Top Layer And Track (189.573mm,52.205mm)(189.573mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.002mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5590.757mil|Location2.Y=5593.007mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11983.389mil|Location2.X=11985.639mil|Location1.Y=5590.757mil|Location2.Y=5593.007mil|Absolute=True">Silk To Solder Mask Clearance Constraint: (0.002mm &lt; 0.025mm) Between Pad U6-6(188.648mm,53.3mm) on Top Layer And Track (189.573mm,52.205mm)(189.573mm,58.205mm) on Top Overlay [Top Overlay] to [Top Solder] clearance [0.002mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUG2TAP2NKO4CLEJZOJDYFSRWIMFPEXDIXTMM25CGU5V3DXYSFGY"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Silk to Silk (Clearance=0mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11186.901mil|Location2.X=11187.902mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11186.901mil|Location2.X=11187.902mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R25" (172.99mm,53.388mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.476mil|Location2.X=11214.477mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.476mil|Location2.X=11214.477mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R25" (172.99mm,53.388mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11108.181mil|Location2.X=11109.182mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11108.181mil|Location2.X=11109.182mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R26" (171.288mm,53.388mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11178.159mil|Location2.X=11179.159mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11178.159mil|Location2.X=11179.159mil|Location1.Y=5661.362mil|Location2.Y=5662.363mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R26" (171.288mm,53.388mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11203.042mil|Location2.X=11204.043mil|Location1.Y=5657.404mil|Location2.Y=5658.405mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11203.042mil|Location2.X=11204.043mil|Location1.Y=5657.404mil|Location2.Y=5658.405mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R26" (171.288mm,53.388mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.476mil|Location2.X=11214.477mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11213.476mil|Location2.X=11214.477mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R27" (173.003mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11269.977mil|Location2.X=11270.977mil|Location1.Y=5820.654mil|Location2.Y=5821.654mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11269.977mil|Location2.X=11270.977mil|Location1.Y=5820.654mil|Location2.Y=5821.654mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R27" (173.003mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11242.019mil|Location2.X=11243.02mil|Location1.Y=5818.319mil|Location2.Y=5819.319mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11242.019mil|Location2.X=11243.02mil|Location1.Y=5818.319mil|Location2.Y=5819.319mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R27" (173.003mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11186.901mil|Location2.X=11187.902mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11186.901mil|Location2.X=11187.902mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R27" (173.003mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11242.019mil|Location2.X=11243.02mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11242.019mil|Location2.X=11243.02mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R28" (171.302mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11203.66mil|Location2.X=11204.661mil|Location1.Y=5818.63mil|Location2.Y=5819.631mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11203.66mil|Location2.X=11204.661mil|Location1.Y=5818.63mil|Location2.Y=5819.631mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R28" (171.302mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11178.694mil|Location2.X=11179.695mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11178.694mil|Location2.X=11179.695mil|Location1.Y=5823.11mil|Location2.Y=5824.111mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R28" (171.302mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.594mil|Location2.X=11269.595mil|Location1.Y=5818.319mil|Location2.Y=5819.319mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.594mil|Location2.X=11269.595mil|Location1.Y=5818.319mil|Location2.Y=5819.319mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Region (0 hole(s)) Bottom Overlay And Text "R28" (171.302mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4856.835mil|Location2.X=4857.835mil|Location1.Y=5905.697mil|Location2.Y=5906.698mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4856.835mil|Location2.X=4857.835mil|Location1.Y=5905.697mil|Location2.Y=5906.698mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C39" (8.2mm,60.6mm) on Top Overlay And Track (4.445mm,61.341mm)(26.543mm,61.341mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4939.512mil|Location2.X=4940.512mil|Location1.Y=5905.697mil|Location2.Y=5906.698mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4939.512mil|Location2.X=4940.512mil|Location1.Y=5905.697mil|Location2.Y=5906.698mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C40" (10.3mm,60.6mm) on Top Overlay And Track (4.445mm,61.341mm)(26.543mm,61.341mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10241.867mil|Location2.X=10242.867mil|Location1.Y=6084.579mil|Location2.Y=6085.58mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10241.867mil|Location2.X=10242.867mil|Location1.Y=6084.579mil|Location2.Y=6085.58mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C42" (145.1mm,65.192mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10730.056mil|Location2.X=10731.056mil|Location1.Y=6084.907mil|Location2.Y=6085.907mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10730.056mil|Location2.X=10731.056mil|Location1.Y=6084.907mil|Location2.Y=6085.907mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C44" (157.5mm,65.2mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10812.733mil|Location2.X=10813.733mil|Location1.Y=6084.907mil|Location2.Y=6085.907mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10812.733mil|Location2.X=10813.733mil|Location1.Y=6084.907mil|Location2.Y=6085.907mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C45" (159.6mm,65.2mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10131.63mil|Location2.X=10132.631mil|Location1.Y=6084.579mil|Location2.Y=6085.58mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10131.63mil|Location2.X=10132.631mil|Location1.Y=6084.579mil|Location2.Y=6085.58mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C60" (142.3mm,65.192mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9997.772mil|Location2.X=9998.773mil|Location1.Y=6084.579mil|Location2.Y=6085.58mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=9997.772mil|Location2.X=9998.773mil|Location1.Y=6084.579mil|Location2.Y=6085.58mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C61" (138.9mm,65.192mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8733.286mil|Location2.X=8734.287mil|Location1.Y=5119.678mil|Location2.Y=5120.679mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8733.286mil|Location2.X=8734.287mil|Location1.Y=5119.678mil|Location2.Y=5120.679mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C90" (107.213mm,41.25mm) on Bottom Overlay And Track (106.922mm,41.284mm)(106.922mm,41.538mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8733.286mil|Location2.X=8734.287mil|Location1.Y=5119.678mil|Location2.Y=5120.679mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8733.286mil|Location2.X=8734.287mil|Location1.Y=5119.678mil|Location2.Y=5120.679mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C90" (107.213mm,41.25mm) on Bottom Overlay And Track (106.922mm,41.284mm)(110.224mm,41.284mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8788.656mil|Location2.X=8789.657mil|Location1.Y=5119.854mil|Location2.Y=5120.855mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8788.656mil|Location2.X=8789.657mil|Location1.Y=5119.854mil|Location2.Y=5120.855mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C91" (109.271mm,41.25mm) on Bottom Overlay And Track (106.922mm,41.284mm)(110.224mm,41.284mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8790.791mil|Location2.X=8791.792mil|Location1.Y=5130.403mil|Location2.Y=5131.403mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8790.791mil|Location2.X=8791.792mil|Location1.Y=5130.403mil|Location2.Y=5131.403mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C91" (109.271mm,41.25mm) on Bottom Overlay And Track (108.439mm,41.531mm)(108.439mm,42.3mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8793.934mil|Location2.X=8794.935mil|Location1.Y=5129.761mil|Location2.Y=5130.761mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8793.934mil|Location2.X=8794.935mil|Location1.Y=5129.761mil|Location2.Y=5130.761mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C91" (109.271mm,41.25mm) on Bottom Overlay And Track (108.439mm,41.531mm)(109.208mm,42.3mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8821.44mil|Location2.X=8822.441mil|Location1.Y=5124.324mil|Location2.Y=5125.324mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8821.44mil|Location2.X=8822.441mil|Location1.Y=5124.324mil|Location2.Y=5125.324mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C91" (109.271mm,41.25mm) on Bottom Overlay And Track (109.208mm,41.284mm)(109.208mm,43.316mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8826.318mil|Location2.X=8827.318mil|Location1.Y=5133.606mil|Location2.Y=5134.606mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8826.318mil|Location2.X=8827.318mil|Location1.Y=5133.606mil|Location2.Y=5134.606mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "C91" (109.271mm,41.25mm) on Bottom Overlay And Track (109.335mm,41.284mm)(109.335mm,43.316mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8935.698mil|Location2.X=8936.698mil|Location1.Y=7535.078mil|Location2.Y=7536.079mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8935.698mil|Location2.X=8936.698mil|Location1.Y=7535.078mil|Location2.Y=7536.079mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "IN -" (106.045mm,99.568mm) on Top Overlay And Track (112.141mm,102.61mm)(129.921mm,102.61mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8935.698mil|Location2.X=8936.698mil|Location1.Y=7394.815mil|Location2.Y=7395.815mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8935.698mil|Location2.X=8936.698mil|Location1.Y=7394.815mil|Location2.Y=7395.815mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "IN -" (106.045mm,99.568mm) on Top Overlay And Track (112.141mm,83.941mm)(112.141mm,102.61mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13032.374mil|Location2.X=13033.374mil|Location1.Y=5480.89mil|Location2.Y=5481.89mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13032.374mil|Location2.X=13033.374mil|Location1.Y=5480.89mil|Location2.Y=5481.89mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "P10" (216.23mm,50.14mm) on Bottom Overlay And Track (216.1mm,49.975mm)(216.1mm,65.625mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13037.374mil|Location2.X=13038.374mil|Location1.Y=4870.381mil|Location2.Y=4871.382mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=13037.374mil|Location2.X=13038.374mil|Location1.Y=4870.381mil|Location2.Y=4871.382mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "P4" (217.145mm,34.722mm) on Bottom Overlay And Track (216.1mm,33.725mm)(216.1mm,49.375mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5722.74mil|Location2.X=5723.74mil|Location1.Y=3370.681mil|Location2.Y=3371.681mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5722.74mil|Location2.X=5723.74mil|Location1.Y=3370.681mil|Location2.Y=3371.681mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE A" (30.861mm,-2.667mm) on Top Overlay And Track (12.528mm,-3.145mm)(30.308mm,-3.145mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5722.74mil|Location2.X=5723.74mil|Location1.Y=3511.974mil|Location2.Y=3512.974mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5722.74mil|Location2.X=5723.74mil|Location1.Y=3511.974mil|Location2.Y=3512.974mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE A" (30.861mm,-2.667mm) on Top Overlay And Track (30.308mm,-3.145mm)(30.308mm,15.524mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11104.303mil|Location2.X=11105.303mil|Location1.Y=3370.681mil|Location2.Y=3371.681mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11104.303mil|Location2.X=11105.303mil|Location1.Y=3370.681mil|Location2.Y=3371.681mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE C" (167.513mm,-2.667mm) on Top Overlay And Track (149.22mm,-3.145mm)(167mm,-3.145mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11104.303mil|Location2.X=11105.303mil|Location1.Y=3511.974mil|Location2.Y=3512.974mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11104.303mil|Location2.X=11105.303mil|Location1.Y=3511.974mil|Location2.Y=3512.974mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PHASE C" (167.513mm,-2.667mm) on Top Overlay And Track (167mm,-3.145mm)(167mm,15.524mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8804.893mil|Location2.X=8805.894mil|Location1.Y=4861.944mil|Location2.Y=4862.945mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=8804.893mil|Location2.X=8805.894mil|Location1.Y=4861.944mil|Location2.Y=4862.945mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "PWM+" (104.9mm,34.196mm) on Top Overlay And Track (108.722mm,34.762mm)(108.722mm,35.016mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10894.578mil|Location2.X=10895.579mil|Location1.Y=6086.181mil|Location2.Y=6087.181mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10894.578mil|Location2.X=10895.579mil|Location1.Y=6086.181mil|Location2.Y=6087.181mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R12" (161.8mm,65.189mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.129mil|Location2.X=11269.13mil|Location1.Y=5596.382mil|Location2.Y=5597.382mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.129mil|Location2.X=11269.13mil|Location1.Y=5596.382mil|Location2.Y=5597.382mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R25" (172.99mm,53.388mm) on Bottom Overlay And Text "R26" (171.288mm,53.388mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.665mil|Location2.X=11269.665mil|Location1.Y=5758.13mil|Location2.Y=5759.13mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11268.665mil|Location2.X=11269.665mil|Location1.Y=5758.13mil|Location2.Y=5759.13mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R27" (173.003mm,57.496mm) on Bottom Overlay And Text "R28" (171.302mm,57.496mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11332.71mil|Location2.X=11333.711mil|Location1.Y=5969.232mil|Location2.Y=5970.232mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11332.71mil|Location2.X=11333.711mil|Location1.Y=5969.232mil|Location2.Y=5970.232mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R29" (172.992mm,61.589mm) on Bottom Overlay And Text "R30" (174.389mm,61.589mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11631.192mil|Location2.X=11632.193mil|Location1.Y=6723.633mil|Location2.Y=6724.634mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11631.192mil|Location2.X=11632.193mil|Location1.Y=6723.633mil|Location2.Y=6724.634mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R31" (181.383mm,80.499mm) on Bottom Overlay And Text "R32" (180.399mm,80.494mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10339.46mil|Location2.X=10340.461mil|Location1.Y=6086.727mil|Location2.Y=6087.727mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10339.46mil|Location2.X=10340.461mil|Location1.Y=6086.727mil|Location2.Y=6087.727mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R4" (147.7mm,65.203mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11626.137mil|Location2.X=11627.138mil|Location1.Y=6898.114mil|Location2.Y=6899.114mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11626.137mil|Location2.X=11627.138mil|Location1.Y=6898.114mil|Location2.Y=6899.114mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R89" (181.889mm,85.182mm) on Bottom Overlay And Text "R90" (180.397mm,85.194mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10658.358mil|Location2.X=10659.359mil|Location1.Y=6086.618mil|Location2.Y=6087.618mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=10658.358mil|Location2.X=10659.359mil|Location1.Y=6086.618mil|Location2.Y=6087.618mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R9" (155.8mm,65.2mm) on Top Overlay And Track (86.935mm,65.908mm)(185.664mm,65.908mm) on Top Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11631.064mil|Location2.X=11632.064mil|Location1.Y=7085.567mil|Location2.Y=7086.567mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=11631.064mil|Location2.X=11632.064mil|Location1.Y=7085.567mil|Location2.Y=7086.567mil|Absolute=True">Silk To Silk Clearance Constraint: (Collision &lt; 0mm) Between Text "R91" (181.394mm,89.695mm) on Bottom Overlay And Text "R92" (180.381mm,89.684mm) on Bottom Overlay Silk Text to Silk Clearance [0mm]</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDN3X3VE2JHWYYMBOWCIHSRHJ1XDG0B2JZRYZF1NINBE2DAX04RACE"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Length Constraint (Min=0mm) (Max=9.804mm) (InNet('CANL_A') Or InNet('CANH_A'))</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Length Constraint: (18.229mm &gt; 9.804mm) Net CANH_A Actual Length = 18.229mm</acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=D:\Drive\AESK Workspace\Elektrik\Motor Driver\MCU_2020\[1] Hardware\MCU_Control_Rev_Check\Control_Revize\Controll.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=0mil|Location2.X=0mil|Location1.Y=0mil|Location2.Y=0mil|Absolute=True">Length Constraint: (11.37mm &gt; 9.804mm) Net CANL_A Actual Length = 11.37mm</acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

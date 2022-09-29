@@ -1,0 +1,12 @@
+Added Component: Designator=C7(Film_Cap_15u)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Digikey"; Value = "https://www.digikey.com/product-detail/en/kemet/C4AQLBU5150A11K/399-16978-ND/8345941"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "ESR"; Value = "6 mOhm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolarence"; Value = "+-10 %"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "15 uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage"; Value = "500 V"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=DC_BUS Pin=C7-2
+Added Member To Class: ClassName=[3] - Inverter Member=Component C3 1600UF CAP
+Added Member To Class: ClassName=[3] - Inverter Member=Component C7 Film Cap
+Added Room: Name=[3] - Inverter

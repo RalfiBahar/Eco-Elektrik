@@ -1,0 +1,31 @@
+            siwave_ng 2020 R2 (Built: May 29 2020 00:50:42)
+    Commenced on host DESKTOP-BUERGON at Tue Apr 20 08:38:16 2021
+
+------------------------------------------------------------------------
+|               |   Real   |   Cpu    |  Memory  |                     |
+|    Command    |   Time   |   Time   |          |                     |
+| geomproc      | 00:00:01 | 00:00:01 |   49864K |    14358 triangle   |
+| solve_setup   | 00:00:03 | 00:00:02 |   91956K |        1 project    |
+------------------------------------------------------------------------
+         Finished on DESKTOP-BUERGON at 04/20/2021 08:38:20
+
+
+           SIwave 2020.2.0 May 29 2020 at 00:40:49 beginning
+     C:\Program Files\AnsysEM\AnsysEM20.2\Win64\siwave_solver.exe
+               on DESKTOP-BUERGON at 04/20/2021 08:38:21
+------------------------------------------------------------------------
+|               |   Real   |   Cpu    |  Memory  |                     |
+|    Command    |   Time   |   Time   |          | Number of Elements  |
+| geomproc      | 00:00:00 | 00:00:00 |   48120K |    14474 triangle   |
+| coupling      | 00:00:00 | 00:00:00 |   68732K |      174 xsections  |
+| xsec_solve    | 00:00:01 | 00:00:00 |   98032K |       24 xsections  |
+| via_extract   | 00:00:00 | 00:00:00 |  110592K |       56 blocks     |
+| bsm_adapt     | 00:00:00 | 00:00:00 |  115916K |    27237 triangles  |
+| IRA_4p        | 00:00:00 | 00:00:00 |   40328K |    22929 matrix     |
+| matrix_assem  | 00:00:00 | 00:00:00 |  134668K |    22929 matrix     |
+| DCS_4p        | 00:00:00 | 00:00:00 |  134668K |    22929 matrix     |
+| SIwave        | 00:00:03 | 00:00:04 |  134668K |    22929 matrix     |
+------------------------------------------------------------------------
+         Finished on DESKTOP-BUERGON at 04/20/2021 08:38:25
+
+

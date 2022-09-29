@@ -1,0 +1,4 @@
+Added Component: Designator=P4(HDR1X2H)
+Added Pin To Net: NetName=+12V Pin=P4-1
+Added Pin To Net: NetName=A_LOW_REF Pin=P4-2
+Added Member To Class: ClassName=Gate_Drive Member=Component P4 Header 2H

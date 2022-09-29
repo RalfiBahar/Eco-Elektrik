@@ -1,0 +1,16 @@
+DRC Rules Export File for PCB: D:\Engin_Personal\[1] Personal\BLDC Driver\[1] Hardware\[1] Power\Power.PcbDoc
+RuleKind=Clearance|RuleName=GND btwn G.C.L|Scope=Board|Minimum=17.32
+RuleKind=Clearance|RuleName=GND btwn G.B.L|Scope=Board|Minimum=17.32
+RuleKind=Clearance|RuleName=GND btwn G.A.L|Scope=Board|Minimum=17.32
+RuleKind=Clearance|RuleName=V_BUS btwn VS_PIN|Scope=Board|Minimum=39.37
+RuleKind=Clearance|RuleName=V_BUS btwn CS_ISO|Scope=Board|Minimum=39.37
+RuleKind=Clearance|RuleName=V_BUS btwn +5V_ISO|Scope=Board|Minimum=39.37
+RuleKind=Clearance|RuleName=V_BUS btwn GND_ISO|Scope=Board|Minimum=39.37
+RuleKind=Clearance|RuleName=V_BUS btwn PHASE_C|Scope=Board|Minimum=39.37
+RuleKind=Clearance|RuleName=V_BUS btwn PHASE_B|Scope=Board|Minimum=39.37
+RuleKind=Clearance|RuleName=V_BUS btwn PHASE_A|Scope=Board|Minimum=39.37
+RuleKind=Clearance|RuleName=Polygon|Scope=Board|Minimum=39.37
+RuleKind=ShortCircuit|RuleName=ShortCircuit|Scope=Board|Allowed=0
+RuleKind=Clearance|RuleName=Clearance|Scope=Board|Minimum=13.78
+RuleKind=Width|RuleName=Width|Scope=Board|Minimum=10.00
+RuleKind=SolderMaskExpansion|RuleName=SolderMaskExpansion|Scope=Board|Minimum=4.00

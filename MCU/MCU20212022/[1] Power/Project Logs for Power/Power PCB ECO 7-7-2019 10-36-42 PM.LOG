@@ -1,0 +1,77 @@
+Change component parameters: Designator = "R_BUS"; Footprint = "Resistor 2512"; UniqueID = "\LOOTREDK"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ComponentLink1Description"; Value = "http://www.farnell.com/datasheets/1610601.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "ComponentLink1URL"; Value = "http://www.farnell.com/datasheets/1610601.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE CONNECTIVITY"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "352124KFT"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "MSL"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Packaging"; Value = "Cut Tape"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Power Rating"; Value = "2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pricing 1"; Value = "1=0.481, 150=0.1603, 400=0.1374, 1000=0.1069, 2000=0.0875, 4000=0.0764, 20000=0.0749, 40000=0.0733 (GBP)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Product Range"; Value = "3520 Series"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance"; Value = "16K"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistance Tolerance"; Value = "± 1%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistor Case Style"; Value = "2512 [6432 Metric]"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistor Element Material"; Value = "-"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Resistor Mounting"; Value = "SMD<!--FANDB--><div class="features-and-benefits-container"></div>"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "RoHS"; Value = "YES"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Stock 1"; Value = "6653"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "SVHC"; Value = "No SVHC (15-Jun-2015)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Temperature Coefficient"; Value = "± 100"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Voltage Rating"; Value = "250"; VariantName = "[No Variations]"
+Added Component: Designator=P1(HDR_2.54_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "HDR_2.54_1X3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "Connector0009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "Header 2.54 1x3"; VariantName = "[No Variations]"
+Added Component: Designator=P2(HDR_2.54_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "HDR_2.54_1X3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "Connector0009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "Header 2.54 1x3"; VariantName = "[No Variations]"
+Added Component: Designator=P3(HDR_2.54_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "HDR_2.54_1X3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "Connector0009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "Header 2.54 1x3"; VariantName = "[No Variations]"
+Added Component: Designator=P4(HDR_2.54_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "HDR_2.54_1X3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "Connector0009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "Header 2.54 1x3"; VariantName = "[No Variations]"
+Added Component: Designator=P5(HDR_2.54_1X3)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Connectors"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "HDR_2.54_1X3"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "Connector0009"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "Header 2.54 1x3"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=+12V_ISO Pin=P1-1
+Added Pin To Net: NetName=-12V_ISO Pin=P1-2
+Added Pin To Net: NetName=V_DC_BUS Pin=P1-3
+Added Pin To Net: NetName=+5V_ISO Pin=P2-1
+Added Pin To Net: NetName=GND_ISO Pin=P2-2
+Added Pin To Net: NetName=CS_PHASE_A Pin=P2-3
+Added Pin To Net: NetName=+5V_ISO Pin=P3-1
+Added Pin To Net: NetName=GND_ISO Pin=P3-2
+Added Pin To Net: NetName=I_DC_BUS Pin=P3-3
+Added Pin To Net: NetName=+5V_ISO Pin=P4-1
+Added Pin To Net: NetName=GND_ISO Pin=P4-2
+Added Pin To Net: NetName=CS_PHASE_B Pin=P4-3
+Added Pin To Net: NetName=+5V_ISO Pin=P5-1
+Added Pin To Net: NetName=GND_ISO Pin=P5-2
+Added Pin To Net: NetName=CS_PHASE_C Pin=P5-3
+Added Member To Class: ClassName=[5] - Voltage Sensors Member=Component P1 1x3 PIN
+Added Member To Class: ClassName=[6] - Current Sensors Member=Component P2 1x3 PIN
+Added Member To Class: ClassName=[6] - Current Sensors Member=Component P3 1x3 PIN
+Added Member To Class: ClassName=[6] - Current Sensors Member=Component P4 1x3 PIN
+Added Member To Class: ClassName=[6] - Current Sensors Member=Component P5 1x3 PIN
+Added Room: Name=[3] - Inverter
+Added Room: Name=[5] - Voltage Sensors
+Added Room: Name=[6] - Current Sensors
+Added Room: Name=[7] - Snubbers
+Added Room: Name=[9] - Logo,MH etc.

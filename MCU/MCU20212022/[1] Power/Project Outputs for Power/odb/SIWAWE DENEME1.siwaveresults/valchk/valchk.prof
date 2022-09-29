@@ -1,0 +1,14 @@
+
+
+
+***********************************************************************
+
+        Validation Check 2020 R2 (Built: May 29 2020 00:49:14)
+    Commenced on host DESKTOP-BUERGON at Tue Apr 20 08:32:37 2021
+
+------------------------------------------------------------------------
+|               |   Real   |   Cpu    |  Memory  |                     |
+|    Command    |   Time   |   Time   |          |                     |
+| BW Collision  | 00:00:00 | 00:00:00 |   44968K |        1 project    |
+| Vias Check    | 00:00:00 | 00:00:00 |   44992K |        1 project    |
+| Nets & Layers | 00:00:04 | 00:00:00 |   66452K |        1 project    |

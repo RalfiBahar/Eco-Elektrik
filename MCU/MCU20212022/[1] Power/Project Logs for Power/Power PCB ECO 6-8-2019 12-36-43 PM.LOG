@@ -1,0 +1,7 @@
+Added Component: Designator=U?(ACS770LCB-050B-PFF-T)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=PHASE_B Pin=U?-4
+Added Pin To Net: NetName=PHASE_V Pin=U?-5
+Added Member To Class: ClassName=[3] - Inverter Member=Component U? ACS770LCB-050B-PFF-T
+Added Member To Class: ClassName=[3] - Inverter Member=Component U? ACS770LCB-050B-PFF-T
+Added Room: Name=[3] - Inverter

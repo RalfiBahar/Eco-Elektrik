@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=R6 Old Footprint=SM/R0603N New Footprint=SM/R0805N
+Change Component Footprint: Designator=R8 Old Footprint=SM/R0603N New Footprint=SM/R0805N
+Added Room: Name=Gate_Drive

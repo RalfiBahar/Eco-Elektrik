@@ -1,0 +1,7 @@
+Time for reading traces: 0.019
+Memory usage for storing traces: 280
+Time for reading plane edges: 0.083
+Memory usage for storing plane edges: 8136
+Time for creating parallel couplings: 0
+Time for processing segments: 0.017
+Memory usage for creating segments: 1600

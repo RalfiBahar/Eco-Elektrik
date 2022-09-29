@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=PHA_HI Pin=P2-1
+Removed Pin From Net: NetName=A_HIGH_REF Pin=P2-2
+Removed Pin From Net: NetName=PHA_LO Pin=P3-1
+Removed Pin From Net: NetName=A_LOW_REF Pin=P3-2
+Added Pin To Net: NetName=A_HIGH_REF Pin=P2-1
+Added Pin To Net: NetName=PHA_HI Pin=P2-2
+Added Pin To Net: NetName=A_LOW_REF Pin=P3-1
+Added Pin To Net: NetName=PHA_LO Pin=P3-2

@@ -1,0 +1,104 @@
+Added Component: Designator=P1(HDR2X2H)
+Added Component: Designator=P2(HDR1X2H)
+Added Component: Designator=P3(HDR1X2H)
+Added Component: Designator=TP1(TEST POINT GREEN)
+Added Component: Designator=TP2(TEST POINT GREEN)
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=A_HIGH_REF Pin=C1-2
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C3-1
+Added Pin To Net: NetName=GND Pin=C4-1
+Added Pin To Net: NetName=NetC4_2 Pin=C4-2
+Added Pin To Net: NetName=+12V Pin=C5-1
+Added Pin To Net: NetName=A_LOW_REF Pin=C5-2
+Added Pin To Net: NetName=+12V Pin=C6-1
+Added Pin To Net: NetName=A_LOW_REF Pin=C6-2
+Added Pin To Net: NetName=GND Pin=C7-1
+Added Pin To Net: NetName=PWM1A_IN Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-1
+Added Pin To Net: NetName=PWM1B_IN Pin=C8-2
+Added Pin To Net: NetName=NetC1_1 Pin=D1-1
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=PHA_HI Pin=D2-1
+Added Pin To Net: NetName=NetD2_2 Pin=D2-2
+Added Pin To Net: NetName=PHA_LO Pin=D3-1
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=PWM1B Pin=P1-2
+Added Pin To Net: NetName=GND Pin=P1-3
+Added Pin To Net: NetName=PWM1A Pin=P1-4
+Added Pin To Net: NetName=PHA_HI Pin=P2-1
+Added Pin To Net: NetName=A_HIGH_REF Pin=P2-2
+Added Pin To Net: NetName=PHA_LO Pin=P3-1
+Added Pin To Net: NetName=A_LOW_REF Pin=P3-2
+Added Pin To Net: NetName=NetD1_2 Pin=R1-1
+Added Pin To Net: NetName=+12V Pin=R1-2
+Added Pin To Net: NetName=NetR2_1 Pin=R2-1
+Added Pin To Net: NetName=PHA_HI Pin=R2-2
+Added Pin To Net: NetName=A_HIGH_REF Pin=R3-1
+Added Pin To Net: NetName=PHA_HI Pin=R3-2
+Added Pin To Net: NetName=NetR2_1 Pin=R4-1
+Added Pin To Net: NetName=NetD2_2 Pin=R4-2
+Added Pin To Net: NetName=GND Pin=R5-1
+Added Pin To Net: NetName=NetC4_2 Pin=R5-2
+Added Pin To Net: NetName=NetR6_1 Pin=R6-1
+Added Pin To Net: NetName=PHA_LO Pin=R6-2
+Added Pin To Net: NetName=A_LOW_REF Pin=R7-1
+Added Pin To Net: NetName=PHA_LO Pin=R7-2
+Added Pin To Net: NetName=NetR6_1 Pin=R8-1
+Added Pin To Net: NetName=NetD3_2 Pin=R8-2
+Added Pin To Net: NetName=PWM1A Pin=R9-1
+Added Pin To Net: NetName=PWM1A_IN Pin=R9-2
+Added Pin To Net: NetName=PWM1B Pin=R10-1
+Added Pin To Net: NetName=PWM1B_IN Pin=R10-2
+Added Pin To Net: NetName=PHA_HI Pin=TP1-TP
+Added Pin To Net: NetName=PHA_LO Pin=TP2-TP
+Added Pin To Net: NetName=PWM1A_IN Pin=U1-1
+Added Pin To Net: NetName=PWM1B_IN Pin=U1-2
+Added Pin To Net: NetName=GND Pin=U1-4
+Added Pin To Net: NetName=GND Pin=U1-5
+Added Pin To Net: NetName=NetC4_2 Pin=U1-6
+Added Pin To Net: NetName=A_LOW_REF Pin=U1-9
+Added Pin To Net: NetName=NetR6_1 Pin=U1-10
+Added Pin To Net: NetName=+12V Pin=U1-11
+Added Pin To Net: NetName=A_HIGH_REF Pin=U1-14
+Added Pin To Net: NetName=NetR2_1 Pin=U1-15
+Added Pin To Net: NetName=NetC1_1 Pin=U1-16
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=A_LOW_REF Pin=U2-4
+Added Pin To Net: NetName=+12V Pin=U2-6
+Added Pin To Net: NetName=5V Pin=C2-2
+Added Pin To Net: NetName=5V Pin=C3-2
+Added Pin To Net: NetName=5V Pin=P1-1
+Added Pin To Net: NetName=5V Pin=U1-3
+Added Pin To Net: NetName=5V Pin=U1-8
+Added Pin To Net: NetName=5V Pin=U2-1
+Added Net: Name=5V
+Added Member To Class: ClassName=Gate_Drive Member=Component C1 4.7uF
+Added Member To Class: ClassName=Gate_Drive Member=Component C2 0.1uF
+Added Member To Class: ClassName=Gate_Drive Member=Component C3 4.7uF
+Added Member To Class: ClassName=Gate_Drive Member=Component C4 2.2nF
+Added Member To Class: ClassName=Gate_Drive Member=Component C5 4.7uF
+Added Member To Class: ClassName=Gate_Drive Member=Component C6 0.1uF
+Added Member To Class: ClassName=Gate_Drive Member=Component C7 100nF
+Added Member To Class: ClassName=Gate_Drive Member=Component C8 100nF
+Added Member To Class: ClassName=Gate_Drive Member=Component D1 BYG23T-M3/TR
+Added Member To Class: ClassName=Gate_Drive Member=Component D2 D Schottky
+Added Member To Class: ClassName=Gate_Drive Member=Component D3 D Schottky
+Added Member To Class: ClassName=Gate_Drive Member=Component P1 Header 2X2H
+Added Member To Class: ClassName=Gate_Drive Member=Component P2 Header 2H
+Added Member To Class: ClassName=Gate_Drive Member=Component P3 Header 2H
+Added Member To Class: ClassName=Gate_Drive Member=Component R1 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R2 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R3 10K
+Added Member To Class: ClassName=Gate_Drive Member=Component R4 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R5 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R6 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R7 10K
+Added Member To Class: ClassName=Gate_Drive Member=Component R8 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R9 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component R10 1K
+Added Member To Class: ClassName=Gate_Drive Member=Component TP1 TEST POINT
+Added Member To Class: ClassName=Gate_Drive Member=Component TP2 TEST POINT
+Added Member To Class: ClassName=Gate_Drive Member=Component U1 UCC21520DW
+Added Member To Class: ClassName=Gate_Drive Member=Component U2 PDM1-S12-S5-S
+Added Room: Name=Gate_Drive

@@ -1,0 +1,88 @@
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q1-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_B Pin=Q2-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_C Pin=Q3-S
+Removed Pin From Net: NetName=PHASE_A Pin=Q4-D
+Removed Pin From Net: NetName=PHASE_B Pin=Q5-D
+Removed Pin From Net: NetName=PHASE_C Pin=Q6-D
+Added Component: Designator=U?(ACS770LCB-050B-PFF-T)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U?(ACS770LCB-050B-PFF-T)
+Add component. Clean all parameters for all variants
+Added Component: Designator=U?(ACS770LCB-050B-PFF-T)
+Add component. Clean all parameters for all variants
+Added Pin To Net: NetName=PHASE_A Pin=U?-5
+Added Pin To Net: NetName=PHASE_B Pin=U?-5
+Added Pin To Net: NetName=PHASE_C Pin=U?-5
+Change Net Name : Old Net Name=PHASE_A New Net Name=PHASE_U
+Change Net Name : Old Net Name=PHASE_B New Net Name=PHASE_V
+Change Net Name : Old Net Name=PHASE_C New Net Name=PHASE_W
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q1-S
+Added Pin To Net: NetName=PHASE_A Pin=Q4-D
+Added Pin To Net: NetName=PHASE_A Pin=U?-4
+Added Net: Name=PHASE_A
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q2-S
+Added Pin To Net: NetName=PHASE_B Pin=Q5-D
+Added Pin To Net: NetName=PHASE_B Pin=U?-4
+Added Net: Name=PHASE_B
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q3-S
+Added Pin To Net: NetName=PHASE_C Pin=Q6-D
+Added Pin To Net: NetName=PHASE_C Pin=U?-4
+Added Net: Name=PHASE_C
+Added Member To Class: ClassName=[3] - Inverter Member=Component U? ACS770LCB-050B-PFF-T
+Added Member To Class: ClassName=[3] - Inverter Member=Component U? ACS770LCB-050B-PFF-T
+Added Member To Class: ClassName=[3] - Inverter Member=Component U? ACS770LCB-050B-PFF-T
+Added Room: Name=[3] - Inverter

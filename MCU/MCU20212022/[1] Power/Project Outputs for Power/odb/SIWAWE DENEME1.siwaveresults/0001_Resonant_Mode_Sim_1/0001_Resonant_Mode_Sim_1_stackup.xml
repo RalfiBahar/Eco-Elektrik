@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SIwaveInput>
+    <Chunk Name="stack_up0" Elevation="155">
+        <Extent>
+            <Loop Id="1"/>
+            <Loop Id="2"/>
+            <Loop Id="3"/>
+            <Loop Id="4"/>
+            <Loop Id="5"/>
+            <Loop Id="6"/>
+            <Loop Id="7"/>
+            <Loop Id="8"/>
+            <Loop Id="9"/>
+            <Loop Id="10"/>
+            <Loop Id="11"/>
+            <Loop Id="12"/>
+            <Loop Id="13"/>
+            <Loop Id="14"/>
+            <Loop Id="15"/>
+            <Loop Id="16"/>
+            <Loop Id="17"/>
+            <Loop Id="18"/>
+            <Loop Id="19"/>
+            <Loop Id="20"/>
+            <Loop Id="21"/>
+            <Loop Id="22"/>
+            <Loop Id="23"/>
+            <Loop Id="24"/>
+            <Loop Id="25"/>
+            <Loop Id="26"/>
+            <Loop Id="27"/>
+            <Loop Id="28"/>
+            <Loop Id="29"/>
+            <Loop Id="30"/>
+            <Loop Id="31"/>
+            <Loop Id="32"/>
+            <Loop Id="33"/>
+            <Loop Id="34"/>
+            <Loop Id="35"/>
+            <Loop Id="36"/>
+            <Loop Id="37"/>
+            <Loop Id="38"/>
+            <Loop Id="39"/>
+            <Loop Id="40"/>
+            <Loop Id="41"/>
+            <Loop Id="42"/>
+            <Loop Id="43"/>
+            <Loop Id="44"/>
+            <Loop Id="45"/>
+            <Loop Id="46"/>
+            <Loop Id="47"/>
+            <Loop Id="48"/>
+            <Loop Id="49"/>
+            <Loop Id="50"/>
+            <Loop Id="51"/>
+            <Loop Id="52"/>
+            <Loop Id="53"/>
+            <Loop Id="54"/>
+            <Loop Id="55"/>
+            <Loop Id="56"/>
+            <Loop Id="57"/>
+            <Loop Id="58"/>
+            <Loop Id="59"/>
+            <Loop Id="60"/>
+            <Loop Id="61"/>
+            <Loop Id="62"/>
+            <Loop Id="63"/>
+            <Loop Id="64"/>
+            <Loop Id="65"/>
+            <Loop Id="66"/>
+            <Loop Id="67"/>
+            <Loop Id="68"/>
+            <Loop Id="69"/>
+            <Loop Id="70"/>
+            <Loop Id="71"/>
+            <Loop Id="72"/>
+            <Loop Id="73"/>
+            <Loop Id="74"/>
+            <Loop Id="75"/>
+            <Loop Id="76"/>
+            <Loop Id="77"/>
+            <Loop Id="78"/>
+            <Loop Id="79"/>
+            <Loop Id="80"/>
+            <Loop Id="81"/>
+            <Loop Id="82"/>
+            <Loop Id="83"/>
+            <Loop Id="84"/>
+            <Loop Id="85"/>
+            <Loop Id="86"/>
+            <Loop Id="87"/>
+            <Loop Id="88"/>
+            <Loop Id="89"/>
+            <Loop Id="90"/>
+            <Loop Id="91"/>
+            <Loop Id="92"/>
+            <Loop Id="93"/>
+            <Loop Id="94"/>
+            <Loop Id="95"/>
+            <Loop Id="96"/>
+            <Loop Id="97"/>
+            <Loop Id="98"/>
+            <Loop Id="99"/>
+            <Loop Id="100"/>
+            <Loop Id="101"/>
+            <Loop Id="102"/>
+            <Loop Id="103"/>
+            <Loop Id="104"/>
+            <Loop Id="105"/>
+            <Loop Id="106"/>
+            <Loop Id="107"/>
+            <Loop Id="108"/>
+            <Loop Id="109"/>
+            <Loop Id="110"/>
+            <Loop Id="111"/>
+            <Loop Id="112"/>
+            <Loop Id="113"/>
+            <Loop Id="114"/>
+            <Loop Id="115"/>
+            <Loop Id="116"/>
+            <Loop Id="117"/>
+            <Loop Id="118"/>
+            <Loop Id="119"/>
+            <Loop Id="120"/>
+            <Loop Id="121"/>
+            <Loop Id="122"/>
+            <Loop Id="123"/>
+            <Loop Id="124"/>
+            <Loop Id="125"/>
+            <Loop Id="126"/>
+            <Loop Id="127"/>
+            <Loop Id="128"/>
+            <Loop Id="129"/>
+            <Loop Id="130"/>
+            <Loop Id="131"/>
+            <Loop Id="132"/>
+            <Loop Id="133"/>
+            <Loop Id="134"/>
+            <Loop Id="135"/>
+            <Loop Id="136"/>
+            <Loop Id="137"/>
+            <Loop Id="138"/>
+            <Loop Id="139"/>
+            <Loop Id="140"/>
+            <Loop Id="141"/>
+            <Loop Id="142"/>
+            <Loop Id="143"/>
+            <Loop Id="144"/>
+            <Loop Id="145"/>
+            <Loop Id="146"/>
+            <Loop Id="147"/>
+            <Loop Id="148"/>
+            <Loop Id="149"/>
+            <Loop Id="150"/>
+            <Loop Id="151"/>
+            <Loop Id="152"/>
+            <Loop Id="153"/>
+            <Loop Id="154"/>
+            <Loop Id="155"/>
+            <Loop Id="156"/>
+            <Loop Id="157"/>
+            <Loop Id="158"/>
+            <Loop Id="159"/>
+            <Loop Id="160"/>
+            <Loop Id="161"/>
+            <Loop Id="162"/>
+            <Loop Id="163"/>
+            <Loop Id="164"/>
+            <Loop Id="165"/>
+            <Loop Id="166"/>
+            <Loop Id="167"/>
+            <Loop Id="168"/>
+            <Loop Id="169"/>
+            <Loop Id="170"/>
+            <Loop Id="171"/>
+            <Loop Id="172"/>
+            <Loop Id="173"/>
+            <Loop Id="174"/>
+            <Loop Id="175"/>
+            <Loop Id="176"/>
+            <Loop Id="177"/>
+            <Loop Id="178"/>
+            <Loop Id="179"/>
+            <Loop Id="180"/>
+            <Loop Id="181"/>
+            <Loop Id="182"/>
+            <Loop Id="183"/>
+            <Loop Id="184"/>
+            <Loop Id="185"/>
+            <Loop Id="186"/>
+            <Loop Id="187"/>
+            <Loop Id="188"/>
+            <Loop Id="189"/>
+            <Loop Id="190"/>
+            <Loop Id="191"/>
+            <Loop Id="192"/>
+            <Loop Id="193"/>
+            <Loop Id="194"/>
+            <Loop Id="195"/>
+            <Loop Id="196"/>
+            <Loop Id="197"/>
+            <Loop Id="198"/>
+            <Loop Id="199"/>
+        </Extent>
+        <Layer Name="top_layer_1" Type="PLANE" Thickness="35.3078" Material="copper" VoidMaterial="air">
+            <SurfaceRoughness Face="Top">
+                <Model Name="HJ" Coefficient="0"/>
+            </SurfaceRoughness>
+            <SurfaceRoughness Face="Bottom">
+                <Model Name="HJ" Coefficient="0"/>
+            </SurfaceRoughness>
+            <SurfaceRoughness Face="Side">
+                <Model Name="HJ" Coefficient="0"/>
+            </SurfaceRoughness>
+            <Solid Id="1">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="2">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="3">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="4">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="5">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="7">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="8">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="11">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="14">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="15">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="16">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="17">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="18">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="19">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="20">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="21">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="22">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="23">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="24">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="25">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="27">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="28">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="32">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="33">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="34">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="35">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="36">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="37">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="43">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="46">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="47">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="48">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="50">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="51">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="55">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="56">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="57">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="58">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="59">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="61">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="62">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="63">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="64">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="65">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="66">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="67">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="70">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="71">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="72">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="76">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="77">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="80">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="82">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="83">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="86">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="87">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="88">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="89">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="90">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="97">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="98">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="101">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="102">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="103">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="104">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="107">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="108">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="109">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="110">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="111">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="112">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="113">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="114">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="120">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="134">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="135">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="137">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="147">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="150">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="151">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="152">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="157">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="158">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="171">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="172">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="173">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="174">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="175">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="176">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="177">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="179">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="180">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="185">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="186">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="187">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="188">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="189">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="190">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="191">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="192">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="193">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="195">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="196">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="197">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="198">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="199">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+        </Layer>
+        <Layer Name="Dielectric_1_2" Type="INSUL" Thickness="320.04" Material="FR4_epoxy"/>
+        <Layer Name="bottom_layer_3" Type="PLANE" Thickness="35.3078" Material="copper" VoidMaterial="air">
+            <SurfaceRoughness Face="Top">
+                <Model Name="HJ" Coefficient="0"/>
+            </SurfaceRoughness>
+            <SurfaceRoughness Face="Bottom">
+                <Model Name="HJ" Coefficient="0"/>
+            </SurfaceRoughness>
+            <SurfaceRoughness Face="Side">
+                <Model Name="HJ" Coefficient="0"/>
+            </SurfaceRoughness>
+            <Solid Id="6">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="9">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="10">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="12">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="13">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="15">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="17">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="18">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="19">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="21">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="22">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="26">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="27">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="28">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="29">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="30">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="31">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="34">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="37">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="38">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="39">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="40">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="41">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="42">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="43">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="44">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="45">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="48">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="49">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="50">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="51">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="52">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="54">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="57">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="58">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="59">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="60">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="61">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="62">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="63">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="64">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="65">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="66">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="67">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="68">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="69">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="70">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="73">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="74">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="75">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="81">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="84">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="85">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="86">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="87">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="88">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="89">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="91">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="92">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="93">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="94">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="95">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="96">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="99">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="100">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="101">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="102">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="105">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="106">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="110">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="111">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="112">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="113">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="114">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="120">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="121">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="124">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="125">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="129">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="130">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="131">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="137">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="139">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="140">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="142">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="145">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="146">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="148">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="149">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="156">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="157">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="158">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="159">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="160">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="162">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="163">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="164">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="176">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="178">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="181">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="185">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="186">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="187">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="188">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="189">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="190">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="191">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="192">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="193">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="195">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="196">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="197">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="198">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+            <Solid Id="199">
+                <AreaRatio>1.0000000000000000</AreaRatio>
+            </Solid>
+        </Layer>
+    </Chunk>
+    <Chunk Name="default" Elevation="0">
+        <Layer Name="SIwave_jz5Bf9Sm_Diel" Type="INSUL" Thickness="120" Material="air"/>
+        <Layer Name="SIwave_3mbcRei9_Gnd" Type="PLANE" Thickness="35" Material="copper" VoidMaterial="air">
+            <SurfaceRoughness Face="Top">
+                <Model Coefficient="0" Name="HJ"/>
+            </SurfaceRoughness>
+            <SurfaceRoughness Face="Bottom">
+                <Model Coefficient="0" Name="HJ"/>
+            </SurfaceRoughness>
+        </Layer>
+    </Chunk>
+</SIwaveInput>

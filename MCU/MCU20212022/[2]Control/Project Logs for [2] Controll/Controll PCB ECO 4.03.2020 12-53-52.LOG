@@ -1,0 +1,93 @@
+Removed Pin From Net: NetName=hall_C Pin=U8-12
+Removed Pin From Net: NetName=hall_B Pin=U8-13
+Removed Pin From Net: NetName=hall_A Pin=U8-14
+Added Component: Designator=R31(RESC 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "0R"; VariantName = "[No Variations]"
+Added Component: Designator=R32(RESC 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "0R"; VariantName = "[No Variations]"
+Added Component: Designator=R89(RESC 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "0R"; VariantName = "[No Variations]"
+Added Component: Designator=R90(RESC 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "0R"; VariantName = "[No Variations]"
+Added Component: Designator=R91(RESC 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "0R"; VariantName = "[No Variations]"
+Added Component: Designator=R92(RESC 0603)
+Add component. Clean all parameters for all variants
+Add component (AddParameter): Name = "Category"; Value = "Resistor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package / Case"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Part Number"; Value = "R0148"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = "1/10W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "%5"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Values"; Value = "0R"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=hall_A Pin=R31-1
+Added Pin To Net: NetName=GND Pin=R32-1
+Added Pin To Net: NetName=hall_A Pin=R32-2
+Added Pin To Net: NetName=hall_B Pin=R89-1
+Added Pin To Net: NetName=GND Pin=R90-1
+Added Pin To Net: NetName=hall_B Pin=R90-2
+Added Pin To Net: NetName=hall_C Pin=R91-1
+Added Pin To Net: NetName=GND Pin=R92-1
+Added Pin To Net: NetName=hall_C Pin=R92-2
+Added Pin To Net: NetName=NetR31_2 Pin=R31-2
+Added Pin To Net: NetName=NetR31_2 Pin=U8-14
+Added Net: Name=NetR31_2
+Added Pin To Net: NetName=NetR89_2 Pin=R89-2
+Added Pin To Net: NetName=NetR89_2 Pin=U8-13
+Added Net: Name=NetR89_2
+Added Pin To Net: NetName=NetR91_2 Pin=R91-2
+Added Pin To Net: NetName=NetR91_2 Pin=U8-12
+Added Net: Name=NetR91_2
+Added Member To Class: ClassName=[15] - Hall and Encoder Isolation Member=Component R31 0R
+Added Member To Class: ClassName=[15] - Hall and Encoder Isolation Member=Component R32 0R
+Added Member To Class: ClassName=[15] - Hall and Encoder Isolation Member=Component R89 0R
+Added Member To Class: ClassName=[15] - Hall and Encoder Isolation Member=Component R90 0R
+Added Member To Class: ClassName=[15] - Hall and Encoder Isolation Member=Component R91 0R
+Added Member To Class: ClassName=[15] - Hall and Encoder Isolation Member=Component R92 0R
+Added Room: Name=[3] - DIMM
+Added Room: Name=[4] - Regulator
+Added Room: Name=[5] - USB Emulator
+Added Room: Name=[6] - Gate Driver
+Added Room: Name=[7] - Current Sensor
+Added Room: Name=[8] - Voltage Sensor
+Added Room: Name=[9] - Comm, UART,CAN etc
+Added Room: Name=[10] - Logo, HM etc
+Added Room: Name=[12] - Manual Interface
+Added Room: Name=[13] - Torque Sensor Interface
+Added Room: Name=[14] - BJTs
+Added Room: Name=[15] - Hall and Encoder Isolation
